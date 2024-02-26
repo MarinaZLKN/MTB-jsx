@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.contacts-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 20px;
+}
+.contacts-container .contacts-row {
+  position: absolute;
+  top: 1%;
+}
+.contacts-container .contacts-picture {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.contacts-container .contacts-wrapper {
+  padding-left: 172px;
+  position: absolute;
+  top: 20%;
+}
+.contacts-container .contacts-wrapper .contacts-form {
+  display: block;
+  width: 700px;
+  height: 550px;
+  margin-top: 10%;
+}
+.contacts-container .contacts-wrapper .contacts-form .input-contacts {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #5C5C59;
+  padding: 1px;
+  font-family: var(--font-text) !important;
+  color: var(--White);
+  font-size: 14px;
+}
+.contacts-container .contacts-wrapper .contacts-form #textarea1 {
+  padding-top: 10px;
+}
+.contacts-container .contacts-wrapper .contacts-form .invalid-input {
+  background: transparent;
+  border: none;
+  padding: 1px;
+  font-family: var(--font-text) !important;
+  color: var(--White);
+  font-size: 14px;
+  border-bottom: 2px solid red;
+}
+.contacts-container .contacts-wrapper .contacts-form .invalid_contacts-lab {
+  color: red;
+  font-family: var(--font-text);
+  font-size: 16px;
+}
+.contacts-container .contacts-wrapper .contacts-form .error-message {
+  text-align: right;
+  color: red;
+  font-size: 16px;
+  font-family: var(--font-text);
+  margin-top: -10px;
+}
+.contacts-container .contacts-wrapper .contacts-form input,
+.contacts-container .contacts-wrapper .contacts-form textarea {
+  display: block;
+  height: 8%;
+  width: 100%; /* Занимать всю доступную ширину */
+  margin-bottom: 5%; /* Опционально: добавляем отступ снизу между элементами формы */
+}
+.contacts-container .contacts-wrapper .contacts-lab {
+  color: #5C5C59;
+  font-family: var(--font-text);
+  font-size: 16px;
+}
+.contacts-container .contacts-wrapper .contacts-data-container {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  height: 700px;
+  overflow: hidden;
+}
+.contacts-container .contacts-wrapper .contacts-data-container .contacts-map {
+  flex: 2;
+}
+.contacts-container .contacts-wrapper .contacts-data-container .contacts-map .contacts-map-pic {
+  width: 700px;
+  height: 500px;
+}
+.contacts-container .contacts-wrapper .contacts-data-container .contacts-data {
+  flex: 1;
+}
+.contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-title {
+  font-family: var(--font-family);
+  color: var(--White);
+  font-size: 120px;
+}
+.contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-p {
+  padding: 15px 0px;
+  font-size: 24px;
+  color: var(--White);
+  font-family: var(--font-text);
+}
+.contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Contacts.css.map */

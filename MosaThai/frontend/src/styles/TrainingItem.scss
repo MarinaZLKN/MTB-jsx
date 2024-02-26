@@ -1,0 +1,61 @@
+.prices-container{
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  .training-item_price{
+    background-color: transparent;
+    border: 1px solid var(--yellow-);
+    width: 19%;
+    //320px
+    height: auto; //300px
+    padding: 75px 20px;
+  }
+  .prices-title{
+    padding-left: 172px;
+  }
+  .prices-prices{
+    padding-top: 2%;
+    padding-left: 172px;
+    display: flex;
+    gap: 4.5%;
+  }
+
+  .prices-name{
+    color: var(--White, #E5E5D6);
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    font-variant: all-small-caps;
+    padding-bottom: 40px;
+  }
+
+  .prices-int{
+    color: var(--Yellow-2, #FFD11B);
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 52px;
+  }
+  @media screen and (max-width: 1440px) {
+    .training-item_price{
+      padding: 55px 30px;
+    }
+    .prices-name{
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+    .prices-int{
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 52px;
+    }
+
+  }
+}

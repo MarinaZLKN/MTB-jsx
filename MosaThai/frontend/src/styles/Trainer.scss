@@ -1,0 +1,74 @@
+.trainer-list_container{
+  padding: 100px 172px;
+  width: 100%;
+  height: auto;
+  .trainers{
+    padding-top: 40px;
+    display: flex;
+    gap: 230px;
+    //justify-content: space-between;
+    align-items: center;
+  }
+
+  .trainer{
+    position: relative;
+    width: 300px;
+    .trainer_img{
+      width: 400px;
+    }
+    .trainer_name{
+      position: absolute;
+      bottom: 18%;
+      //width: 237px;
+      //height: 65px;
+      background: var(--yellow-, #FFD11B);
+      display: inline-flex;
+      padding: 15px 30px 15px 30px;
+      //padding-bottom: 4%;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-text);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 100% */
+      font-variant: all-small-caps;
+    }
+    .trainer_title{
+      position: absolute;
+      bottom: 9%;
+      display: inline-flex;
+      padding: 8px 30px 12px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background: var(--Black, #0D0C0A);
+      color: var(--White, #E5E5D6);
+      font-family: var(--font-text);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .trainer_availible{
+      position: absolute;
+      bottom: 3%;
+      left: 10%;
+      color: var(--yellow-);
+      font-family: var(--font-family);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .trainers{
+      gap: 100px;
+      .trainer_img{
+        width: 350px;
+      }
+    }
+  }
+}

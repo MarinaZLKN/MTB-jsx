@@ -1,0 +1,98 @@
+.section8-container {
+  width: 100%;
+  height: auto;
+  padding: 100px 172px;
+}
+.section8-container .news-container {
+  margin-top: 40px;
+  display: flex;
+  border: 1px solid gray;
+}
+.section8-container .news-container .news-image {
+  width: 40%;
+  height: auto;
+}
+.section8-container .news-container .news-wrapper {
+  padding: 4% 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.section8-container .news-container .news-wrapper .news-date {
+  color: var(--White);
+  font-size: 20px;
+}
+.section8-container .news-container .news-wrapper .news-title {
+  color: var(--White);
+  font-size: 46px;
+}
+.section8-container .news-container .news-wrapper .news-text {
+  font-family: var(--font-text);
+  color: var(--White);
+  line-height: 20px;
+}
+.section8-container .news-container .news-wrapper .news-button {
+  width: 23%;
+  height: 12%;
+  font-size: 24px;
+}
+@media screen and (max-width: 1440px) {
+  .section8-container .news-container .news-wrapper .news-text {
+    font-size: 0.9vw;
+  }
+}
+
+.newsfeed-container {
+  width: 100%;
+  height: auto;
+}
+.newsfeed-container .newsfeed-list {
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.newsfeed-container .news-container {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  border: 1px solid gray;
+}
+.newsfeed-container .news-container .news-image1 {
+  width: 40%;
+  height: auto;
+}
+.newsfeed-container .news-container .news-wrapper1 {
+  padding: 4% 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+}
+.newsfeed-container .news-container .news-wrapper1 .news-date1 {
+  color: var(--White);
+  font-size: 20px;
+}
+.newsfeed-container .news-container .news-wrapper1 .news-title1 {
+  color: var(--White);
+  font-size: 50px;
+}
+.newsfeed-container .news-container .news-wrapper1 .news-text {
+  font-family: var(--font-text);
+  color: var(--White);
+  line-height: 20px;
+}
+.newsfeed-container .news-container .news-wrapper1 .news-button {
+  width: 23%;
+  height: 12%;
+  font-size: 24px;
+}
+@media screen and (max-width: 1440px) {
+  .newsfeed-container .news-container .news-wrapper1 .news-text {
+    font-size: 0.9vw;
+  }
+}
+
+/*# sourceMappingURL=NewsFeed.css.map */

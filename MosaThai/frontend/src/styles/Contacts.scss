@@ -1,0 +1,119 @@
+.contacts-container{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom:20px;
+  .contacts-row{
+    position: absolute;
+    top: 1%;
+  }
+  .contacts-picture{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+  }
+  .contacts-wrapper{
+      padding-left: 172px;
+      position: absolute;
+      top: 20%;
+
+      .contacts-form {
+        display: block;
+        width: 700px;
+        height: 550px;
+        margin-top: 10%;
+        .input-contacts{
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid #5C5C59;
+          padding: 1px;
+          font-family: var(--font-text)!important;
+          color: var(--White);
+          font-size: 14px;
+        }
+        #textarea1{
+          padding-top:10px;
+        }
+        .invalid-input {
+          background: transparent;
+          border: none;
+          padding: 1px;
+          font-family: var(--font-text)!important;
+          color: var(--White);
+          font-size: 14px;
+          border-bottom: 2px solid red;
+        }
+
+        .invalid_contacts-lab{
+          color: red;
+          font-family: var(--font-text);
+          font-size: 16px;
+        }
+
+
+        .error-message {
+            text-align: right;
+            color: red;
+            font-size: 16px;
+            font-family: var(--font-text);
+          margin-top: -10px;
+        }
+      }
+
+      .contacts-form input,
+      .contacts-form textarea {
+        display: block;
+        height: 8%;
+        width: 100%; /* Занимать всю доступную ширину */
+        margin-bottom: 5%; /* Опционально: добавляем отступ снизу между элементами формы */
+      }
+      .contacts-lab{
+        color: #5C5C59;
+        font-family: var(--font-text);
+        font-size: 16px;
+      }
+    .contacts-data-container{
+      padding-top: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      height: 700px;
+      overflow: hidden;
+
+      .contacts-map{
+        flex: 2;
+        .contacts-map-pic{
+          width: 700px;
+          height: 500px;
+        }
+      }
+      .contacts-data{
+        flex: 1;
+
+        .contacts-title{
+          font-family: var(--font-family);
+          color: var(--White);
+          font-size: 120px;
+        }
+        .contacts-p{
+          padding: 15px 0px;
+          font-size: 24px;
+          color: var(--White);
+          font-family: var(--font-text);
+        }
+        .contacts-p a{
+          color: inherit;
+          text-decoration: none;
+        }
+
+      }
+
+    }
+  }
+  @media screen and (max-width: 1440px) {
+
+  }
+
+}

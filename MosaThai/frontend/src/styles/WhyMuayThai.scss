@@ -1,0 +1,109 @@
+.wmt-container{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 1440px) {
+    height: 650px;
+    margin-bottom: 5px;
+  }
+
+  .wmt-picture-block{
+    padding-left: 172px;
+    .wmt-picture{
+      width: 768px;
+      height: 950px;
+      overflow: hidden;
+
+      @media screen and (max-width: 1920px) and (min-width: 1331px) {
+        width: 30vw; /* Примерно 768px на экране 1920px */
+        height: 40vw; /* Примерно 1002px на экране 1920px */
+    }
+      @media screen and (max-width: 1440px) {
+          /* Дополнительное уменьшение размеров */
+          width: 29vw; /* Примерно 768px на экране 1330px */
+          height: 40vw; /* Примерно 1002px на экране 1330px */
+      }
+    }
+  }
+  .wmt-info-block{
+    height: 730px;
+    display: flex;
+    padding: 10px 96px 80px 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 58px;
+    position: relative;
+    .wmy-title{
+      color: var(--White, #E5E5D6);
+      font-family: var(--font-family);
+      font-size: 68px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 68px;
+    }
+    .wmt-text{
+      color: var(--White, #E5E5D6);
+      font-family: var(--font-text);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 36px;
+    }
+    @media screen and (max-width: 1440px) {
+        padding: 1vw 6vw 5vw 6vw; /* Уменьшение отступов */
+        gap: 3.5vw; /* Уменьшение расстояния между элементами */
+        .wmy-title {
+            font-size: 3.3vw; /* Уменьшение размера шрифта заголовка */
+            line-height: 4vw; /* Уменьшение высоты строки заголовка */
+        }
+
+        .wmt-text {
+            font-size: 1.1vw; /* Уменьшение размера шрифта текста */
+            line-height: 1.7vw; /* Уменьшение высоты строки текста */
+        }
+    }
+  }
+  .arrow-container{
+    position: absolute;
+    bottom: -25px;
+    display: flex;
+    gap: 15px;
+    @media screen and (max-width: 1440px) {
+     bottom: 23%;
+   }
+  }
+
+}
+
+#next-btn {
+  transform: rotate(180deg);
+}
+
+.custom-next-button, .custom-prev-button {
+  cursor: pointer;
+  width: 68px;
+  height: 68px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--yellow-);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-next-button:hover,
+.custom-prev-button:hover {
+  background-color: #FFD11B;
+}
+.custom-prev-button img, .custom-next-button img {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+
+.custom-prev-button:hover img, .custom-next-button:hover img {
+  filter: grayscale(100%) invert(100%);
+}
