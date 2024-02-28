@@ -12,12 +12,18 @@
   }
   .prices-title{
     padding-left: 172px;
+     @media screen and (max-width: 1440px) {
+     padding-left: 130px;
+   }
   }
   .prices-prices{
     padding-top: 2%;
     padding-left: 172px;
     display: flex;
     gap: 4.5%;
+    @media screen and (max-width: 1440px) {
+     padding-left: 130px;
+   }
   }
 
   .prices-name{

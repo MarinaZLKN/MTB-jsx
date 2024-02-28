@@ -15,12 +15,12 @@ const Header = ({ scrollToSection }) => {
                 <div className="header-menu-main" onClick={() => scrollToSection('prices')}>Prices</div>
                 <div className="header-menu-main" onClick={() => scrollToSection('schedule')}>Schedule</div>
                 <div className="header-menu-main" onClick={() => scrollToSection('coaches')}>Coaches</div>
-                <Link to="/news"><div className="header-menu-main">News</div></Link>
+                <Link to="/news"onClick={() => window.scrollTo(0, 0)}><div className="header-menu-main">News</div></Link>
                 <div className="header-menu-main">Merch</div>
                 <div className="header-menu-main" onClick={() => scrollToSection('contact')}>Contact</div>
             </div>
             <div className="registration-button">
-                <Link to="/register">
+                <Link to="/register"onClick={() => window.scrollTo(0, 0)}>
                     <button className="header-btn">Register</button>
                 </Link>
             </div>

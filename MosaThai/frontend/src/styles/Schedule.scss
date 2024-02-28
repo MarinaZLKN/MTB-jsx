@@ -1,5 +1,8 @@
 .schedule-table-container{
   padding: 30px 172px;
+   @media screen and (max-width: 1440px) {
+     padding:30px  130px;
+   }
 
 
   .schedule-table {

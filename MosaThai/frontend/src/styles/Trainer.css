@@ -3,6 +3,11 @@
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 1440px) {
+  .trainer-list_container {
+    padding: 100px 130px;
+  }
+}
 .trainer-list_container .trainers {
   padding-top: 40px;
   display: flex;

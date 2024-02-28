@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import '../../../styles/NewsFeed.scss'
+import {Link} from "react-router-dom";
 
 const News = () => {
   const [latestNews, setLatestNews] = useState(null);
@@ -34,7 +36,7 @@ const News = () => {
     return <div>Loading...</div>;
   }
 
-  const { title, date_created, text, photo1 } = latestNews;
+  const { id, title, date_created, text, photo1 } = latestNews;
   const truncatedText = truncateText(text, 500);
 
   return (
@@ -44,7 +46,13 @@ const News = () => {
         <p className="news-date">{formatDate(date_created)}</p>
         <h2 className="news-title">{title}</h2>
         <p className="news-text">{truncatedText}</p>
-        <button className="news-button">Read more</button>
+         <Link to="/news"onClick={() => window.scrollTo(0, 0)}>
+           <div className="btn">
+             <button className="news-button">Read more</button>
+           </div>
+
+        </Link>
+
       </div>
     </div>
   );

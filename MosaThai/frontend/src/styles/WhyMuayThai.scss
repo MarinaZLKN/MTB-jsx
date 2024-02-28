@@ -12,6 +12,9 @@
 
   .wmt-picture-block{
     padding-left: 172px;
+    @media screen and (max-width: 1440px) {
+     padding-left: 130px;
+   }
     .wmt-picture{
       width: 768px;
       height: 950px;
@@ -27,6 +30,7 @@
           height: 40vw; /* Примерно 1002px на экране 1330px */
       }
     }
+
   }
   .wmt-info-block{
     height: 730px;

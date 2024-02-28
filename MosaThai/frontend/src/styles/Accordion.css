@@ -10,6 +10,11 @@
   position: absolute;
   width: 500px;
 }
+@media screen and (max-width: 1440px) {
+  .section4-container .section4-title {
+    padding-left: 130px;
+  }
+}
 .section4-container .section4-picture {
   object-fit: cover;
   width: 100%;
@@ -22,6 +27,11 @@
   position: absolute;
   top: 20%;
   left: 172px;
+}
+@media screen and (max-width: 1440px) {
+  .section4-container .section4-accordion-block {
+    left: 130px;
+  }
 }
 .section4-container .section4-accordion-picture {
   margin-top: 26px;
