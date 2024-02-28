@@ -17,6 +17,9 @@
       padding-left: 172px;
       position: absolute;
       top: 20%;
+      @media screen and (max-width: 1440px) {
+       padding-left: 130px;
+     }
 
       .contacts-form {
         display: block;

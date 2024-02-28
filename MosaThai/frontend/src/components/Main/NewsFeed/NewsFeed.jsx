@@ -17,7 +17,8 @@ const NewsFeed= () => {
                 return response.json();
             })
             .then(data => {
-                setNewsList(data);
+                const sortedNewsList = data.reverse();
+                setNewsList(sortedNewsList);
                 setLoading(false);
                 console.log('POSTS: ', data)
             })

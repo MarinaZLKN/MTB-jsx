@@ -13,11 +13,21 @@
 .prices-container .prices-title {
   padding-left: 172px;
 }
+@media screen and (max-width: 1440px) {
+  .prices-container .prices-title {
+    padding-left: 130px;
+  }
+}
 .prices-container .prices-prices {
   padding-top: 2%;
   padding-left: 172px;
   display: flex;
   gap: 4.5%;
+}
+@media screen and (max-width: 1440px) {
+  .prices-container .prices-prices {
+    padding-left: 130px;
+  }
 }
 .prices-container .prices-name {
   color: var(--White, #E5E5D6);

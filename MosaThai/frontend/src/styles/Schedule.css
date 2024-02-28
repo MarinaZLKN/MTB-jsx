@@ -1,6 +1,11 @@
 .schedule-table-container {
   padding: 30px 172px;
 }
+@media screen and (max-width: 1440px) {
+  .schedule-table-container {
+    padding: 30px 130px;
+  }
+}
 .schedule-table-container .schedule-table {
   max-width: 100%;
   overflow-x: auto;

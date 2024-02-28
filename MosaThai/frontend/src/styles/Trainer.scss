@@ -2,6 +2,9 @@
   padding: 100px 172px;
   width: 100%;
   height: auto;
+   @media screen and (max-width: 1440px) {
+     padding:100px  130px;
+   }
   .trainers{
     padding-top: 40px;
     display: flex;

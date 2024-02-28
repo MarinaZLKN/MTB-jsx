@@ -19,6 +19,11 @@
   position: absolute;
   top: 20%;
 }
+@media screen and (max-width: 1440px) {
+  .contacts-container .contacts-wrapper {
+    padding-left: 130px;
+  }
+}
 .contacts-container .contacts-wrapper .contacts-form {
   display: block;
   width: 700px;

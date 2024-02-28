@@ -45,16 +45,4 @@ button:hover {
     transition: background-color 0.9s, color 0.3s;
 }
 
-/*input, textarea{*/
-/*    background: transparent;*/
-/*    border: none;*/
-/*    border-bottom: 2px solid #5C5C59;*/
-/*    padding: 1px;*/
-/*    font-family: var(--font-text)!important;*/
-/*    color: var(--White);*/
-/*    font-size: 14px;*/
-/*}*/
 
-/*textarea{*/
-/*    padding-top:10px;*/
-/*}*/
