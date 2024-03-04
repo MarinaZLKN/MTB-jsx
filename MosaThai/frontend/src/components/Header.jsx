@@ -16,7 +16,7 @@ const Header = ({ scrollToSection }) => {
                 <div className="header-menu-main" onClick={() => scrollToSection('schedule')}>Schedule</div>
                 <div className="header-menu-main" onClick={() => scrollToSection('coaches')}>Coaches</div>
                 <Link to="/news"onClick={() => window.scrollTo(0, 0)}><div className="header-menu-main">News</div></Link>
-                <div className="header-menu-main">Merch</div>
+                 <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><div className="header-menu-main">Merch</div></Link>
                 <div className="header-menu-main" onClick={() => scrollToSection('contact')}>Contact</div>
             </div>
             <div className="registration-button">

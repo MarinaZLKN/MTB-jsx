@@ -7,9 +7,7 @@ from .models import (
     Feedback,
     TrainingRegistration,
     Contact,
-    AboutUs,
-    MerchandisePhoto,
-    Size, Schedule,
+    Size, Schedule, Category,
 )
 
 
@@ -32,11 +30,6 @@ class PriceSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class MerchandisePhotoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = MerchandisePhoto
-        fields = '__all__'
-
 
 class SizeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -45,7 +38,6 @@ class SizeSerializer(serializers.ModelSerializer):
 
 
 class MerchandiseSerializer(serializers.ModelSerializer):
-    photos = MerchandisePhotoSerializer(many=True, read_only=True)
     sizes = SizeSerializer(many=True, read_only=True)
 
     class Meta:
@@ -71,9 +63,9 @@ class ContactSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class AboutUsSerializer(serializers.ModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = AboutUs
+        model = Category
         fields = '__all__'
 
 

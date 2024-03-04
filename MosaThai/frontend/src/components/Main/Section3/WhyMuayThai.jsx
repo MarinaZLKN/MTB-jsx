@@ -10,7 +10,7 @@ const WhyMuayThai = () => {
 
     const text1 = (
         <>
-            Muay Thai, known as Thai boxing, provides a multitude of <b>physical</b> benefits. It serves as a
+            Muay Thai, known as Thai boxing, provides a multitude of <b style={{ textTransform: 'uppercase' }}>physical</b> benefits. It serves as a
             comprehensive full-body workout that extensively engages the arms, legs, and core, ensuring a well-rounded
             exercise regimen.
             <br/><br/>
@@ -28,7 +28,7 @@ const WhyMuayThai = () => {
 
     const text2 = (
         <>
-            On the <b>spiritual</b> front, Muay Thai offers significant benefits as well. The rigorous physical activity
+            On the <b style={{ textTransform: 'uppercase' }}>spiritual</b> front, Muay Thai offers significant benefits as well. The rigorous physical activity
             involved is an excellent stress reliever, helping practitioners clear their minds and release tension.
             <br/><br/>
             Muay Thai requires a high level of discipline and focus, which over time, enhances these qualities in its

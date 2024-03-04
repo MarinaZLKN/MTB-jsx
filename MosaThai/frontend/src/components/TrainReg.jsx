@@ -85,12 +85,12 @@ const TrainReg = () => {
                 </select>
               </div>
               <div>
-                <label className="train-reg-lab">Phone Number</label>
+                <label className="train-reg-lab">Phone Number*</label>
                 <input className="input-train-reg" type="tel" name="phone_number" value={formData.phone_number}
                   onChange={handleChange} required />
               </div>
               <div>
-                <label className="train-reg-lab">Email</label>
+                <label className="train-reg-lab">Email*</label>
                 <input className="input-train-reg" type="email" name="email" value={formData.email}
                   onChange={handleChange} required />
               </div>

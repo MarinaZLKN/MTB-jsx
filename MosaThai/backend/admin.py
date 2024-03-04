@@ -9,8 +9,7 @@ from .models import (
     TrainingRegistration,
     Contact,
     AboutUs,
-    MerchandisePhoto,
-    Size, Schedule,
+    Size, Schedule, Category,
 )
 
 class FeedbackAdmin(admin.ModelAdmin):
@@ -25,7 +24,7 @@ admin.site.register(Feedback, FeedbackAdmin)
 admin.site.register(TrainingRegistration)
 admin.site.register(Contact)
 admin.site.register(AboutUs)
-admin.site.register(MerchandisePhoto)
 admin.site.register(Size)
 admin.site.register(Schedule)
+admin.site.register(Category)
 
