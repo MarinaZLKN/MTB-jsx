@@ -36,6 +36,17 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 100px;
+  }
+  .header-container .header-menu {
+    gap: 5px;
+  }
+  .header-container .header-menu .header-menu-main {
+    display: none;
+  }
+}
 .header-container::before {
   content: "";
   position: absolute;
@@ -52,6 +63,13 @@
 .logo-main {
   width: 112px;
   height: 112px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-main {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */

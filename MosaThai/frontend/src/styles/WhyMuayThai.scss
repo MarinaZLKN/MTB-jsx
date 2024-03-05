@@ -9,12 +9,18 @@
     height: 650px;
     margin-bottom: 5px;
   }
+  @media screen and (max-width: 768px) {
+    height: 350px;
+  }
 
   .wmt-picture-block{
     padding-left: 172px;
     @media screen and (max-width: 1440px) {
      padding-left: 130px;
    }
+    @media screen and (max-width: 768px) {
+      padding-left: 50px;
+    }
     .wmt-picture{
       width: 768px;
       height: 950px;
@@ -24,11 +30,14 @@
         width: 30vw; /* Примерно 768px на экране 1920px */
         height: 40vw; /* Примерно 1002px на экране 1920px */
     }
+      @media screen and (max-width: 768px) {}
       @media screen and (max-width: 1440px) {
           /* Дополнительное уменьшение размеров */
           width: 29vw; /* Примерно 768px на экране 1330px */
           height: 40vw; /* Примерно 1002px на экране 1330px */
       }
+      @media screen and (max-width: 768px) {}
+
     }
 
   }
@@ -69,6 +78,12 @@
             line-height: 1.7vw; /* Уменьшение высоты строки текста */
         }
     }
+    @media screen and (max-width: 768px) {
+      width: 500px;
+      .wmt-text{
+        font-size: 11px;
+      }
+    }
   }
   .arrow-container{
     position: absolute;
@@ -78,6 +93,9 @@
     @media screen and (max-width: 1440px) {
      bottom: 23%;
    }
+    @media screen and (max-width: 768px) {
+      bottom: 415px;
+    }
   }
 
 }
@@ -110,4 +128,16 @@
 
 .custom-prev-button:hover img, .custom-next-button:hover img {
   filter: grayscale(100%) invert(100%);
+}
+
+@media screen and (max-width: 768px) {
+
+  .custom-next-button, .custom-prev-button {
+    width: 40px;
+    height: 40px;
+  }
+  .custom-prev-button img, .custom-next-button img {
+    width: 30px;
+
+}
 }

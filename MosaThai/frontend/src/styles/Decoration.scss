@@ -4,6 +4,13 @@
   overflow: hidden;
 
 }
+@media screen and (max-width: 768px) {
+  .decoration-container{
+    //height: 300px;
+    display: none;
+
+  }
+}
 
 .yellow-text {
   color:var(--yellow-);
@@ -13,6 +20,14 @@
   font-weight: 400;
   line-height: 132px;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .yellow-text {
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: 1px;
+  }
 }
 
 h1{
@@ -27,8 +42,14 @@ h1{
   font-weight: 400;
   line-height: 132px; /* 100% */
   letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .white-text {
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: 1px;
   }
-
+}
 
 .marquee-infinite {
   width: 1920px;
@@ -37,18 +58,25 @@ h1{
   height: 139px;
 
 }
-
 .marquee-infinite div {
   display: flex;
   width: 120%;
   animation: marquee-infinite 10s linear infinite;
 }
+
 .marquee-infinite h1{
   white-space: nowrap;
   width: 150%;
 
 }
-
+@media screen and (max-width: 768px) {
+  .marquee-infinite {
+    width: 768px;
+    padding-top: 10px;
+    height: 109px;
+    overflow: hidden;
+  }
+}
 @keyframes marquee-infinite {
   0% {
     transform: translateX(0%);
@@ -61,9 +89,16 @@ h1{
 
 .marquee-infinite2 {
   width: 1920px;
-  padding-top: 10px;
+  padding-top: 30px;
   overflow: hidden;
   height: 250px;
+}
+@media screen and (max-width: 768px) {
+  .marquee-infinite2 {
+    width: 768px;
+    padding-top: 0px;
+    height: 109px;
+  }
 }
 
 .marquee-infinite2 div {

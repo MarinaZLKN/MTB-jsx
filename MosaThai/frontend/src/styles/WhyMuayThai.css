@@ -12,12 +12,22 @@
     margin-bottom: 5px;
   }
 }
+@media screen and (max-width: 768px) {
+  .wmt-container {
+    height: 350px;
+  }
+}
 .wmt-container .wmt-picture-block {
   padding-left: 172px;
 }
 @media screen and (max-width: 1440px) {
   .wmt-container .wmt-picture-block {
     padding-left: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wmt-container .wmt-picture-block {
+    padding-left: 50px;
   }
 }
 .wmt-container .wmt-picture-block .wmt-picture {
@@ -77,6 +87,14 @@
     line-height: 1.7vw; /* Уменьшение высоты строки текста */
   }
 }
+@media screen and (max-width: 768px) {
+  .wmt-container .wmt-info-block {
+    width: 500px;
+  }
+  .wmt-container .wmt-info-block .wmt-text {
+    font-size: 11px;
+  }
+}
 .wmt-container .arrow-container {
   position: absolute;
   bottom: -25px;
@@ -86,6 +104,11 @@
 @media screen and (max-width: 1440px) {
   .wmt-container .arrow-container {
     bottom: 23%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wmt-container .arrow-container {
+    bottom: 415px;
   }
 }
 
@@ -117,6 +140,16 @@
 
 .custom-prev-button:hover img, .custom-next-button:hover img {
   filter: grayscale(100%) invert(100%);
+}
+
+@media screen and (max-width: 768px) {
+  .custom-next-button, .custom-prev-button {
+    width: 40px;
+    height: 40px;
+  }
+  .custom-prev-button img, .custom-next-button img {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=WhyMuayThai.css.map */

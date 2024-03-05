@@ -60,6 +60,30 @@
           font-size: 14px;
 
       }
+      .invalid-input {
+          background: transparent;
+          border: none;
+          padding: 1px;
+          font-family: var(--font-text)!important;
+          color: var(--White);
+          font-size: 14px;
+          border-bottom: 2px solid red;
+        }
+
+        .invalid_contacts-lab{
+          color: red;
+          font-family: var(--font-text);
+          font-size: 16px;
+        }
+
+
+        .error-message {
+            text-align: right;
+            color: red;
+            font-size: 16px;
+            font-family: var(--font-text);
+          margin-top: -10px;
+        }
       #train-reg_btn{
         position: absolute;
         left:  30%;

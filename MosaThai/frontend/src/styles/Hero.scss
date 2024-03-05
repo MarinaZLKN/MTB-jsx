@@ -41,6 +41,18 @@
       line-height: 2vw;
     }
   }
+   @media screen and (max-width: 768px) {
+     width: 768px;
+     .image-title{
+      top: 30%;
+      left: 8%;
+    }
+     .main-page_pic-title{
+      font-size: 10vw;
+      line-height: 2vw;
+      margin-bottom: 3vw;
+    }
+   }
 }
 
 .hero-image {

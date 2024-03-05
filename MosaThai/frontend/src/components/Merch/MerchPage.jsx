@@ -10,16 +10,12 @@ const MerchPage = () => {
         <div className="container merch-container">
 
             <div className="merch-content">
-                <p className="p">Merch page coming soon</p>
                 <Link to="/">
                     <button className="p1">back</button>
                 </Link>
                 <MerchandiseGroups/>
 
             </div>
-
-
-
             <footer className="merch-footer">
                     <Footer/>
                 </footer>
