@@ -10,12 +10,18 @@
     @media screen and (max-width: 1440px) {
      padding-left: 130px;
    }
+    @media screen and (max-width: 768px) {
+      padding-left: 50px;
+
+    }
   }
   .section4-picture{
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
+
+
   .section4-accordion-block{
     width: 924px;
     display: flex;
@@ -26,6 +32,10 @@
     @media screen and (max-width: 1440px) {
      left: 130px;
    }
+     @media screen and (max-width: 768px) {
+       left: 50px;
+     }
+
   }
   .section4-accordion-picture{
     margin-top: 26px;
@@ -86,6 +96,7 @@
 .title-medium {
   font-size: 100px;
 }
+
 .title-large {
   font-size: 150px;
 }

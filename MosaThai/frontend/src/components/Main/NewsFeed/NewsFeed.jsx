@@ -3,6 +3,7 @@ import NewsClosed from './NewsClosed';
 import '../../../styles/NewsFeed.scss'
 import trainreg from '@images/img.png';
 import Footer from "../../Footer.jsx";
+import {Link} from "react-router-dom";
 
 const NewsFeed= () => {
     const [newsList, setNewsList] = useState([]);
@@ -38,7 +39,11 @@ const NewsFeed= () => {
 
     return (
             <div className="newsfeed-container">
+
                 <div className="newsfeed-list">
+                    <Link to="/">
+                        <button >back</button>
+                    </Link>
                     {newsList.map((news, index) => (
                         <NewsClosed key={index} news={news}/>
                     ))}

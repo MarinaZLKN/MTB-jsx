@@ -1,17 +1,68 @@
 .merch-container{
   width: 100%;
-  height: 1000px;
-   margin-top: 50px;
+  height: 1500px;
+  margin-top: 50px;
   .merch-content{
-    height: 600px;
-    padding-left: 100px;
+    //width: auto;
+    //height: 800px;
+    padding-left: 50px;
+    padding-right: 20px;
+    .groups{
+      width: 100%;
+      height: auto;
+    }
   }
   .p{
 
     font-size: 100px;
     color: aliceblue;
   }
-  .p1{
 
+  .merchandise-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    .merch-item{
+      width: 650px;
+      height: 500px;
+      display: flex;
+      color: var(--White);
+      .merch-item-slider{
+        padding: 10px 30px;
+        width: 350px;
+
+        .merch-image{
+
+        }
+      }
+      .merch-item-info{
+        display: block;
+        flex-direction: row;
+        gap:15px;
+         .merch-item-title{
+            font-size: 42px;
+      }
+        .merch-item-desc{
+          font-family: var(--font-text);
+          font-size: 16px;
+        }
+        .merch-item-price{
+          color: var(--yellow-);
+          font-size: 32px;
+        }
+        .merch-item-availibe{
+          font-size: 24px;
+        }
+        .merch-item-size{
+          font-size: 24px;
+        }
+      }
+      .merch-item-info h3,
+      .merch-item-info p {
+        margin-bottom: 15px;
+      }
+
+    }
   }
 }
+

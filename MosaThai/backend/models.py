@@ -89,10 +89,10 @@ class TrainingRegistration(models.Model):
     ]
 
     name = models.CharField(max_length=255)
-    age = models.PositiveIntegerField()
+    age = models.PositiveIntegerField(blank=True, null=True)
     phone_number = models.CharField(max_length=15)
     email = models.EmailField()
-    parent_name = models.CharField(max_length=255)
+    parent_name = models.CharField(max_length=255, blank=True, null=True)
     level = models.CharField(max_length=20, choices=LEVEL_CHOICES, default='beginner')
 
     def __str__(self):

@@ -39,6 +39,20 @@
     line-height: 2vw;
   }
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+  .hero .image-title {
+    top: 30%;
+    left: 8%;
+  }
+  .hero .main-page_pic-title {
+    font-size: 10vw;
+    line-height: 2vw;
+    margin-bottom: 3vw;
+  }
+}
 
 .hero-image {
   object-fit: cover;
