@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Logo from './Logo';
 import '../styles/Header.scss';
 import { Link } from "react-router-dom";
+import DropdownMenu from "./DropdownMenu";
 
 const Header = ({ scrollToSection }) => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Header = ({ scrollToSection }) => {
                 <label className="header-menu-main" onClick={() => scrollToSection('schedule')}>Schedule</label>
                 <label className="header-menu-main" onClick={() => scrollToSection('coaches')}>Coaches</label>
                 <Link to="/news"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">News</label></Link>
-                 <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">Merch</label></Link>
+                <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">Merch</label></Link>
                 <div className="header-menu-main" onClick={() => scrollToSection('contact')}>Contact</div>
             </div>
             <div className="registration-button">
@@ -29,8 +30,10 @@ const Header = ({ scrollToSection }) => {
             <div className="burger-menu" onClick={() => setMenuOpen(!isMenuOpen)}>
                 &#9776;
             </div>
+             {isMenuOpen && <DropdownMenu scrollToSection={scrollToSection} onClose={() => setMenuOpen(false)} />}
         </div>
     );
 };
 
 export default Header;
+
