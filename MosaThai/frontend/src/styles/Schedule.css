@@ -6,6 +6,11 @@
     padding: 30px 130px;
   }
 }
+@media screen and (max-width: 768px) {
+  .schedule-table-container {
+    padding-left: 50px;
+  }
+}
 .schedule-table-container .schedule-table {
   max-width: 100%;
   overflow-x: auto;
@@ -51,6 +56,27 @@
   }
   .schedule-table-container th, .schedule-table-container td {
     width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .schedule-table-container .schedule-table {
+    width: 700px;
+  }
+  .schedule-table-container table {
+    font-size: 10px;
+  }
+  .schedule-table-container td {
+    font-size: 14px;
+    line-height: 18px; /* 100% */
+  }
+  .schedule-table-container th {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .schedule-table-container th, .schedule-table-container td {
+    padding: 3px 0px;
+    width: 100px;
   }
 }
 

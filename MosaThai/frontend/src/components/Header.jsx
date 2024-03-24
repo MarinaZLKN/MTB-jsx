@@ -10,13 +10,13 @@ const Header = ({ scrollToSection }) => {
                 <Logo alt="Header logo" className="logo-main" />
             </div>
             <div className="header-menu">
-                <div className="header-menu-main" onClick={() => scrollToSection('about')}>About</div>
-                <div className="header-menu-main" onClick={() => scrollToSection('programs')}>Programs</div>
-                <div className="header-menu-main" onClick={() => scrollToSection('prices')}>Prices</div>
-                <div className="header-menu-main" onClick={() => scrollToSection('schedule')}>Schedule</div>
-                <div className="header-menu-main" onClick={() => scrollToSection('coaches')}>Coaches</div>
-                <Link to="/news"onClick={() => window.scrollTo(0, 0)}><div className="header-menu-main">News</div></Link>
-                 <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><div className="header-menu-main">Merch</div></Link>
+                <label className="header-menu-main" onClick={() => scrollToSection('about')}>About</label>
+                <label className="header-menu-main" onClick={() => scrollToSection('programs')}>Programs</label>
+                <label className="header-menu-main" onClick={() => scrollToSection('prices')}>Prices</label>
+                <label className="header-menu-main" onClick={() => scrollToSection('schedule')}>Schedule</label>
+                <label className="header-menu-main" onClick={() => scrollToSection('coaches')}>Coaches</label>
+                <Link to="/news"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">News</label></Link>
+                 <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">Merch</label></Link>
                 <div className="header-menu-main" onClick={() => scrollToSection('contact')}>Contact</div>
             </div>
             <div className="registration-button">

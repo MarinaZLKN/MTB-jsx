@@ -4,6 +4,11 @@
   height: auto;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .section4-container {
+    width: 768px;
+  }
+}
 .section4-container .section4-title {
   padding-top: 2%;
   padding-left: 172px;
@@ -18,6 +23,7 @@
 @media screen and (max-width: 768px) {
   .section4-container .section4-title {
     padding-left: 50px;
+    padding-top: 9%;
   }
 }
 .section4-container .section4-picture {
@@ -25,12 +31,17 @@
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 768px) {
+  .section4-container .section4-picture {
+    height: 1100px;
+  }
+}
 .section4-container .section4-accordion-block {
   width: 924px;
   display: flex;
   gap: 10%;
   position: absolute;
-  top: 20%;
+  top: 16%;
   left: 172px;
 }
 @media screen and (max-width: 1440px) {
@@ -46,8 +57,19 @@
 .section4-container .section4-accordion-picture {
   margin-top: 26px;
 }
+@media screen and (max-width: 768px) {
+  .section4-container .section4-accordion-picture .acc-pic {
+    display: none;
+  }
+}
 .section4-container .section4-accordion {
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .section4-container .section4-accordion {
+    width: 700px;
+    margin-left: -90px;
+  }
 }
 .accordion-title {
   width: 500px;
@@ -127,6 +149,31 @@
   .title {
     font-size: 8rem;
     line-height: 1.2; /* Доделать потом line-height!!!!!*/
+  }
+}
+@media screen and (max-width: 768px) {
+  .accordion-title {
+    width: 700px;
+    max-width: 700px;
+    margin-bottom: 15px;
+    font-size: 2.2em;
+  }
+  .accordion-title::before {
+    width: 100%;
+    bottom: -17px;
+  }
+  .accordion-content {
+    width: 700px;
+    max-width: 700px;
+  }
+  .title {
+    font-size: 5.5rem;
+    line-height: 1.2;
+  }
+  .accordion-content {
+    padding: 22px 34px 22px 30px;
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 

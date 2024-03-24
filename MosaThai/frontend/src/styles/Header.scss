@@ -12,9 +12,10 @@
 
   .header-menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    //align-items: center;
     gap: 14px;
+
 
     .header-menu-main {
       color: var(--White);
@@ -41,18 +42,6 @@
 
 }
 
-@media screen and (max-width: 768px) {
-  .header-container {
-    height: 100px;
-
-    .header-menu {
-      gap: 5px;
-      .header-menu-main {
-        display: none;
-      }
-    }
-  }
-}
 
 .header-container::before {
   content: "";
@@ -72,10 +61,23 @@
   height: 112px;
 }
 
+
 @media screen and (max-width: 768px) {
+  .header-container {
+    width: 768px;
+    height: 100px;
+
+    .header-menu {
+      gap: 5px;
+      .header-menu-main {
+        display: none;
+      }
+    }
+  }
   .logo-main {
     width: 80px;
     height: 80px;
   }
 }
+
 

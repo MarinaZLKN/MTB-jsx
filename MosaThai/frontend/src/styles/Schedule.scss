@@ -3,6 +3,9 @@
    @media screen and (max-width: 1440px) {
      padding:30px  130px;
    }
+  @media screen and (max-width: 768px) {
+      padding-left: 50px;
+  }
 
 
   .schedule-table {
@@ -55,6 +58,31 @@
     }
     th, td {
       width: 150px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .schedule-table {
+      width: 700px;
+    }
+
+    table {
+      font-size: 10px;
+    }
+    td{
+      font-size: 14px;
+      line-height: 18px; /* 100% */
+
+    }
+
+    th {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 26px;
+
+    }
+    th, td {
+      padding: 3px 0px;
+      width: 100px;
     }
   }
 

@@ -4,6 +4,7 @@ import sec4 from '@images/prg.png';
 import acc from '@images/accordion-pic.png';
 import Title from '../../Title';
 import { motion, AnimatePresence } from "framer-motion";
+import TrainingList from "../Section5/TrainingList";
 
 
 const Section4 = () => {
@@ -45,7 +46,7 @@ const Section4 = () => {
             <img src={sec4} alt="section4 picture" className="section4-picture"/>
             <div className="section4-accordion-block">
                 <div className="section4-accordion-picture">
-                    <img src={acc} alt="accordion picture"/>
+                    <img src={acc} alt="accordion picture" className="acc-pic"/>
                 </div>
                 <div className="section4-accordion">
                   {accordionData.map((data, index) => (
