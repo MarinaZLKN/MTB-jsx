@@ -68,6 +68,9 @@
     width: 80px;
     height: 80px;
   }
+  .registration-button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */
