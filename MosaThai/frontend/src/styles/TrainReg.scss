@@ -5,9 +5,9 @@
     padding-top: 160px;
     position: absolute;
     left: 24%;
-
     width: 1000px;
     height: auto;
+
     .train_reg-img{
         width: 100%;
         height: auto;
@@ -111,6 +111,28 @@
       font-size: 80px;
     }
   }
+  @media screen and (max-width: 768px) {
+    .train-pic {
+      width: 708px;
+      left: 4%;
+    }
+    .train_reg-close{
+      right: 40px;
+    }
+    .train-reg-title{
+      font-size: 60px;
+      display: flex;
+      justify-content: center;
+    }
+    .train-reg-wrapper{
+      top: 7%;
+      left: 17%;
+      .train-reg-form{
+        display: block;
+        width: 500px;
+      }
+    }
+  }
   .train-reg-wrapper_sent{
     position: absolute;
     top: 1%;
@@ -134,5 +156,8 @@
     }
 
   }
-
+  @media screen and (max-width: 768px) {}
+    .train-reg-wrapper_sent{
+      left: 17%;
+    }
 }

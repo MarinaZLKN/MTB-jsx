@@ -104,6 +104,28 @@
     font-size: 80px;
   }
 }
+@media screen and (max-width: 768px) {
+  .train_reg-container .train-pic {
+    width: 708px;
+    left: 4%;
+  }
+  .train_reg-container .train_reg-close {
+    right: 40px;
+  }
+  .train_reg-container .train-reg-title {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .train_reg-container .train-reg-wrapper {
+    top: 7%;
+    left: 17%;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form {
+    display: block;
+    width: 500px;
+  }
+}
 .train_reg-container .train-reg-wrapper_sent {
   position: absolute;
   top: 1%;
@@ -125,6 +147,9 @@
   font-size: 20px;
   padding-top: 50px;
   padding-bottom: 100px;
+}
+.train_reg-container .train-reg-wrapper_sent {
+  left: 17%;
 }
 
 /*# sourceMappingURL=TrainReg.css.map */

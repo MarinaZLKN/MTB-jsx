@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Logo from './Logo';
 import '../styles/Header.scss';
 import { Link } from "react-router-dom";
 
 const Header = ({ scrollToSection }) => {
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
     return (
         <div className="container header-container">
             <div className="header-logo">
@@ -23,6 +25,9 @@ const Header = ({ scrollToSection }) => {
                 <Link to="/register"onClick={() => window.scrollTo(0, 0)}>
                     <button className="header-btn">Register</button>
                 </Link>
+            </div>
+            <div className="burger-menu" onClick={() => setMenuOpen(!isMenuOpen)}>
+                &#9776;
             </div>
         </div>
     );
