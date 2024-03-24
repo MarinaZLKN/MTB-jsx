@@ -36,12 +36,15 @@
       .header-menu-main {
         font-size: 42px;
       }
-
     }
   }
-
+  .burger-menu{
+    display: block;
+    color: var(--yellow-);
+    font-size: 40px; /* Устанавливаем размер шрифта */
+    cursor: pointer;
+  }
 }
-
 
 .header-container::before {
   content: "";
@@ -83,4 +86,56 @@
   }
 }
 
+.dropdown-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px; /* Ширина меню */
+    height: 100%; /* Высота меню */
+    background-color: #1e1e1e;
+    border: 1px solid black;
+    padding: 10px;
+    z-index: 1001;
+    overflow-y: auto; /* Включаем вертикальную прокрутку, если контент не помещается на экране */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для стиля */
+    transition: opacity 0.3s ease;
+}
 
+
+.dropdown-menu ul {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+.dropdown-menu ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: var(--White);
+    font-family: var(--font-family);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+.dropdown-menu ul li a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста от родительского элемента */
+}
+.dropdown-menu ul li:hover {
+      color: var(--yellow-);
+    }
+.dropdown-pic{
+  position: relative;
+  right: -145px;
+  cursor: pointer;
+  .dropdown-close{
+    color: var(--yellow-);
+    width: 30px;
+    height: 30px;
+
+  }
+}
