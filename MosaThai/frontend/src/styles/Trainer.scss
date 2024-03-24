@@ -5,12 +5,20 @@
    @media screen and (max-width: 1440px) {
      padding:100px  130px;
    }
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
   .trainers{
     padding-top: 40px;
     display: flex;
     gap: 230px;
     //justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      gap: 130px;
+  }
   }
 
   .trainer{
@@ -65,6 +73,7 @@
       font-weight: 400;
       line-height: 36px;
     }
+
   }
   @media screen and (max-width: 1440px) {
     .trainers{
@@ -73,5 +82,36 @@
         width: 350px;
       }
     }
+  }
+  @media screen and (max-width: 768px) {
+      .trainer {
+        width: 200px;
+
+        .trainer_img {
+          width: 300px;
+          padding-right: 10px;
+        }
+
+        .trainer_name {
+          padding: 10px 20px;
+          gap: 10px;
+          font-size: 16px;
+
+        }
+
+        .trainer_title {
+          bottom: 7%;
+          padding: 8px 20px 12px 20px;
+          gap: 8px;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+        }
+
+        .trainer_availible {
+          display: none;
+        }
+      }
   }
 }

@@ -2,6 +2,9 @@
   width: 100%;
   height: auto;
   padding-bottom: 100px;
+  @media screen and (max-width: 768px) {
+      padding-bottom: 20px;
+    }
   .training-item_price{
     background-color: transparent;
     border: 1px solid var(--yellow-);
@@ -15,6 +18,9 @@
      @media screen and (max-width: 1440px) {
      padding-left: 130px;
    }
+    @media screen and (max-width: 768px) {
+      padding-left: 50px;
+    }
   }
   .prices-prices{
     padding-top: 2%;
@@ -24,6 +30,10 @@
     @media screen and (max-width: 1440px) {
      padding-left: 130px;
    }
+    @media screen and (max-width: 768px) {
+      padding-left: 50px;
+      gap: 3%;
+    }
   }
 
   .prices-name{
@@ -63,5 +73,23 @@
       line-height: 52px;
     }
 
+  }
+  @media screen and (max-width: 768px) {
+    .training-item_price{
+      width: 18%;
+      padding: 35px 17px;
+      height: 148px;
+      .prices-name{
+        font-size: 20px;
+        line-height: 18px;
+        font-weight: 500;
+        padding-bottom: 20px;
+      }
+      .prices-int{
+        font-size: 20px;
+        line-height: 18px;
+        font-weight: 500;
+      }
+    }
   }
 }

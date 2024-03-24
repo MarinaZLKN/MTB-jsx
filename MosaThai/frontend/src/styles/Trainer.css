@@ -8,11 +8,23 @@
     padding: 100px 130px;
   }
 }
+@media screen and (max-width: 768px) {
+  .trainer-list_container {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+}
 .trainer-list_container .trainers {
   padding-top: 40px;
   display: flex;
   gap: 230px;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .trainer-list_container .trainers {
+    gap: 130px;
+  }
 }
 .trainer-list_container .trainer {
   position: relative;
@@ -70,6 +82,32 @@
   }
   .trainer-list_container .trainers .trainer_img {
     width: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .trainer-list_container .trainer {
+    width: 200px;
+  }
+  .trainer-list_container .trainer .trainer_img {
+    width: 300px;
+    padding-right: 10px;
+  }
+  .trainer-list_container .trainer .trainer_name {
+    padding: 10px 20px;
+    gap: 10px;
+    font-size: 16px;
+  }
+  .trainer-list_container .trainer .trainer_title {
+    bottom: 7%;
+    padding: 8px 20px 12px 20px;
+    gap: 8px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .trainer-list_container .trainer .trainer_availible {
+    display: none;
   }
 }
 

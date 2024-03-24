@@ -1,11 +1,10 @@
-from datetime import timezone
 
 from django.shortcuts import render
-from rest_framework import viewsets, generics, status
+from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import Post, Trainer, Price, Merchandise, Feedback, TrainingRegistration, Contact, AboutUs, Schedule, \
+from .models import Post, Trainer, Price, Merchandise, Feedback, TrainingRegistration, Contact, Schedule, \
     Category
 from .serializers import (
     PostSerializer,
@@ -58,6 +57,7 @@ class MerchandiseByCategoryViewSet(viewsets.ViewSet):
             categories_with_merchandise[category_id]['merchandise'].append(MerchandiseSerializer(item).data)
 
         return Response(categories_with_merchandise.values())
+
 
 class FeedbackView(APIView):
     def post(self, request, *args, **kwargs):

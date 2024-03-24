@@ -10,6 +10,7 @@
   .wmt-container {
     height: 650px;
     margin-bottom: 5px;
+    padding-top: 30px;
   }
 }
 @media screen and (max-width: 768px) {

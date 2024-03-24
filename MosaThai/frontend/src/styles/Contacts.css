@@ -5,6 +5,11 @@
   position: relative;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .contacts-container {
+    width: 768px;
+  }
+}
 .contacts-container .contacts-row {
   position: absolute;
   top: 1%;
@@ -14,6 +19,11 @@
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .contacts-container .contacts-picture {
+    height: 2100px;
+  }
+}
 .contacts-container .contacts-wrapper {
   padding-left: 172px;
   position: absolute;
@@ -22,6 +32,11 @@
 @media screen and (max-width: 1440px) {
   .contacts-container .contacts-wrapper {
     padding-left: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts-container .contacts-wrapper {
+    padding-left: 50px;
   }
 }
 .contacts-container .contacts-wrapper .contacts-form {
@@ -108,6 +123,17 @@
 .contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-p a {
   color: inherit;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .contacts-container .contacts-wrapper .contacts-form {
+    display: block;
+    width: 500px;
+    height: 550px;
+    margin-top: 7%;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=Contacts.css.map */
