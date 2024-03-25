@@ -44,7 +44,7 @@
    @media screen and (max-width: 768px) {
      width: 768px;
      .image-title{
-      top: 30%;
+      top: 25%;
       left: 8%;
     }
      .main-page_pic-title{
@@ -53,6 +53,7 @@
       margin-bottom: 3vw;
     }
    }
+
 }
 
 .hero-image {
@@ -62,5 +63,29 @@
 }
 
 @media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .hero {
+
+    .image-title {
+      position: absolute;
+      top: 30%;
+      left: 8%;
+    }
+
+    .main-page_pic-title {
+      font-size: 80px;
+      line-height: 58px;
+      letter-spacing: 1px;
+    }
+
+    .main-page_pic-subtitle {
+      font-size: 14px;
+      line-height: 24px;
+
+    }
+  }
 
 }
