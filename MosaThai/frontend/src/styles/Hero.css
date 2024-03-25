@@ -44,7 +44,7 @@
     width: 768px;
   }
   .hero .image-title {
-    top: 30%;
+    top: 25%;
     left: 8%;
   }
   .hero .main-page_pic-title {
@@ -58,6 +58,23 @@
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .hero .image-title {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+  }
+  .hero .main-page_pic-title {
+    font-size: 80px;
+    line-height: 58px;
+    letter-spacing: 1px;
+  }
+  .hero .main-page_pic-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 /*# sourceMappingURL=Hero.css.map */
