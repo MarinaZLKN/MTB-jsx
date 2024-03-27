@@ -31,11 +31,6 @@
     padding-left: 50px;
   }
 }
-@media screen and (min-width: 360px) {
-  .wmt-container .wmt-picture-block {
-    padding-left: 10px;
-  }
-}
 .wmt-container .wmt-picture-block .wmt-picture {
   width: 768px;
   height: 950px;
@@ -87,7 +82,7 @@
 @media screen and (max-width: 1440px) {
   .wmt-container .wmt-info-block {
     padding: 1vw 6vw 5vw 6vw; /* Уменьшение отступов */
-    gap: 3.5vw; /* Уменьшение расстояния между элементами */
+    gap: 2.2vw; /* Уменьшение расстояния между элементами */
   }
   .wmt-container .wmt-info-block .wmy-title {
     font-size: 3.3vw; /* Уменьшение размера шрифта заголовка */
@@ -95,7 +90,7 @@
   }
   .wmt-container .wmt-info-block .wmt-text {
     font-size: 1.1vw; /* Уменьшение размера шрифта текста */
-    line-height: 1.7vw; /* Уменьшение высоты строки текста */
+    line-height: 1.9vw; /* Уменьшение высоты строки текста */
   }
 }
 @media screen and (max-width: 768px) {
