@@ -37,7 +37,7 @@
     top: 7%;
     left: 32%;
     .train-reg-form{
-      display: block;
+        display: block;
         width: 700px;
         height: 550px;
         margin-top: 10%;
@@ -46,6 +46,9 @@
         font-family: var(--font-text);
         font-size: 16px;
 
+      }
+      .train-btn{
+        padding-top: 10%;
       }
       #lab{
         padding-bottom: 20px;
@@ -70,20 +73,20 @@
           border-bottom: 2px solid red;
         }
 
-        .invalid_contacts-lab{
+      .invalid_contacts-lab{
           color: red;
           font-family: var(--font-text);
           font-size: 16px;
-        }
+      }
 
 
-        .error-message {
-            text-align: right;
-            color: red;
-            font-size: 16px;
-            font-family: var(--font-text);
-          margin-top: -10px;
-        }
+      .error-message {
+        text-align: right;
+        color: red;
+        font-size: 16px;
+        font-family: var(--font-text);
+        margin-top: -10px;
+      }
       #train-reg_btn{
         position: absolute;
         left:  30%;
@@ -157,7 +160,5 @@
 
   }
   @media screen and (max-width: 768px) {}
-    .train-reg-wrapper_sent{
-      left: 17%;
-    }
+
 }

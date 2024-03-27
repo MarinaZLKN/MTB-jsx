@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import axios from 'axios';
 import tick from '@images/sucsess.svg';
 
+
 const TrainReg = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -19,26 +20,27 @@ const TrainReg = () => {
     const [submitted, setSubmitted] = useState(false);
     const [emailError, setEmailError] = useState(null);
     const [phoneError, setPhoneError] = useState(null);
+    const [ageError, setAgeError] = useState(null);
+    const [parentNameError, setParentNameError] = useState(null);
 
     const handleChange = (e) => {
-        const {name, value} = e.target;
+        const { name, value } = e.target;
 
         setFormData(prevState => ({
             ...prevState,
             [name]: value
         }));
     };
-    //TODO add control for age < 4
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!formData.email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+        if (!formData.email.match(/^\w+([\.-]?\w+)*@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
             setEmailError("Invalid email format");
             return;
         } else {
             setEmailError(null);
         }
-
 
         if (!formData.phone_number.match(/^\+?\d+(\s?\d+)*$/)) {
             setPhoneError("Phone number must contain only digits and may start with +");
@@ -46,6 +48,23 @@ const TrainReg = () => {
         } else {
             setPhoneError(null);
         }
+
+        if (formData.level === 'child') {
+            if (formData.age < 4) {
+                setAgeError("Age must be at least 4 for child registration");
+                return;
+            } else {
+                setAgeError(null);
+            }
+
+            if (formData.parent_name.trim() === '') {
+                setParentNameError("Parent name is required for child registration");
+                return;
+            } else {
+                setParentNameError(null);
+            }
+        }
+
         axios.post('http://127.0.0.1:8000/v1/registrations/', formData)
             .then((response) => {
                 console.log('Data sent to server', response.data);
@@ -62,7 +81,6 @@ const TrainReg = () => {
             .catch((error) => {
                 console.error('error sending data', error);
             });
-        console.log(formData);
 
         setFormData({
             name: '',
@@ -73,14 +91,15 @@ const TrainReg = () => {
             level: 'beginner'
         });
     };
+    //TODO check the css for invalid messages
 
     return (
         <>
             <div className="container train_reg-container">
                 <div className="train-pic">
-                    <img src={trainreg} className="train_reg-img"/>
+                    <img src={trainreg} className="train_reg-img" alt="Train registration"/>
                     <Link to="/">
-                        <img src={close} className="train_reg-close"/>
+                        <img src={close} className="train_reg-close" alt="Close"/>
                     </Link>
                 </div>
                 {!submitted ? (
@@ -104,38 +123,39 @@ const TrainReg = () => {
                                 </select>
                             </div>
                             <div>
-                                <label className={phoneError ? 'invalid_contacts-lab': "train-reg-lab"}>Phone Number*</label>
+                                <label className={phoneError ? 'invalid_contacts-lab' : "train-reg-lab"}>Phone Number*</label>
                                 <input className={phoneError ? 'invalid-input' : "input-train-reg"} type="tel" name="phone_number"
                                        value={formData.phone_number}
                                        onChange={handleChange} required/>
-                              {phoneError && <p className="error-message">{phoneError}</p>}
+                                {phoneError && <p className="error-message">{phoneError}</p>}
                             </div>
                             <div>
-                                <label className={emailError ? 'invalid_contacts-lab': "train-reg-lab"}>Email*</label>
-                                <input className={emailError ? 'invalid-input' : "input-train-reg"} type="text" name="email" value={formData.email}
+                                <label className={emailError ? 'invalid_contacts-lab' : "train-reg-lab"}>Email*</label>
+                                <input className={emailError ? 'invalid-input' : "input-train-reg"} type="email" name="email" value={formData.email}
                                        onChange={handleChange} required/>
-                              {emailError && <p className="error-message">{emailError}</p>}
+                                {emailError && <p className="error-message">{emailError}</p>}
                             </div>
-                            <div className="train-reg-lab" id="lab">
-                                <label>If you want to bring a child to training:</label>
-                            </div>
-                            <div>
-                                <label className="train-reg-lab">Age</label>
-                                <input className="input-train-reg" type="number" name="age" value={formData.age}
-                                       onChange={handleChange}
-                                       required={formData.level === 'child'}/>
+                            {formData.level === 'child' && (
+                                <>
+                                    <div>
+                                        <label className={ageError ? 'invalid_contacts-lab' : "train-reg-lab"}>Age</label>
+                                        <input className={ageError ? 'invalid-input' : "input-train-reg"} type="number" name="age" value={formData.age}
+                                               onChange={handleChange} required/>
+                                        {ageError && <p className="error-message">{ageError}</p>}
+                                    </div>
+                                    <div>
+                                        <label className={parentNameError ? 'invalid_contacts-lab' : "train-reg-lab"}>Parent Name</label>
+                                        <input className={parentNameError ? 'invalid-input' : "input-train-reg"} type="text" name="parent_name"
+                                               value={formData.parent_name}
+                                               onChange={handleChange} required/>
+                                        {parentNameError && <p className="error-message">{parentNameError}</p>}
+                                    </div>
+                                </>
+                            )}
+                            <div className="train-btn">
+                                <button id="train-reg_btn" type="submit">Join us</button>
                             </div>
 
-                            <div>
-                                <label className="train-reg-lab">Parent Name</label>
-                                <input className="input-train-reg" type="text" name="parent_name"
-                                       value={formData.parent_name}
-                                       onChange={handleChange}
-                                       required={formData.level === 'child'}
-                                       { ...(formData.level === 'child' && { min: 5 }) } />
-                            </div>
-
-                            <button id="train-reg_btn" type="submit">Join us</button>
                         </form>
                     </div>) : (
                     <div className="train-reg-wrapper_sent">

@@ -33,7 +33,7 @@ const Contacts = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        if (!formData.email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+        if (!formData.email.match(/^\w+([\.-]?\w+)*@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)){
             setEmailError("Invalid email format");
             return;
         } else {

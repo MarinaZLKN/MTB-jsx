@@ -5,6 +5,7 @@
   align-items: flex-start;
   margin-bottom: 30px;
 
+
   @media screen and (max-width: 1440px) {
     height: 650px;
     margin-bottom: 5px;
@@ -22,9 +23,9 @@
     @media screen and (max-width: 768px) {
       padding-left: 50px;
     }
-    @media screen and (min-width: 360px) {
-       padding-left: 10px;
-    }
+    //@media screen and (min-width: 360px) {
+    //   padding-left: 10px;
+    //}
     .wmt-picture{
       width: 768px;
       height: 950px;
@@ -77,7 +78,7 @@
     }
     @media screen and (max-width: 1440px) {
         padding: 1vw 6vw 5vw 6vw; /* Уменьшение отступов */
-        gap: 3.5vw; /* Уменьшение расстояния между элементами */
+        gap: 2.2vw; /* Уменьшение расстояния между элементами */
         .wmy-title {
             font-size: 3.3vw; /* Уменьшение размера шрифта заголовка */
             line-height: 4vw; /* Уменьшение высоты строки заголовка */
@@ -85,7 +86,7 @@
 
         .wmt-text {
             font-size: 1.1vw; /* Уменьшение размера шрифта текста */
-            line-height: 1.7vw; /* Уменьшение высоты строки текста */
+            line-height: 1.9vw; /* Уменьшение высоты строки текста */
         }
     }
     @media screen and (max-width: 768px) {
