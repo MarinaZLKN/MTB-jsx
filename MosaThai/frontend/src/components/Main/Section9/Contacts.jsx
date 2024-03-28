@@ -4,7 +4,8 @@ import contacts_pic from '@images/contacts-pic.png';
 import '../../../styles/Contacts.scss'
 import Title from "../../Title";
 import InfiniteMarquee from "../Section2/InfiniteMarquee";
-import map from '@images/map.png'
+import map from '@images/map.png';
+import tick from '@images/sucsess.svg';
 
 
 const Contacts = () => {
@@ -17,6 +18,7 @@ const Contacts = () => {
     });
     const [emailError, setEmailError] = useState(null);
     const [phoneError, setPhoneError] = useState(null);
+    const [submitted, setSubmitted] = useState(false);
 
 
     useEffect(() => {
@@ -51,8 +53,8 @@ const Contacts = () => {
 
         axios.post('http://127.0.0.1:8000/v1/feedbacks/', formData)
             .then((response) => {
-                console.log('Data sent to server', response.data);
                 setFormData({ name: '', email: '', phone_number: '', text: '' });
+                setSubmitted(true);
             })
             .catch((error) => {
                 console.error('error sending data', error);
@@ -67,39 +69,48 @@ const Contacts = () => {
             </div>
             <div className="contacts-wrapper">
                 <Title text="Contact us" size="large" color="var(--White)" lineHeight="120px"/>
-                <form className="contacts-form" onSubmit={handleFormSubmit}>
-                    <label className="contacts-lab">Name</label>
-                    <input
-                        type="text"
-                        className="input-contacts"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    />
-                    <label className={emailError ? 'invalid_contacts-lab': "contacts-lab"}>Email*</label>
-                    <input
-                        type="text"
-                        value={formData.email}
-                        className={emailError ? 'invalid-input' : 'input-contacts'}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    />
-                     {emailError && <p className="error-message">{emailError}</p>}
-                    <label className={phoneError ? 'invalid_contacts-lab': "contacts-lab"}>Phone number*</label>
-                    <input
-                        type="text"
-                        value={formData.phone_number}
-                        className={phoneError ? 'invalid-input' : 'input-contacts'}
-                        onChange={(e) => setFormData({ ...formData, phone_number: e.target.value })}
-                    />
-                    {phoneError && <p className="error-message">{phoneError}</p>}
-                    <label className="contacts-lab">Message</label>
-                    <textarea
-                        value={formData.text}
-                        id="textarea1"
-                        className="input-contacts"
-                        onChange={(e) => setFormData({ ...formData, text: e.target.value })}
-                    />
-                    <button type="submit">Contact us</button>
-                </form>
+                {!submitted ? (
+                    <form className="contacts-form" onSubmit={handleFormSubmit}>
+                        <label className="contacts-lab">Name</label>
+                        <input
+                            type="text"
+                            className="input-contacts"
+                            value={formData.name}
+                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        />
+                        <label className={emailError ? 'invalid_contacts-lab': "contacts-lab"}>Email*</label>
+                        <input
+                            type="text"
+                            value={formData.email}
+                            className={emailError ? 'invalid-input' : 'input-contacts'}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        />
+                        {emailError && <p className="error-message">{emailError}</p>}
+                        <label className={phoneError ? 'invalid_contacts-lab': "contacts-lab"}>Phone number*</label>
+                        <input
+                            type="text"
+                            value={formData.phone_number}
+                            className={phoneError ? 'invalid-input' : 'input-contacts'}
+                            onChange={(e) => setFormData({ ...formData, phone_number: e.target.value })}
+                        />
+                        {phoneError && <p className="error-message">{phoneError}</p>}
+                        <label className="contacts-lab">Message</label>
+                        <textarea
+                            value={formData.text}
+                            id="textarea1"
+                            className="input-contacts"
+                            onChange={(e) => setFormData({ ...formData, text: e.target.value })}
+                        />
+                        <button type="submit">Contact us</button>
+                    </form>
+                ) : (
+                    <div className="contacts-submitted-form">
+                        <div className="contacts-submitted-form-title">Thank you for your feedback!</div>
+                        <div className="contacts-submitted-form-img">
+                            <img src={tick} alt="Success tick" className="submitted-form-img"/>
+                        </div>
+                    </div>
+                )}
                 {contact && (
                     <div className="contacts-data-container">
                         <div className="contacts-map">
