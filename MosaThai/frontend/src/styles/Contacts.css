@@ -79,12 +79,30 @@
   font-family: var(--font-text);
   margin-top: -10px;
 }
+.contacts-container .contacts-wrapper .contacts-submitted-form {
+  width: 700px;
+  height: 550px;
+  margin-top: 10%;
+}
+.contacts-container .contacts-wrapper .contacts-submitted-form .contacts-submitted-form-title {
+  color: var(--White);
+  font-family: var(--font-text);
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+.contacts-container .contacts-wrapper .contacts-submitted-form .contacts-submitted-form-img {
+  padding-left: 15%;
+}
+.contacts-container .contacts-wrapper .contacts-submitted-form .contacts-submitted-form-img .submitted-form-img {
+  width: 200px;
+  height: auto;
+}
 .contacts-container .contacts-wrapper .contacts-form input,
 .contacts-container .contacts-wrapper .contacts-form textarea {
   display: block;
   height: 8%;
   width: 100%; /* Занимать всю доступную ширину */
-  margin-bottom: 5%; /* Опционально: добавляем отступ снизу между элементами формы */
+  margin-bottom: 5%;
 }
 .contacts-container .contacts-wrapper .contacts-lab {
   color: #5C5C59;

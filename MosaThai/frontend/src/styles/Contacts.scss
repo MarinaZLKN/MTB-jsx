@@ -80,6 +80,24 @@
       }
 
     }
+    .contacts-submitted-form{
+      width: 700px;
+      height: 550px;
+      margin-top: 10%;
+      .contacts-submitted-form-title{
+        color: var(--White);
+        font-family: var(--font-text);
+        font-size: 30px;
+        padding-bottom: 100px;
+      }
+      .contacts-submitted-form-img{
+        padding-left: 15%;
+        .submitted-form-img{
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
 
 
     .contacts-form input,
@@ -87,7 +105,7 @@
       display: block;
       height: 8%;
       width: 100%; /* Занимать всю доступную ширину */
-      margin-bottom: 5%; /* Опционально: добавляем отступ снизу между элементами формы */
+      margin-bottom: 5%;
     }
 
     .contacts-lab {
