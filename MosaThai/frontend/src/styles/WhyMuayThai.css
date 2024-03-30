@@ -166,5 +166,37 @@
     width: 30px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wmt-container {
+    height: 550px;
+  }
+  .wmt-container .wmt-picture-block {
+    padding-left: 50px;
+  }
+  .wmt-container .wmt-info-block {
+    max-width: 50%;
+    gap: 30px;
+  }
+  .wmt-container .wmt-info-block .wmy-title {
+    font-size: 5vw;
+    line-height: 38px;
+  }
+  .wmt-container .wmt-info-block .wmt-text {
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  .wmt-container .arrow-container {
+    position: absolute;
+    top: 55%;
+    display: flex;
+    gap: 15px;
+  }
+  .custom-next-button, .custom-prev-button {
+    width: 58px;
+    height: 58px;
+  }
+}
 
 /*# sourceMappingURL=WhyMuayThai.css.map */

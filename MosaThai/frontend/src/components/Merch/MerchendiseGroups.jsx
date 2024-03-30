@@ -21,7 +21,7 @@ const MerchandiseGroups = () => {
   return (
     <div className="groups">
       {categories.map(category => (
-        <div key={category.category_name}>
+        <div className="groups-title" key={category.category_name}>
           <h3 className="p">{category.category_name}</h3>
           <div className="merchandise-list">
             {category.merchandise.map(merchItem => (

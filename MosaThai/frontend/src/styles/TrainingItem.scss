@@ -93,3 +93,32 @@
     }
   }
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .prices-container{
+    min-width: 769px;
+    max-width: 1024px;
+    .prices-title{
+      padding-left: 50px;
+    }
+    .prices-prices{
+      padding-left: 50px;
+      gap: 4%;
+    }
+    .training-item_price{
+      width: 20%;
+      padding: 40px 40px;
+      height: 168px;
+      .prices-name{
+        font-size: 2vw;
+        line-height: 18px;
+        padding-bottom: 10%;
+      }
+      .prices-int{
+        font-size: 2vw;
+        line-height: 18px;
+      }
+    }
+  }
+}

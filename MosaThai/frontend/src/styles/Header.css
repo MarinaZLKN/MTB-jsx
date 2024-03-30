@@ -144,4 +144,30 @@
   height: 30px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-container {
+    min-width: 768px;
+    max-width: 1024px;
+    height: 120px;
+  }
+  .header-container .header-menu {
+    gap: 5px;
+  }
+  .header-container .header-menu .header-menu-main {
+    display: none;
+  }
+  .header-container .logo-main {
+    width: 100px;
+    height: 100px;
+  }
+  .header-container .registration-button {
+    display: none;
+  }
+  .header-container .header-btn {
+    font-size: 24px;
+    width: 140px;
+    height: 50px;
+  }
+}
+
 /*# sourceMappingURL=Header.css.map */

@@ -53,6 +53,14 @@
       margin-bottom: 3vw;
     }
    }
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+    .main-page_pic-subtitle{
+      font-size: 2vw;
+      line-height: 30px;
+      margin-bottom: 30px;
+      padding-top: 5%;
+    }
+  }
 
 }
 
@@ -60,6 +68,13 @@
   object-fit: cover;
   width: 100%;
   height: auto
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .hero-image {
+    //TODO check this in the end!!!!
+    max-width: 1090px;
+    height: auto
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -87,5 +102,5 @@
 
     }
   }
-
 }
+
