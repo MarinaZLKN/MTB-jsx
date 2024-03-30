@@ -176,5 +176,31 @@
     line-height: 22px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section4-container {
+    height: auto;
+  }
+  .section4-container .section4-title {
+    padding-left: 50px;
+  }
+  .section4-container .section4-picture {
+    max-width: 1024px;
+    height: 1100px;
+  }
+  .section4-container .section4-accordion-picture {
+    display: none;
+  }
+  .section4-container .section4-accordion {
+    margin-left: -80px;
+  }
+  .accordion-title::before {
+    width: 900px;
+    bottom: -17px;
+  }
+  .accordion-content {
+    width: 100%;
+    max-width: 90%; /* Макс ширина для контента */
+  }
+}
 
 /*# sourceMappingURL=Accordion.css.map */

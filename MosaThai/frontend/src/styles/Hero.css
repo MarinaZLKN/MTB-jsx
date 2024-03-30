@@ -53,6 +53,14 @@
     margin-bottom: 3vw;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero .main-page_pic-subtitle {
+    font-size: 2vw;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding-top: 5%;
+  }
+}
 
 .hero-image {
   object-fit: cover;
@@ -60,6 +68,12 @@
   height: auto;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-image {
+    max-width: 1090px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .hero .image-title {
     position: absolute;

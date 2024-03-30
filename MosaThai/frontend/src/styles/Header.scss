@@ -160,3 +160,28 @@
 
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .header-container {
+    min-width: 768px;
+    max-width: 1024px;
+    height: 120px;
+    .header-menu {
+      gap: 5px;
+      .header-menu-main {
+        display: none;
+      }
+    }
+    .logo-main {
+      width: 100px;
+      height: 100px;
+    }
+    .registration-button{
+      display: none;
+    }
+    .header-btn{
+      font-size: 24px;
+      width: 140px;
+      height: 50px;
+    }
+  }
+}
