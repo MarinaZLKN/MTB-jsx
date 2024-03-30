@@ -151,5 +151,19 @@
   padding-top: 50px;
   padding-bottom: 100px;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .train_reg-container .train-pic {
+    max-width: 658px;
+    left: 16%;
+  }
+  .train_reg-container .train-reg-wrapper {
+    top: 7%;
+    left: 16%;
+  }
+  .train_reg-container .train-reg-wrapper_sent {
+    top: 1%;
+    left: 24%;
+  }
+}
 
 /*# sourceMappingURL=TrainReg.css.map */

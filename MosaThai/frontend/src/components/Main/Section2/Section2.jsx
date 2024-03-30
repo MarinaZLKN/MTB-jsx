@@ -8,8 +8,8 @@ const Section2 =() => {
 
     return (
         <div className="container decoration-container">
-            {/*<InfiniteMarquee />*/}
-            {/*<InfiniteMarquee2 />*/}
+            <InfiniteMarquee />
+            <InfiniteMarquee2 />
 
 
         </div>

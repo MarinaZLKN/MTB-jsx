@@ -159,6 +159,22 @@
     }
 
   }
-  @media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {}
 
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .train_reg-container {
+    .train-pic {
+      max-width: 658px;
+      left: 16%;
+    }
+    .train-reg-wrapper {
+      top: 7%;
+      left: 16%;
+    }
+    .train-reg-wrapper_sent{
+      top: 1%;
+      left: 24%;
+    }
+  }
 }

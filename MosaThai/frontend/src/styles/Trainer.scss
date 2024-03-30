@@ -115,3 +115,10 @@
       }
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .trainer-list_container{
+    padding-left: 50px;
+    max-width: 1024px;
+    height: auto;
+  }
+}

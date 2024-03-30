@@ -135,3 +135,37 @@ h1{
 
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .decoration-container{
+    width: 1024px;
+    height: 350px;
+    overflow: hidden;
+
+  }
+  .marquee-infinite {
+  width: 1024px;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 139px;
+
+}
+.marquee-infinite div {
+  display: flex;
+  width: 200%;
+  animation: marquee-infinite 10s linear infinite;
+}
+
+.marquee-infinite h1{
+  white-space: nowrap;
+  width: 150%;
+
+}
+
+.marquee-infinite2 {
+  width: 1024px;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 250px;
+}
+
+}

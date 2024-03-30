@@ -173,5 +173,43 @@
     font-size: 20px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contacts-container {
+    max-width: 1024px;
+    padding-bottom: 20px;
+  }
+  .contacts-container .contacts-picture {
+    height: 1900px;
+  }
+  .contacts-container .contacts-wrapper {
+    padding-left: 50px;
+    top: 12%;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container {
+    padding-top: 10px;
+    display: block;
+    height: 900px;
+    width: 900px;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-map {
+    flex: 2;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-map .contacts-map-pic {
+    padding-bottom: 20px;
+    width: 1000px;
+    height: 600px;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-data {
+    text-align: right;
+    flex: 1;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-title {
+    display: none;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-p {
+    padding: 10px 0px;
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=Contacts.css.map */

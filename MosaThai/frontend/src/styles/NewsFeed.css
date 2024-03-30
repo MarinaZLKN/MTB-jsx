@@ -91,6 +91,16 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section8-container {
+    max-width: 1024px;
+    height: auto;
+    padding-left: 50px;
+  }
+  .section8-container .news-container {
+    width: 950px;
+  }
+}
 .newsfeed-container {
   width: 100%;
   height: auto;

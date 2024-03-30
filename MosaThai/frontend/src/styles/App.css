@@ -47,9 +47,18 @@ button:hover {
 
 
  @media screen and (max-width: 768px) {
+     .container{
+         max-width: 768px;
+     }
      button{
          width: 180px;
          height: 50px;
          font-size: 28px;
      }
  }
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .container {
+        max-width: 1024px;
+        height: auto;
+    }
+}
