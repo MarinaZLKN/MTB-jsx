@@ -78,3 +78,53 @@
 }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .merch-container{
+    max-width: 1024px;
+
+     .merch-content{
+      padding-left: 20px;
+     }
+    .merchandise-list{
+      width: 1024px;
+      margin-bottom: 20px;
+    .merch-item{
+      width: 480px;
+      height: 450px;
+      display: flex;
+      color: var(--White);
+      .merch-item-slider{
+        padding: 10px 30px;
+        width: 250px;
+      }
+      .merch-item-info{
+        display: block;
+        flex-direction: row;
+        gap:15px;
+         .merch-item-title{
+            font-size: 3.2vw;
+      }
+        .merch-item-desc{
+          font-family: var(--font-text);
+          font-size: 1.5vw;
+        }
+        .merch-item-price{
+          color: var(--yellow-);
+          font-size: 32px;
+        }
+        .merch-item-availibe{
+          font-size: 24px;
+        }
+        .merch-item-size{
+          font-size: 24px;
+        }
+      }
+      .merch-item-info h3,
+      .merch-item-info p {
+        margin-bottom: 15px;
+      }
+
+    }
+  }
+  }
+}

@@ -95,7 +95,25 @@
 @media screen and (min-width: 769px) and (max-width: 1024px){
   .schedule-table-container{
     padding-left: 50px;
-    max-width: 1024px;
+    min-width: 769px;
+    .schedule-table {
+      max-width: 130%;
+    }
+    table {
+      font-size: 10px;
+    }
+    td{
+      font-size: 14px;
+      line-height: 18px; /* 100% */
+    }
+    th {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+    th, td {
+      padding: 6px 0px;
+    }
   }
 }
 
