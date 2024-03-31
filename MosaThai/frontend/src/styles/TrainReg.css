@@ -156,6 +156,12 @@
     max-width: 658px;
     left: 16%;
   }
+  .train_reg-container .train-pic .train_reg-close {
+    position: absolute;
+    top: 100px;
+    right: -80px;
+    cursor: pointer;
+  }
   .train_reg-container .train-reg-wrapper {
     top: 7%;
     left: 16%;
