@@ -187,7 +187,7 @@
     padding-left: 50px;
   }
   .section4-container .section4-accordion-block {
-    width: 700px;
+    width: 820px;
   }
   .section4-container .section4-picture {
     max-width: 1024px;
@@ -204,8 +204,7 @@
     bottom: -17px;
   }
   .accordion-content {
-    width: 100%;
-    max-width: 90%; /* Макс ширина для контента */
+    max-width: 100%; /* Макс ширина для контента */
   }
 }
 

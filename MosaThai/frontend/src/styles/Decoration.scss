@@ -138,15 +138,15 @@ h1{
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .decoration-container{
     width: 1024px;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
 
   }
   .marquee-infinite {
   width: 1024px;
-  padding-top: 30px;
+  padding-top: 20px;
   overflow: hidden;
-  height: 139px;
+  height: 119px;
 
 }
 .marquee-infinite div {
@@ -166,6 +166,14 @@ h1{
   padding-top: 30px;
   overflow: hidden;
   height: 250px;
+}
+.yellow-text {
+  font-size: 120px;
+  line-height: 112px;
+}
+.white-text {
+  font-size: 120px;
+  line-height: 112px; /* 100% */
 }
 
 }

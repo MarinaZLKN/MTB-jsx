@@ -167,6 +167,12 @@
     .train-pic {
       max-width: 658px;
       left: 16%;
+      .train_reg-close{
+        position: absolute;
+        top: 100px;
+        right: -80px;
+        cursor: pointer;
+      }
     }
     .train-reg-wrapper {
       top: 7%;
