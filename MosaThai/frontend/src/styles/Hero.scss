@@ -44,7 +44,7 @@
    @media screen and (max-width: 768px) {
      width: 768px;
      .image-title{
-      top: 25%;
+      top: 20%;
       left: 8%;
     }
      .main-page_pic-title{
@@ -54,6 +54,9 @@
     }
    }
   @media screen and (min-width: 769px) and (max-width: 1024px){
+    .image-title{
+      top: 30%;
+    }
     .main-page_pic-subtitle{
       font-size: 2vw;
       line-height: 30px;

@@ -82,7 +82,7 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   .decoration-container {
-    width: 768px;
+    max-width: 768px;
     height: 250px;
     overflow: hidden;
   }
@@ -94,7 +94,7 @@ h1 {
   .marquee-infinite div {
     display: flex;
     width: 200%;
-    animation: marquee-infinite 10s linear infinite;
+    animation: marquee-infinite 15s linear infinite;
   }
   .marquee-infinite h1 {
     white-space: nowrap;
@@ -155,7 +155,13 @@ h1 {
     overflow: hidden;
     height: 250px;
   }
+  .marquee-infinite2 h1 {
+    white-space: nowrap;
+    width: 150%;
+  }
   .marquee-infinite2 {
+    display: flex;
+    width: 200%;
     animation: marquee-infinite 15s linear infinite;
   }
   .yellow-text {

@@ -6,9 +6,7 @@
      padding:100px  130px;
    }
    @media screen and (max-width: 768px) {
-     padding-left: 50px;
-     padding-bottom: 50px;
-     padding-top: 50px;
+     padding: 50px 50px;
   }
   .news-container{
     margin-top: 40px;
@@ -102,6 +100,7 @@
     max-width: 1024px;
     height: auto;
     padding-left: 50px;
+    padding-right: 40px;
     .news-container{
       width: 950px;
       .news-wrapper{

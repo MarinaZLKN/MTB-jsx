@@ -9,6 +9,7 @@
 @media screen and (max-width: 768px) {
   .schedule-table-container {
     padding-left: 50px;
+    padding-right: 40px;
   }
 }
 .schedule-table-container .schedule-table {
@@ -83,6 +84,7 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .schedule-table-container {
     padding-left: 50px;
+    padding-right: 40px;
     min-width: 769px;
   }
   .schedule-table-container .schedule-table {

@@ -10,9 +10,7 @@
 }
 @media screen and (max-width: 768px) {
   .section8-container {
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding: 50px 50px;
   }
 }
 .section8-container .news-container {
@@ -96,6 +94,7 @@
     max-width: 1024px;
     height: auto;
     padding-left: 50px;
+    padding-right: 40px;
   }
   .section8-container .news-container {
     width: 950px;
