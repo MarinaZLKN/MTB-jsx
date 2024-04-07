@@ -20,6 +20,7 @@ body {
 }
 .container {
     width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -46,9 +47,10 @@ button:hover {
 }
 
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 767px) and  (max-width: 1336px){
      .container{
          width: 768px;
+         max-width: 1336px;
          height: auto;
      }
      button{
@@ -57,16 +59,23 @@ button:hover {
          font-size: 28px;
      }
  }
-@media screen and (max-width: 1024px){
-    .container {
-        max-width: 1024px;
-        height: auto;
-    }
-}
+/*@media screen and (max-width: 1024px){*/
+/*    .container {*/
+/*        max-width: 1024px;*/
+/*        height: auto;*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 800px){
-    .container {
-        max-width: 800px;
-        height: auto;
-    }
-}
+/*@media screen and (max-width: 800px){*/
+/*    .container {*/
+/*        max-width: 800px;*/
+/*        height: auto;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 360px) and (max-width: 1024px) {*/
+/*    .container{*/
+/*        max-width: 100%;*/
+/*        height: auto;*/
+/*    }*/
+/*}*/

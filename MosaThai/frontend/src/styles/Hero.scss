@@ -89,7 +89,7 @@
 
     .image-title {
       position: absolute;
-      top: 30%;
+      top: 20%;
       left: 8%;
     }
 
@@ -107,3 +107,22 @@
   }
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1439px){
+  .hero {
+    z-index: 100;
+    width: 100%;
+
+    .image-title{
+      top: 40%;
+      left: 5%;
+    }
+    .main-page_pic-title{
+      font-size: 160px;
+      line-height: 138px;
+    }
+    .main-page_pic-subtitle{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

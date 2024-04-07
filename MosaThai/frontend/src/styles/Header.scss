@@ -44,12 +44,10 @@
     font-size: 40px; /* Устанавливаем размер шрифта */
     cursor: pointer;
   }
-  @media screen and (min-width: 1300px) {
-    .burger-menu {
+  @media screen and (min-width: 1026px) and (max-width: 2500px)  {
+    .burger-menu{
       display: none;
     }
-  }
-  @media screen and (min-width: 360px) and (max-width: 767px)  {
   }
 }
 
@@ -154,8 +152,8 @@
   }
 
   .logo-main {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
   .burger-menu{
 
@@ -197,4 +195,32 @@
     font-style: normal;
     font-weight: 400;
   }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1439px){
+    .header-container {
+      min-width: 1025px;
+      max-width: 1439px;
+      height: 120px;
+      .header-menu {
+        gap: 5px;
+        .header-menu-main {
+
+        }
+      }
+      .logo-main {
+        width: 100px;
+        height: 100px;
+      }
+      .registration-button{
+
+      }
+      .header-btn{
+        font-size: 24px;
+        width: 140px;
+        height: 50px;
+      }
+
+  }
+
 }

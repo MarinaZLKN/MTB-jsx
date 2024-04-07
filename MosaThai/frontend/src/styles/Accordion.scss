@@ -120,10 +120,11 @@
 
 }
 
-@media (max-width: 1536px) {
+@media screen and (max-width: 1536px) {
   .section4-accordion-block {
     margin-top: 40px;
-    width: 800px;
+    width: 100%;
+    height: auto;
 
   }
 

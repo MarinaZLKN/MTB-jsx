@@ -40,11 +40,12 @@
   font-size: 40px; /* Устанавливаем размер шрифта */
   cursor: pointer;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1026px) and (max-width: 2500px) {
   .header-container .burger-menu {
     display: none;
   }
 }
+
 .header-container::before {
   content: "";
   position: absolute;
@@ -139,8 +140,8 @@
     padding: 10px 26px;
   }
   .logo-main {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
   .dropdown-menu ul li {
     padding: 20px 0;
@@ -178,6 +179,25 @@
     font-size: 3vw;
     font-style: normal;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .header-container {
+    min-width: 1025px;
+    max-width: 1439px;
+    height: 120px;
+  }
+  .header-container .header-menu {
+    gap: 5px;
+  }
+  .header-container .logo-main {
+    width: 100px;
+    height: 100px;
+  }
+  .header-container .header-btn {
+    font-size: 24px;
+    width: 140px;
+    height: 50px;
   }
 }
 
