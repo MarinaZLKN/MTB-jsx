@@ -53,6 +53,14 @@ const NewsClosed = ({news}) => {
                     <div className="news-container-content">
                         <div className="news-slider">
                             <Slider{...settings}>
+                                {news.video && (
+                                    <div className="news-video-container">
+                                        <video controls className="news-video">
+                                            <source src={news.video} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                )}
                                 {Object.keys(news)
                             .filter(key => key.startsWith('photo') && news[key])
                             .map((key, index) => (

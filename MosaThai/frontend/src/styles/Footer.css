@@ -21,8 +21,11 @@
   font-weight: 400;
   line-height: 64px; /* 100% */
 }
-.footer-container .footer-logo {
-  padding-left: 37%;
+.footer-container .footer-logo-container {
+  height: 150px;
+}
+.footer-container .footer-logo-container .footer-logo {
+  margin-left: 40%;
 }
 .footer-container .footer-social {
   display: flex;
