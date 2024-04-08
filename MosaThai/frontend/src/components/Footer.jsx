@@ -13,7 +13,9 @@ const Footer = () => {
         <div className="footer-title">
           Follow us on social media <br />for the exact dates and to stay updated!
         </div>
-        <Logo alt="footer logo" className="footer-logo" />
+        <div className="footer-logo-container">
+           <Logo alt="footer logo" className="footer-logo" />
+        </div>
         <div className="footer-social">
           <img className="footer-social_logo" src={fb} alt="Facebook" />
           <a href="https://www.instagram.com/mosathaiboxing">

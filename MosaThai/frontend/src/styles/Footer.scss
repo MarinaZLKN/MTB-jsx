@@ -22,9 +22,13 @@
     line-height: 64px; /* 100% */
 
   }
-  .footer-logo{
-    padding-left: 37%;
+  .footer-logo-container{
+    height: 150px;
+    .footer-logo{
+        margin-left: 40%;
+      }
   }
+
   .footer-social{
     display: flex;
     gap: 20px;
