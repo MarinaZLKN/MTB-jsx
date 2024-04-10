@@ -18,6 +18,9 @@
      @media screen and (max-width: 1440px) {
      padding-left: 130px;
    }
+    @media screen and (max-width: 1280px) {
+      padding-left: 50px;
+    }
     @media screen and (max-width: 768px) {
       padding-left: 50px;
     }
@@ -33,6 +36,9 @@
     @media screen and (max-width: 768px) {
       padding-left: 50px;
       gap: 3%;
+    }
+    @media screen and (max-width: 1280px) {
+      padding-left: 50px;
     }
   }
 

@@ -64,6 +64,7 @@ const Contacts = () => {
     return (
         <div className="container contacts-container">
             <img src={contacts_pic} className="contacts-picture"/>
+
             <div className="contacts-row">
                  <InfiniteMarquee/>
             </div>

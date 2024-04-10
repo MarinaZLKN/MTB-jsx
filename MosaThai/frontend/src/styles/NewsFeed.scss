@@ -8,6 +8,10 @@
    @media screen and (max-width: 768px) {
      padding: 50px 50px;
   }
+  @media screen and (max-width: 1280px) {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
   .news-container{
     margin-top: 40px;
     display: flex;

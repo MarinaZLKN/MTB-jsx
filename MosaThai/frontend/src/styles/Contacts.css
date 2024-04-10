@@ -10,6 +10,12 @@
     width: 768px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .contacts-container {
+    width: 1300px;
+    overflow: hidden;
+  }
+}
 .contacts-container .contacts-row {
   position: absolute;
   top: 1%;
@@ -26,7 +32,13 @@
 }
 @media screen and (max-width: 768px) {
   .contacts-container .contacts-picture {
+    width: 768px;
     height: 1800px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contacts-container .contacts-picture {
+    height: 1900px;
   }
 }
 .contacts-container .contacts-wrapper {
@@ -43,6 +55,11 @@
   .contacts-container .contacts-wrapper {
     padding-left: 50px;
     top: 12%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .contacts-container .contacts-wrapper {
+    padding-left: 50px;
   }
 }
 .contacts-container .contacts-wrapper .contacts-form {

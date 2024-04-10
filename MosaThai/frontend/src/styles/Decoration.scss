@@ -126,7 +126,11 @@ h1{
   }
 
 }
-
+ @media screen and (max-width: 1280px) {
+   .decoration-container{
+    width: 1280px;
+  }
+ }
 
 @media screen and (max-width: 1440px) {
   .decoration-container{

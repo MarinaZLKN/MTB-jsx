@@ -42,6 +42,9 @@
      @media screen and (max-width: 768px) {
        left: 50px;
      }
+   @media screen and (max-width: 1280px) {
+     left: 55px;
+   }
 
   }
   .section4-accordion-picture{
@@ -157,7 +160,7 @@
    }
    .accordion-title {
       width: 700px;
-      max-width: 700px;
+      max-width: 90%;
       margin-bottom: 15px;
       font-size: 2.2em;
     }
@@ -167,7 +170,7 @@
     }
     .accordion-content {
       width: 700px;
-      max-width: 700px;
+      max-width: 90%;
     }
     .title {
       font-size: 5.5rem;
@@ -199,7 +202,7 @@
       display: none;
     }
     .section4-accordion{
-      margin-left: -80px;
+      margin-left: 0px;
     }
   }
   .accordion-title::before {
@@ -208,5 +211,17 @@
   }
   .accordion-content {
     max-width: 100%; /* Макс ширина для контента */
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .section4-container{
+    height: auto;
+    .section4-title{
+      padding-left: 50px;
+    }
+    .section4-accordion-block{
+      width: 820px;
+    }
   }
 }
