@@ -13,6 +13,12 @@
     padding: 50px 50px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .section8-container {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+}
 .section8-container .news-container {
   margin-top: 40px;
   display: flex;

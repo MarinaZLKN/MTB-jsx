@@ -12,6 +12,12 @@
     padding-right: 40px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .schedule-table-container {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+}
 .schedule-table-container .schedule-table {
   max-width: 100%;
   overflow-x: auto;
