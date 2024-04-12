@@ -1,23 +1,6 @@
 .schedule-table-container {
   padding: 30px 172px;
 }
-@media screen and (max-width: 1440px) {
-  .schedule-table-container {
-    padding: 30px 130px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .schedule-table-container {
-    padding-left: 50px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .schedule-table-container {
-    padding-left: 50px;
-    padding-right: 40px;
-  }
-}
 .schedule-table-container .schedule-table {
   max-width: 100%;
   overflow-x: auto;
@@ -54,63 +37,6 @@
   font-weight: 400;
   line-height: 36px;
   font-variant: all-small-caps;
-}
-@media screen and (max-width: 1440px) {
-  .schedule-table-container td {
-    padding: 8px 2px;
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .schedule-table-container th, .schedule-table-container td {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .schedule-table-container .schedule-table {
-    width: 700px;
-  }
-  .schedule-table-container table {
-    font-size: 10px;
-  }
-  .schedule-table-container td {
-    font-size: 14px;
-    line-height: 18px; /* 100% */
-  }
-  .schedule-table-container th {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 26px;
-  }
-  .schedule-table-container th, .schedule-table-container td {
-    padding: 3px 0px;
-    width: 100px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .schedule-table-container {
-    padding-left: 50px;
-    padding-right: 40px;
-    min-width: 769px;
-  }
-  .schedule-table-container .schedule-table {
-    max-width: 130%;
-  }
-  .schedule-table-container table {
-    font-size: 10px;
-  }
-  .schedule-table-container td {
-    font-size: 14px;
-    line-height: 18px; /* 100% */
-  }
-  .schedule-table-container th {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 26px;
-  }
-  .schedule-table-container th, .schedule-table-container td {
-    padding: 6px 0px;
-  }
 }
 
 /*# sourceMappingURL=Schedule.css.map */

@@ -29,18 +29,13 @@
 .header-container .header-menu .header-menu-main:hover {
   color: var(--yellow-);
 }
-@media screen and (max-width: 1440px) {
-  .header-container .header-menu .header-menu-main {
-    font-size: 42px;
-  }
-}
 .header-container .burger-menu {
   display: block;
   color: var(--yellow-);
   font-size: 40px; /* Устанавливаем размер шрифта */
   cursor: pointer;
 }
-@media screen and (min-width: 1026px) and (max-width: 2500px) {
+@media screen and (min-width: 1026px) and (max-width: 3500px) {
   .header-container .burger-menu {
     display: none;
   }
@@ -64,25 +59,6 @@
   height: 152px;
 }
 
-@media screen and (max-width: 768px) {
-  .header-container {
-    width: 768px;
-    height: 100px;
-  }
-  .header-container .header-menu {
-    gap: 5px;
-  }
-  .header-container .header-menu .header-menu-main {
-    display: none;
-  }
-  .logo-main {
-    width: 80px;
-    height: 80px;
-  }
-  .registration-button {
-    display: none;
-  }
-}
 .dropdown-menu {
   position: fixed;
   top: 0;
@@ -135,82 +111,104 @@
   height: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 720px) {
+@media screen and (max-width: 1680px) {
   .header-container {
-    padding: 5px 16px;
-  }
-  .logo-main {
-    width: 70px;
-    height: auto;
-  }
-  .dropdown-menu {
-    width: 70%;
-  }
-  .dropdown-menu ul li {
-    padding: 20px 0;
-    font-size: 7vw;
-    font-style: normal;
-    font-weight: 400;
-  }
-  .dropdown-pic {
-    left: 80%;
-    cursor: pointer;
-  }
-  .dropdown-pic .dropdown-close {
-    color: var(--yellow-);
-    width: 18%;
-    height: auto;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .header-container {
-    width: 100%;
-    min-width: 768px;
-    max-width: 1024px;
-    height: 120px;
+    width: 1680px;
+    max-width: 100%;
+    padding: 16px 36px;
   }
   .header-container .header-menu {
-    gap: 5px;
+    gap: 0.3%;
   }
-  .header-container .header-menu .header-menu-main {
+  .header-container .burger-menu {
     display: none;
   }
-  .header-container .logo-main {
-    width: 100px;
-    height: 100px;
+}
+@media screen and (max-width: 1440px) {
+  .header-container {
+    width: 1440px;
+    max-width: 100%;
+    padding: 16px 36px;
+  }
+  .header-container .header-menu {
+    gap: 0.3%;
+  }
+  .header-container .header-menu .header-menu-main {
+    font-size: 48px;
+    line-height: 30px;
+  }
+  .header-container .burger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .header-container {
+    width: 1366px;
+    max-width: 100%;
+  }
+  .header-container .header-menu {
+    gap: 0.2%;
+  }
+  .header-container .header-menu .header-menu-main {
+    font-size: 44px;
+  }
+  .header-container .burger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header-container {
+    width: 1280px;
+    max-width: 100%;
+  }
+  .header-container .header-menu {
+    gap: 0.2%;
+  }
+  .header-container .header-menu .header-menu-main {
+    font-size: 42px;
+  }
+  .header-container .burger-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1270px) {
+  .header-container .header-menu {
+    display: none;
   }
   .header-container .registration-button {
     display: none;
   }
-  .header-container .header-btn {
-    font-size: 24px;
-    width: 140px;
-    height: 50px;
-  }
-  .dropdown-menu ul li {
-    padding: 20px 0;
-    font-size: 3vw;
-    font-style: normal;
-    font-weight: 400;
+  .header-container .burger-menu {
+    display: block;
+    color: var(--yellow-);
+    font-size: 40px; /* Устанавливаем размер шрифта */
+    cursor: pointer;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1439px) {
+@media screen and (max-width: 1024px) {
   .header-container {
-    min-width: 1025px;
-    max-width: 1439px;
-    height: 120px;
+    width: 1024px;
+    height: 140px;
+    position: fixed;
+    top: 0;
+    padding: 13px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
   }
   .header-container .header-menu {
-    gap: 5px;
+    display: none;
   }
-  .header-container .logo-main {
-    width: 100px;
-    height: 100px;
+  .header-container .registration-button {
+    display: none;
   }
-  .header-container .header-btn {
-    font-size: 24px;
-    width: 140px;
-    height: 50px;
+  .header-container .burger-menu {
+    display: block;
+    color: var(--yellow-);
+    font-size: 40px; /* Устанавливаем размер шрифта */
+    cursor: pointer;
   }
 }
 

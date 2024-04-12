@@ -1,14 +1,7 @@
-@charset "UTF-8";
 .prices-container {
   width: 100%;
   height: auto;
   padding-bottom: 100px;
-}
-@media screen and (max-width: 768px) {
-  .prices-container {
-    padding-bottom: 20px;
-    width: 768px;
-  }
 }
 .prices-container .training-item_price {
   background-color: transparent;
@@ -20,42 +13,11 @@
 .prices-container .prices-title {
   padding-left: 172px;
 }
-@media screen and (max-width: 1440px) {
-  .prices-container .prices-title {
-    padding-left: 130px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .prices-container .prices-title {
-    padding-left: 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .prices-container .prices-title {
-    padding-left: 50px;
-  }
-}
 .prices-container .prices-prices {
   padding-top: 2%;
   padding-left: 172px;
   display: flex;
   gap: 4.5%;
-}
-@media screen and (max-width: 1440px) {
-  .prices-container .prices-prices {
-    padding-left: 130px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .prices-container .prices-prices {
-    padding-left: 50px;
-    gap: 3%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .prices-container .prices-prices {
-    padding-left: 50px;
-  }
 }
 .prices-container .prices-name {
   color: var(--White, #E5E5D6);
@@ -77,99 +39,112 @@
   font-weight: 500;
   line-height: 52px;
 }
-@media screen and (max-width: 1440px) {
+
+@media screen and (max-width: 1680px) {
+  .prices-container {
+    width: 1680px;
+    height: auto;
+    padding-bottom: 100px;
+  }
   .prices-container .training-item_price {
-    padding: 55px 30px;
+    width: 19%;
+    height: auto;
+    padding: 60px 20px;
   }
   .prices-container .prices-name {
-    font-size: 20px;
-    line-height: 24px;
-    padding-bottom: 10px;
+    font-size: 2vw;
+    line-height: 28px;
+    padding-bottom: 35px;
   }
   .prices-container .prices-int {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 3vw;
     line-height: 52px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
+  .prices-container {
+    width: 1400px;
+    height: auto;
+    padding-bottom: 80px;
+  }
   .prices-container .training-item_price {
     width: 21%;
-    padding: 35px 17px;
-    height: 148px;
-  }
-  .prices-container .training-item_price .prices-name {
-    font-size: 20px;
-    line-height: 18px;
-    font-weight: 500;
-    padding-bottom: 20px;
-  }
-  .prices-container .training-item_price .prices-int {
-    font-size: 20px;
-    line-height: 18px;
-    font-weight: 500;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .prices-container {
-    min-width: 769px;
-    max-width: 1024px;
-  }
-  .prices-container .prices-title {
-    padding-left: 50px;
-  }
-  .prices-container .prices-prices {
-    padding-left: 50px;
-    gap: 4%;
-  }
-  .prices-container .training-item_price {
-    width: 20%;
-    padding: 40px 40px;
-    height: 168px;
-  }
-  .prices-container .training-item_price .prices-name {
-    font-size: 2vw;
-    line-height: 18px;
-    padding-bottom: 10%;
-  }
-  .prices-container .training-item_price .prices-int {
-    font-size: 2vw;
-    line-height: 18px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 720px) {
-  .prices-container {
-    max-width: 70%;
-  }
-  .prices-container .prices-title {
-    padding-left: 20px;
-  }
-  .prices-container .prices-prices {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    gap: 4%;
-  }
-  .prices-container .prices-prices .training-item-wrapper {
-    width: calc(50% - 10px); /* Ширина элемента - половина ширины контейнера - отступ между элементами */
-    margin: 0 5px 20px; /* Отступы вокруг элементов */
-  }
-  .prices-container .training-item_price {
-    width: 20%;
-    padding: 30px 30px;
     height: auto;
-    margin-bottom: 10px;
+    padding: 55px 20px;
   }
-  .prices-container .training-item_price .prices-name {
-    font-size: 5vw;
-    line-height: 18px;
-    padding-bottom: 10%;
+  .prices-container .prices-title {
+    padding-left: 132px;
   }
-  .prices-container .training-item_price .prices-int {
-    font-size: 4vw;
-    line-height: 18px;
+  .prices-container .prices-prices {
+    padding-top: 2%;
+    padding-left: 132px;
+    display: flex;
+    gap: 4%;
+  }
+  .prices-container .prices-name {
+    font-size: 2vw;
+    line-height: 24px;
+    padding-bottom: 35px;
+  }
+  .prices-container .prices-int {
+    font-size: 2.5vw;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .prices-container {
+    width: 1366px;
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .prices-container .training-item_price {
+    width: 21%;
+    height: auto;
+    padding: 50px 20px;
+  }
+  .prices-container .prices-title {
+    padding-left: 122px;
+  }
+  .prices-container .prices-prices {
+    padding-top: 2%;
+    padding-left: 122px;
+  }
+  .prices-container .prices-name {
+    font-size: 2vw;
+    line-height: 24px;
+    padding-bottom: 35px;
+  }
+  .prices-container .prices-int {
+    font-size: 2.5vw;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .prices-container {
+    width: 1280px;
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .prices-container .training-item_price {
+    width: 21%;
+    height: auto;
+    padding: 50px 20px;
+  }
+  .prices-container .prices-title {
+    padding-left: 115px;
+  }
+  .prices-container .prices-prices {
+    padding-top: 2%;
+    padding-left: 115px;
+  }
+  .prices-container .prices-name {
+    font-size: 2vw;
+    line-height: 24px;
+    padding-bottom: 35px;
+  }
+  .prices-container .prices-int {
+    font-size: 2.5vw;
+    line-height: 48px;
   }
 }
 

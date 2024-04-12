@@ -29,7 +29,7 @@ const TrainingList= () => {
           key={training.id}
           name={training.name}
           amount={training.amount}
-          className="training-item-wrapper"
+
         />
       ))}
       </div>
