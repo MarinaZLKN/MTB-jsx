@@ -65,9 +65,9 @@ const Contacts = () => {
         <div className="container contacts-container">
             <img src={contacts_pic} className="contacts-picture"/>
 
-            <div className="contacts-row">
-                 <InfiniteMarquee/>
-            </div>
+            {/*<div className="contacts-row">*/}
+            {/*     <InfiniteMarquee/>*/}
+            {/*</div>*/}
             <div className="contacts-wrapper">
                 <Title text="Contact us" size="large" color="var(--White)" lineHeight="120px"/>
                 {!submitted ? (

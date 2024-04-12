@@ -2,10 +2,10 @@
   width: 100%;
   height: auto;
   padding-bottom: 100px;
-  @media screen and (max-width: 768px) {
-      padding-bottom: 20px;
-      width: 768px;
-    }
+  //@media screen and (max-width: 768px) {
+  //    padding-bottom: 20px;
+  //    width: 768px;
+  //  }
   .training-item_price{
     background-color: transparent;
     border: 1px solid var(--yellow-);
@@ -16,31 +16,31 @@
   }
   .prices-title{
     padding-left: 172px;
-     @media screen and (max-width: 1440px) {
-     padding-left: 130px;
-   }
-    @media screen and (max-width: 1280px) {
-      padding-left: 50px;
-    }
-    @media screen and (max-width: 768px) {
-      padding-left: 50px;
-    }
+   //  @media screen and (max-width: 1440px) {
+   //  padding-left: 130px;
+   //}
+   // @media screen and (max-width: 1280px) {
+   //   padding-left: 50px;
+   // }
+   // @media screen and (max-width: 768px) {
+   //   padding-left: 50px;
+   // }
   }
   .prices-prices{
     padding-top: 2%;
     padding-left: 172px;
     display: flex;
     gap: 4.5%;
-    @media screen and (max-width: 1440px) {
-     padding-left: 130px;
-   }
-    @media screen and (max-width: 768px) {
-      padding-left: 50px;
-      gap: 3%;
-    }
-    @media screen and (max-width: 1280px) {
-      padding-left: 50px;
-    }
+   // @media screen and (max-width: 1440px) {
+   //  padding-left: 130px;
+   //}
+   // @media screen and (max-width: 768px) {
+   //   padding-left: 50px;
+   //   gap: 3%;
+   // }
+   // @media screen and (max-width: 1280px) {
+   //   padding-left: 50px;
+   // }
   }
 
   .prices-name{
@@ -64,103 +64,256 @@
     font-weight: 500;
     line-height: 52px;
   }
-  @media screen and (max-width: 1440px) {
+  //@media screen and (max-width: 1440px) {
+  //  .training-item_price{
+  //    padding: 55px 30px;
+  //  }
+  //  .prices-name{
+  //    font-size: 20px;
+  //    line-height: 24px;
+  //    padding-bottom: 10px;
+  //  }
+  //  .prices-int{
+  //    font-size: 36px;
+  //    font-style: normal;
+  //    font-weight: 500;
+  //    line-height: 52px;
+  //  }
+  //
+  //}
+  //@media screen and (max-width: 768px) {
+  //  .training-item_price{
+  //    width: 21%;
+  //    padding: 35px 17px;
+  //    height: 148px;
+  //    .prices-name{
+  //      font-size: 20px;
+  //      line-height: 18px;
+  //      font-weight: 500;
+  //      padding-bottom: 20px;
+  //    }
+  //    .prices-int{
+  //      font-size: 20px;
+  //      line-height: 18px;
+  //      font-weight: 500;
+  //    }
+  //  }
+  //}
+}
+
+//
+//@media screen and (min-width: 769px) and (max-width: 1024px){
+//  .prices-container{
+//    min-width: 769px;
+//    max-width: 1024px;
+//    .prices-title{
+//      padding-left: 50px;
+//    }
+//    .prices-prices{
+//      padding-left: 50px;
+//      gap: 4%;
+//    }
+//    .training-item_price{
+//      width: 20%;
+//      padding: 40px 40px;
+//      height: 168px;
+//      .prices-name{
+//        font-size: 2vw;
+//        line-height: 18px;
+//        padding-bottom: 10%;
+//      }
+//      .prices-int{
+//        font-size: 2vw;
+//        line-height: 18px;
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (min-width: 320px) and (max-width: 480px) {
+//    .prices-container{
+//      max-width: 460px;
+//      .prices-title{
+//        padding-left: 20px;
+//      }
+//      .prices-prices{
+//        display: grid;
+//        grid-template-columns: repeat(2, 1fr);
+//        padding-left: 20px;
+//        gap: 0px;
+//
+//      }
+//      .training-item_price{
+//        width: 75%;
+//        padding: 35px 30px;
+//        //height: 100%;
+//        margin-bottom: 10px;
+//        .prices-name{
+//          font-size: 5vw;
+//          line-height: 18px;
+//          padding-bottom: 10%;
+//        }
+//        .prices-int{
+//          font-size: 4vw;
+//          line-height: 18px;
+//        }
+//      }
+//  }
+//}
+
+@media screen  and (max-width: 1680px){
+  .prices-container{
+    width: 1680px;
+    height: auto;
+    padding-bottom: 100px;
     .training-item_price{
-      padding: 55px 30px;
+      width: 19%;
+      height: auto; //300px
+      padding: 60px 20px;
     }
+
     .prices-name{
-      font-size: 20px;
-      line-height: 24px;
-      padding-bottom: 10px;
+      font-size: 2vw;
+      line-height: 28px;
+      padding-bottom: 35px;
     }
+
     .prices-int{
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 500;
+      font-size: 3vw;
       line-height: 52px;
     }
+  }
 
-  }
-  @media screen and (max-width: 768px) {
-    .training-item_price{
-      width: 21%;
-      padding: 35px 17px;
-      height: 148px;
-      .prices-name{
-        font-size: 20px;
-        line-height: 18px;
-        font-weight: 500;
-        padding-bottom: 20px;
-      }
-      .prices-int{
-        font-size: 20px;
-        line-height: 18px;
-        font-weight: 500;
-      }
-    }
-  }
+
 }
-
-
-@media screen and (min-width: 769px) and (max-width: 1024px){
-  .prices-container{
-    min-width: 769px;
-    max-width: 1024px;
-    .prices-title{
-      padding-left: 50px;
-    }
-    .prices-prices{
-      padding-left: 50px;
-      gap: 4%;
-    }
-    .training-item_price{
-      width: 20%;
-      padding: 40px 40px;
-      height: 168px;
-      .prices-name{
-        font-size: 2vw;
-        line-height: 18px;
-        padding-bottom: 10%;
-      }
-      .prices-int{
-        font-size: 2vw;
-        line-height: 18px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 720px) {
+@media screen  and (max-width: 1440px){
     .prices-container{
-      max-width: 70%;
+      width: 1400px;
+      height: auto;
+      padding-bottom: 80px;
+      .training-item_price{
+        width: 21%;
+        //320px
+        height: auto; //300px
+        padding: 55px 20px;
+      }
       .prices-title{
-        padding-left: 20px;
+        padding-left: 132px;
+
       }
       .prices-prices{
+        padding-top: 2%;
+        padding-left: 132px;
         display: flex;
-        flex-wrap: wrap;
-
-        padding-left: 20px;
         gap: 4%;
-        .training-item-wrapper {
-  width: calc(50% - 10px); /* Ширина элемента - половина ширины контейнера - отступ между элементами */
-  margin: 0 5px 20px; /* Отступы вокруг элементов */
-}
       }
-      .training-item_price{
-        width: 20%;
-        padding: 30px 30px;
-        height: auto;
-        margin-bottom: 10px;
-        .prices-name{
-          font-size: 5vw;
-          line-height: 18px;
-          padding-bottom: 10%;
-        }
-        .prices-int{
-          font-size: 4vw;
-          line-height: 18px;
-        }
+
+      .prices-name{
+        font-size: 2vw;
+        line-height: 24px;
+        padding-bottom: 35px;
+      }
+
+      .prices-int{
+        font-size: 2.5vw;
+        line-height: 48px;
       }
   }
 }
+@media screen  and (max-width: 1366px){
+  .prices-container{
+      width: 1366px;
+      height: auto;
+      padding-bottom: 80px;
+      .training-item_price{
+        width: 21%;
+        //320px
+        height: auto;
+        padding: 50px 20px;
+      }
+      .prices-title{
+        padding-left: 122px;
+
+      }
+      .prices-prices{
+        padding-top: 2%;
+        padding-left: 122px;
+      }
+
+      .prices-name{
+        font-size: 2vw;
+        line-height: 24px;
+        padding-bottom: 35px;
+      }
+
+      .prices-int{
+        font-size: 2.5vw;
+        line-height: 48px;
+      }
+  }
+}
+@media screen  and (max-width: 1280px){
+  .prices-container{
+      width: 1280px;
+      height: auto;
+      padding-bottom: 80px;
+      .training-item_price{
+        width: 21%;
+        //320px
+        height: auto;
+        padding: 50px 20px;
+      }
+      .prices-title{
+        padding-left: 115px;
+
+      }
+      .prices-prices{
+        padding-top: 2%;
+        padding-left: 115px;
+      }
+
+      .prices-name{
+        font-size: 2vw;
+        line-height: 24px;
+        padding-bottom: 35px;
+      }
+
+      .prices-int{
+        font-size: 2.5vw;
+        line-height: 48px;
+      }
+  }
+}
+//@media screen  and (max-width: 1024px){
+//  .prices-container{
+//      width: 1024px;
+//      height: auto;
+//      padding-bottom: 80px;
+//      .training-item_price{
+//        width: 21%;
+//        //320px
+//        height: auto;
+//        padding: 30px 23px;
+//      }
+//      .prices-title{
+//        padding-left: 100px;
+//
+//      }
+//      .prices-prices{
+//        padding-top: 2%;
+//        padding-left: 100px;
+//        gap: 3.7%;
+//      }
+//
+//      .prices-name{
+//        font-size: 2vw;
+//        line-height: 20px;
+//        padding-bottom: 35px;
+//      }
+//
+//      .prices-int{
+//        font-size: 2.5vw;
+//        line-height: 40px;
+//      }
+//  }
+//}

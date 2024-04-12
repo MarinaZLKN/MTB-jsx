@@ -35,7 +35,7 @@ const Main = () => {
                     <WhyMuayThai/>
                 </section>
                 <section id="programs">
-                    <Section4/>
+                    {/*<Section4/>*/}
                 </section>
                 <section id="prices">
                     <TrainingList/>
@@ -44,13 +44,13 @@ const Main = () => {
                     <Schedule/>
                 </section>
                 <section id="coaches">
-                    <TrainerList/>
+                    {/*<TrainerList/>*/}
                 </section>
                 <section>
                     <Section8/>
                 </section>
                 <section id="contact">
-                    <Contacts/>
+                    {/*<Contacts/>*/}
                 </section>
 
             </main>
