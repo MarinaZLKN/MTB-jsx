@@ -225,3 +225,74 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+  .section4-container{
+    max-width: 100%;
+    height:1000px;
+    .section4-title{
+      padding-left: 20px;
+      height: 20%;
+    }
+    .section4-accordion-block{
+      width: 80%;
+      gap: 0px;
+      top: 10%;
+      left: 0px;
+    }
+    .section4-picture{
+      display: none;
+    }
+    .section4-accordion-picture{
+      display: none;
+    }
+    .section4-accordion{
+      margin-left: 0px;
+    }
+  }
+  .accordion-title::before {
+    min-width: 300px;
+    bottom: -17px;
+  }
+  .accordion-content {
+    max-width: 60%;
+  }
+
+
+  .accordion-title{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 68px;
+    position: relative;
+    padding-top: 10px;
+  }
+
+  .accordion-title::before {
+    content: "";
+    position: absolute;
+    bottom: -17px; /*  отступ подчеркивания */
+    left: 0;
+    max-width: 100%;
+
+  }
+
+  .accordion-content{
+    max-width: 100%;
+    height: auto;
+    padding: 12px 24px 12px 20px;
+    font-size: 2.6vw;
+    line-height: 20px;
+  }
+  .title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 300;
+  }
+  .title-large {
+    font-size: 70px;
+
+  }
+}
