@@ -1,64 +1,31 @@
 .wmt-container{
   width: 100%;
+  //height: auto;
   height: 800px;
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
   padding: 0px 172px;
 
-  //@media screen and (max-width: 1440px) {
-  //  height: 650px;
-  //  margin-bottom: 5px;
-  //  padding-top: 30px;
-  //}
-  //@media screen and (max-width: 768px) {
-  //  height: 570px;
-  //}
-
   .wmt-picture-block{
-    //padding-left: 172px;
-   // @media screen and (max-width: 1440px) {
-   //  padding-left: 130px;
-   //}
-   // @media screen and (max-width: 768px) {
-   //   display: none;
-   // }
-    //@media screen and (min-width: 360px) {
-    //   padding-left: 10px;
-    //}
     .wmt-picture{
       width: 768px;
       height: 950px;
       overflow: hidden;
-
-    //  @media screen and (max-width: 1920px) and (min-width: 1331px) {
-    //    width: 30vw; /* Примерно 768px на экране 1920px */
-    //    height: 40vw; /* Примерно 1002px на экране 1920px */
-    //}
-      //@media screen and (max-width: 1440px) {
-      //    /* Дополнительное уменьшение размеров */
-      //    width: 29vw; /* Примерно 768px на экране 1330px */
-      //    height: 40vw; /* Примерно 1002px на экране 1330px */
-      //}
-    //  @media screen and (max-width: 768px) {}
-    //
-    //
     }
-
-  //}
-  //@media screen and (min-width: 360px) and (max-width: 767px) {
-  //  .wmt-picture{
-  //    display: none;
-  //  }
   }
   .wmt-info-block{
-    height: 730px;
+    //height: 750px;
     display: flex;
     padding: 10px 96px 80px 100px;
     flex-direction: column;
     align-items: flex-start;
     gap: 58px;
     position: relative;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+
     .wmy-title{
       color: var(--White, #E5E5D6);
       font-family: var(--font-family);
@@ -75,47 +42,14 @@
       font-weight: 300;
       line-height: 36px;
     }
-    //@media screen and (max-width: 1440px) {
-    //    padding: 1vw 6vw 5vw 6vw; /* Уменьшение отступов */
-    //    gap: 2.2vw; /* Уменьшение расстояния между элементами */
-    //    .wmy-title {
-    //        font-size: 3.3vw; /* Уменьшение размера шрифта заголовка */
-    //        line-height: 4vw; /* Уменьшение высоты строки заголовка */
-    //    }
-    //
-    //    .wmt-text {
-    //        font-size: 1.1vw; /* Уменьшение размера шрифта текста */
-    //        line-height: 1.9vw; /* Уменьшение высоты строки текста */
-    //    }
-    //}
-    //@media screen and (max-width: 768px) {
-    //  width: 100%;
-    //  height: auto;
-    //  .wmt-text{
-    //    font-size: 12px;
-    //  }
-    //}
-    //@media screen and (min-width: 360px) and (max-width: 767px) {
-    //  .wmy-title{
-    //    font-size: 38px;
-    //  }
-    //  .wmt-text {
-    //    font-size: 16px; /* Уменьшение размера шрифта текста */
-    //    line-height: 4vw; /* Уменьшение высоты строки текста */
-    //  }
-    //}
+
   }
   .arrow-container{
     position: absolute;
     bottom: -25px;
     display: flex;
     gap: 15px;
-   // @media screen and (max-width: 1440px) {
-   //  bottom: 23%;
-   //}
-   // @media screen and (max-width: 768px) {
-   //   bottom: -10px;
-   // }
+    //z-index: 100;
   }
 
 }
@@ -192,47 +126,33 @@
 }
 
 
-//@media screen and (max-width: 768px) {
-//
-//  .custom-next-button, .custom-prev-button {
-//    width: 40px;
-//    height: 40px;
-//  }
-//  .custom-prev-button img, .custom-next-button img {
-//    width: 30px;
-//
-//}
-//}
-
-
-@media screen and (min-width: 767px) and (max-width: 1364px){
+@media screen and (min-width: 721px) and (max-width: 1364px){
   .wmt-container{
     height: auto;
-    width: 90%;
+    //width: 100%;
     padding: 0px;
     margin: 0px 1%;
     .wmt-picture-block{
       display: none;
     }
     .wmt-info-block{
-      max-width: 100%;
       margin: 0px 10px;
       gap: 20px;
       padding: 70px 20px;
       .wmy-title{
-        font-size: 40px;
+        font-size: 8vw;
         line-height: 38px;
       }
       .wmt-text{
         font-size: 18px;
         font-style: normal;
         font-weight: 300;
-        line-height: 3.5vw;
+        line-height: 3vw;
       }
     }
     .arrow-container{
       position: absolute;
-      bottom: 10%;
+      bottom: 2%;
       display: flex;
       gap: 15px;
     }
@@ -243,56 +163,56 @@
   }
 }
 
-//@media screen and (min-width: 1221px) {
-//    .wmt-container{
-//      height: 550px;
-//      .wmt-picture-block{
-//        padding-left: 50px;
-//      }
-//      .wmt-info-block{
-//        margin-right: 20px;
-//
-//        max-width: 100%;
-//        height: auto;
-//        gap: 30px;
-//        .wmy-title{
-//          font-size: 5vw;
-//          line-height: 38px;
-//        }
-//        .wmt-text{
-//          font-size: 1.5vw;
-//          font-style: normal;
-//          font-weight: 300;
-//          line-height: 22px;
-//        }
-//      }
-//      .arrow-container{
-//        position: absolute;
-//        top: 100%;
-//        display: flex;
-//        gap: 15px;
-//      }
-//  }
-//  .custom-next-button, .custom-prev-button {
-//    width: 58px;
-//    height: 58px;
-//  }
-//
-//}
-//
-//@media screen and (min-width: 360px) and (max-width: 767px) {
-//  .wmt-container{
-//    max-width: 100%;
-//
-//    .wmt-picture-block{}
-//  }
-//}
-//
-//
-//@media screen and (min-width: 1025px) and (max-width: 1331px){
-//  .wmt-picture-block{
-//    display: none;
-//  }
-//}
 
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    .wmt-container{
+      max-width: 500px;
+      height: auto;
+      //max-width: 40%;
+
+      padding: 0px 0px;
+
+      .wmt-picture-block{
+        display: none;
+
+    }
+    .wmt-info-block{
+      height: auto;
+      padding: 3% 3%;
+      //margin-right: 20%;
+      gap: 10px;
+      .wmy-title{
+        font-size: 9vw;
+        line-height: 68px;
+      }
+      .wmt-text{
+        font-size: 3.3vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 5vw;
+      }
+    }
+    .arrow-container{
+      bottom: -7%;
+      gap: 4vw;
+      z-index: 100;
+    }
+      #next-btn {
+      transform: rotate(180deg);
+    }
+
+  .custom-next-button, .custom-prev-button {
+    width: 50%;
+    height: 50%;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .custom-prev-button img, .custom-next-button img {
+    transition: transform 0.3s, filter 0.3s;
+    width: 35px;
+  }
+
+
+  }
+}
 

@@ -135,23 +135,36 @@
   height: 30px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 720px) {
   .header-container {
-    padding: 10px 26px;
+    padding: 5px 16px;
   }
   .logo-main {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: auto;
+  }
+  .dropdown-menu {
+    width: 70%;
   }
   .dropdown-menu ul li {
     padding: 20px 0;
-    font-size: 3vw;
+    font-size: 7vw;
     font-style: normal;
     font-weight: 400;
   }
+  .dropdown-pic {
+    left: 80%;
+    cursor: pointer;
+  }
+  .dropdown-pic .dropdown-close {
+    color: var(--yellow-);
+    width: 18%;
+    height: auto;
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header-container {
+    width: 100%;
     min-width: 768px;
     max-width: 1024px;
     height: 120px;
