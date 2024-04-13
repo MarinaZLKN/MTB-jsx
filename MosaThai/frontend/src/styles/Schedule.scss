@@ -1,17 +1,5 @@
 .schedule-table-container{
   padding: 30px 172px;
-  // @media screen and (max-width: 1440px) {
-  //   padding:30px  130px;
-  // }
-  //@media screen and (max-width: 768px) {
-  //    padding-left: 50px;
-  //    padding-right: 40px;
-  //}
-  //@media screen and (max-width: 1280px) {
-  //  padding-left: 50px;
-  //  padding-right: 40px;
-  //}
-
 
   .schedule-table {
   max-width: 100%;
@@ -26,7 +14,7 @@
   }
 
   th, td {
-    padding: 10px 24px;
+    padding: 10px 1px;
     text-align: center;
     border: 1px solid var(--White);
     height: 5%;
@@ -55,73 +43,132 @@
     font-variant: all-small-caps;
 
   }
-  //@media screen and (max-width: 1440px) {
-  //  td {
-  //    padding: 8px 2px;
-  //    font-size: 20px;
-  //    line-height: 25px;
-  //  }
-  //  th, td {
-  //    width: 150px;
-  //  }
-  //}
-  //@media screen and (max-width: 768px) {
-  //    .schedule-table {
-  //      width: 700px;
-  //    }
-  //
-  //    table {
-  //      font-size: 10px;
-  //    }
-  //
-  //    td {
-  //      font-size: 14px;
-  //      line-height: 18px; /* 100% */
-  //
-  //    }
-  //
-  //    th {
-  //      font-size: 24px;
-  //      font-weight: 300;
-  //      line-height: 26px;
-  //
-  //    }
-  //
-  //    th, td {
-  //      padding: 3px 0px;
-  //      width: 100px;
-  //    }
-  //  }
-
-  //tbody tr:nth-child(even) {
-  //  background-color: var(--White);
-  //}
 }
 
-//
-//@media screen and (min-width: 769px) and (max-width: 1024px){
-//  .schedule-table-container{
-//    padding-left: 50px;
-//    padding-right: 40px;
-//    min-width: 769px;
-//    .schedule-table {
-//      max-width: 130%;
-//    }
-//    table {
-//      font-size: 10px;
-//    }
-//    td{
-//      font-size: 14px;
-//      line-height: 18px; /* 100% */
-//    }
-//    th {
-//      font-size: 24px;
-//      font-weight: 300;
-//      line-height: 26px;
-//    }
-//    th, td {
-//      padding: 6px 0px;
-//    }
-//  }
-//}
-//
+@media screen  and (max-width: 1680px){
+
+
+}
+@media screen  and (max-width: 1440px){
+  .schedule-table-container{
+    padding-top: 30px;
+    padding-left: 132px;
+    padding-right: 100px;
+
+    .schedule-table {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 30px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px 1px;
+      width: 210px;
+
+    }
+    td{
+      font-size: 22px;
+      line-height: 20px; /* 100% */
+    }
+
+    th {
+      line-height: 30px;
+
+    }
+  }
+}
+@media screen  and (max-width: 1366px){
+  .schedule-table-container{
+    padding-top: 30px;
+    padding-left: 122px;
+    padding-right: 50px;
+
+    .schedule-table {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 30px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px 1px;
+      width: 210px;
+
+    }
+    td{
+      font-size: 22px;
+      line-height: 20px; /* 100% */
+    }
+
+    th {
+      line-height: 30px;
+
+    }
+  }
+}
+@media screen  and (max-width: 1280px){
+  .schedule-table-container{
+    padding-top: 30px;
+    padding-left: 115px;
+    padding-right: 40px;
+
+    .schedule-table {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 30px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px 1px;
+      width: 210px;
+
+    }
+    td{
+      font-size: 22px;
+      line-height: 20px; /* 100% */
+    }
+
+    th {
+      line-height: 28px;
+
+    }
+  }
+}
+@media screen  and (max-width: 1024px){
+  .schedule-table-container{
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 50px;
+
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px 1px;
+      width: 210px;
+
+    }
+    td{
+      font-size: 20px;
+      line-height: 20px; /* 100% */
+    }
+
+    th {
+      line-height: 25px;
+
+    }
+  }
+}

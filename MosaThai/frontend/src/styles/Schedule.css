@@ -12,7 +12,7 @@
   font-size: 16px;
 }
 .schedule-table-container th, .schedule-table-container td {
-  padding: 10px 24px;
+  padding: 10px 1px;
   text-align: center;
   border: 1px solid var(--White);
   height: 5%;
@@ -37,6 +37,106 @@
   font-weight: 400;
   line-height: 36px;
   font-variant: all-small-caps;
+}
+
+@media screen and (max-width: 1440px) {
+  .schedule-table-container {
+    padding-top: 30px;
+    padding-left: 132px;
+    padding-right: 100px;
+  }
+  .schedule-table-container .schedule-table {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 30px;
+  }
+  .schedule-table-container table {
+    width: 100%;
+  }
+  .schedule-table-container th, .schedule-table-container td {
+    padding: 10px 1px;
+    width: 210px;
+  }
+  .schedule-table-container td {
+    font-size: 22px;
+    line-height: 20px; /* 100% */
+  }
+  .schedule-table-container th {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .schedule-table-container {
+    padding-top: 30px;
+    padding-left: 122px;
+    padding-right: 50px;
+  }
+  .schedule-table-container .schedule-table {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 30px;
+  }
+  .schedule-table-container table {
+    width: 100%;
+  }
+  .schedule-table-container th, .schedule-table-container td {
+    padding: 10px 1px;
+    width: 210px;
+  }
+  .schedule-table-container td {
+    font-size: 22px;
+    line-height: 20px; /* 100% */
+  }
+  .schedule-table-container th {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .schedule-table-container {
+    padding-top: 30px;
+    padding-left: 115px;
+    padding-right: 40px;
+  }
+  .schedule-table-container .schedule-table {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 30px;
+  }
+  .schedule-table-container table {
+    width: 100%;
+  }
+  .schedule-table-container th, .schedule-table-container td {
+    padding: 10px 1px;
+    width: 210px;
+  }
+  .schedule-table-container td {
+    font-size: 22px;
+    line-height: 20px; /* 100% */
+  }
+  .schedule-table-container th {
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .schedule-table-container {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  .schedule-table-container table {
+    width: 100%;
+  }
+  .schedule-table-container th, .schedule-table-container td {
+    padding: 10px 1px;
+    width: 210px;
+  }
+  .schedule-table-container td {
+    font-size: 20px;
+    line-height: 20px; /* 100% */
+  }
+  .schedule-table-container th {
+    line-height: 25px;
+  }
 }
 
 /*# sourceMappingURL=Schedule.css.map */

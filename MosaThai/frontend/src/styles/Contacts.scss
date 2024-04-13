@@ -3,52 +3,22 @@
   height: auto;
   position: relative;
   padding-bottom: 20px;
-  //@media screen and (max-width: 768px) {
-  //  width: 768px;
-  //
-  //}
-  //@media screen and (max-width: 1280px) {
-  //  width: 1300px;
-  //  overflow: hidden;
-  //
-  //}
-
   .contacts-row {
+    width: 100%;
     position: absolute;
     top: 1%;
-    //@media screen and (max-width: 768px) {
-    //  display: none;
-    //}
   }
 
   .contacts-picture {
     object-fit: cover;
     width: 100%;
     height: auto;
-  //  @media screen and (max-width: 768px) {
-  //    width: 768px;
-  //    height: 1800px;
-  //  }
-  //  @media screen and (max-width: 1280px) {
-  //    height: 1900px;
-  //}
   }
 
   .contacts-wrapper {
     padding-left: 172px;
     position: absolute;
     top: 20%;
-  //  @media screen and (max-width: 1440px) {
-  //    padding-left: 130px;
-  //  }
-  //  @media screen and (max-width: 768px) {
-  //    padding-left: 50px;
-  //    top: 12%;
-  //  }
-  //  @media screen and (max-width: 1280px) {
-  //  padding-left: 50px;
-  //
-  //}
 
     .contacts-form {
       display: block;
@@ -213,57 +183,136 @@
     //  }
     //}
   }
+}
+@media screen  and (max-width: 1680px){
+  .contacts-container {
+    width: 1680px;
+    overflow: hidden;
+    height: auto;
+  .contacts-wrapper {
+    padding-left: 172px;
+    top: 20%;
 
-  @media screen and (max-width: 1440px) {
+    .contacts-form {
+      width: 700px;
+    }
+    .contacts-data-container {
+      .contacts-map {
+        flex: 2;
+        .contacts-map-pic {
+          width: 800px;
+        }
+      }
+
+    }
   }
 }
 
-//@media screen and (min-width: 769px) and (max-width: 1024px) {
-//  .contacts-container {
-//    max-width: 1024px;
-//    padding-bottom: 20px;
-//
-//    .contacts-picture {
-//      height: 1900px;
-//    }
-//
-//    .contacts-wrapper {
-//      padding-left: 50px;
-//      top: 12%;
-//
-//      .contacts-data-container {
-//        padding-top: 10px;
-//        display: block;
-//        height: 900px;
-//        width: 900px;
-//
-//        .contacts-map {
-//          flex: 2;
-//
-//          .contacts-map-pic {
-//            padding-bottom: 20px;
-//            width: 1000px;
-//            height: 600px;
-//          }
-//        }
-//
-//        .contacts-data {
-//          text-align: right;
-//          flex: 1;
-//
-//          .contacts-title {
-//            display: none;
-//            //font-size: 80px;
-//          }
-//
-//          .contacts-p {
-//            padding: 10px 0px;
-//            font-size: 20px;
-//          }
-//        }
-//      }
-//    }
-//
-//
-//  }
-//}
+}
+@media screen  and (max-width: 1440px){
+    .contacts-container {
+      width: 1440px;
+    .contacts-wrapper {
+      padding-left: 132px;
+      top: 17%;
+    }
+  }
+}
+@media screen  and (max-width: 1366px){
+  .contacts-container {
+    width: 1366px;
+  .contacts-wrapper {
+    padding-left: 122px;
+    top: 15%;
+
+    .contacts-form {
+      width: 700px;
+    }
+    .contacts-data-container {
+      .contacts-map {
+        flex: 2;
+        .contacts-map-pic {
+          width: 750px;
+        }
+      }
+    }
+  }
+}
+
+}
+@media screen  and (max-width: 1280px){
+  .contacts-container {
+    width: 1280px;
+    height: auto;
+    .contacts-wrapper {
+      padding-left: 115px;
+      top: 15%;
+
+      .contacts-form {
+        width: 700px;
+      }
+      .contacts-data-container {
+          padding-top: 5px;
+        .contacts-map {
+          flex: 2;
+          .contacts-map-pic {
+            width: 650px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen  and (max-width: 1024px){
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contacts-container {
+    max-width: 1024px;
+    padding-bottom: 20px;
+
+    .contacts-picture {
+      height: 1900px;
+    }
+
+    .contacts-wrapper {
+      padding-left: 50px;
+      top: 12%;
+
+      .contacts-data-container {
+        padding-top: 10px;
+        display: block;
+        height: 900px;
+        width: 900px;
+
+        .contacts-map {
+          flex: 2;
+
+          .contacts-map-pic {
+            padding-bottom: 20px;
+            width: 1000px;
+            height: 600px;
+          }
+        }
+
+        .contacts-data {
+          text-align: right;
+          flex: 1;
+
+          .contacts-title {
+            display: none;
+            //font-size: 80px;
+          }
+
+          .contacts-p {
+            padding: 10px 0px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+
+  }
+}

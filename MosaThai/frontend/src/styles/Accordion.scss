@@ -2,31 +2,17 @@
   width: 100%;
   height: auto;
   position: relative;
-  //@media screen and (max-width: 768px) {
-  //  width: 768px;
-  //}
 
   .section4-title{
     padding-top: 2%;
     padding-left: 172px;
     position: absolute;
     width: 500px;
-   // @media screen and (max-width: 1440px) {
-   //  padding-left: 130px;
-   //}
-   // @media screen and (max-width: 768px) {
-   //   padding-left: 50px;
-   //   padding-top: 9%;
-   // }
   }
   .section4-picture{
     object-fit: cover;
     width: 100%;
     height: 100%;
-
-    //@media screen and (max-width: 768px) {
-    //   height: 1100px;
-    //}
   }
 
   .section4-accordion-block{
@@ -36,33 +22,14 @@
     position: absolute;
     top: 19%;
     left: 172px;
-   // @media screen and (max-width: 1440px) {
-   //  left: 130px;
-   //}
-   //  @media screen and (max-width: 768px) {
-   //    left: 50px;
-   //  }
-   //@media screen and (max-width: 1280px) {
-   //  left: 55px;
-   //}
 
   }
   .section4-accordion-picture{
     margin-top: 26px;
-  //  @media screen and (max-width: 768px) {
-  //    .acc-pic{
-  //      //width: 300px;
-  //      display: none;
-  //    }
-  //}
   }
 
   .section4-accordion{
     height: auto;
-    //@media screen and (max-width: 768px) {
-    //  width: 700px;
-    //  margin-left: -90px;
-    //}
     .section4-accordeon-item{
 
     }
@@ -122,177 +89,161 @@
   font-size: 150px;
 
 }
-//
-//@media screen and (max-width: 1536px) {
-//  .section4-accordion-block {
-//    margin-top: 40px;
-//    width: 100%;
-//    height: auto;
-//
-//  }
-//
-//  .accordion-title {
-//    width: 600px; /* Заполнить всю ширину контейнера */
-//    max-width: 600px; /* Макс ширина для заголовков */
-//    margin-bottom: 15px;
-//    font-size: 3em;
-//  }
-//  .accordion-title::before {
-//    width: 600px;
-//    bottom: -17px;
-//  }
-//  .accordion-content {
-//    width: 100%;
-//    max-width: 600px; /* Макс ширина для контента */
-//  }
-//  .title {
-//    font-size: 8rem;
-//    line-height: 1.2;/* Доделать потом line-height!!!!!*/
-//  }
-//}
-//
-// @media screen and (max-width: 768px) {
-//   .section4-container{
-//     .section4-accordion-block{
-//       width: 600px;
-//       padding-left: 20px;
-//     }
-//   }
-//   .accordion-title {
-//      width: 700px;
-//      max-width: 90%;
-//      margin-bottom: 15px;
-//      font-size: 2.2em;
-//    }
-//    .accordion-title::before {
-//      width: 100%;
-//      bottom: -17px;
-//    }
-//    .accordion-content {
-//      width: 700px;
-//      max-width: 90%;
-//    }
-//    .title {
-//      font-size: 5.5rem;
-//      line-height: 1.2;
-//    }
-//
-//  .accordion-content{
-//    padding: 22px 34px 22px 30px;
-//    font-size: 15px;
-//    line-height: 22px;
-//  }
-//
-//}
-//
-//@media screen and (min-width: 769px) and (max-width: 1024px){
-//  .section4-container{
-//    height: auto;
-//    .section4-title{
-//      padding-left: 50px;
-//    }
-//    .section4-accordion-block{
-//      width: 820px;
-//    }
-//    .section4-picture{
-//      max-width: 1024px;
-//      height: 1100px;
-//    }
-//    .section4-accordion-picture{
-//      display: none;
-//    }
-//    .section4-accordion{
-//      margin-left: 0px;
-//    }
-//  }
-//  .accordion-title::before {
-//    width: 900px;
-//    bottom: -17px;
-//  }
-//  .accordion-content {
-//    max-width: 100%; /* Макс ширина для контента */
-//  }
-//}
-//
-//@media screen and (max-width: 1280px) {
-//  .section4-container{
-//    height: auto;
-//    .section4-title{
-//      padding-left: 50px;
-//    }
-//    .section4-accordion-block{
-//      width: 820px;
-//    }
-//  }
-//}
-//
-//@media screen and (min-width: 320px) and (max-width: 500px){
-//  .section4-container{
-//    max-width: 100%;
-//    height:1000px;
-//    .section4-title{
-//      padding-left: 20px;
-//      height: 20%;
-//    }
-//    .section4-accordion-block{
-//      width: 80%;
-//      gap: 0px;
-//      top: 10%;
-//      left: 0px;
-//    }
-//    .section4-picture{
-//      display: none;
-//    }
-//    .section4-accordion-picture{
-//      display: none;
-//    }
-//    .section4-accordion{
-//      margin-left: 0px;
-//    }
-//  }
-//  .accordion-title::before {
-//    min-width: 300px;
-//    bottom: -17px;
-//  }
-//  .accordion-content {
-//    max-width: 60%;
-//  }
-//
-//
-//  .accordion-title{
-//    width: 100%;
-//    margin-bottom: 15px;
-//    font-size: 6vw;
-//    font-style: normal;
-//    font-weight: 300;
-//    line-height: 68px;
-//    position: relative;
-//    padding-top: 10px;
-//  }
-//
-//  .accordion-title::before {
-//    content: "";
-//    position: absolute;
-//    bottom: -17px; /*  отступ подчеркивания */
-//    left: 0;
-//    max-width: 100%;
-//
-//  }
-//
-//  .accordion-content{
-//    max-width: 100%;
-//    height: auto;
-//    padding: 12px 24px 12px 20px;
-//    font-size: 2.6vw;
-//    line-height: 20px;
-//  }
-//  .title {
-//    font-family: var(--font-family);
-//    font-style: normal;
-//    font-weight: 300;
-//  }
-//  .title-large {
-//    font-size: 70px;
-//
-//  }
-//}
+
+@media screen  and (max-width: 1680px){
+  .section4-container{
+    width: 1680px;
+    .section4-accordion-block{
+      width: 800px;
+      gap: 7%;
+      top: 25%;
+    }
+  }
+}
+
+@media screen  and (max-width: 1440px){
+  .section4-container{
+    width: 1440px;
+    .section4-title{
+      padding-top: 2%;
+      padding-left: 132px;
+      position: absolute;
+      width: 500px;
+    }
+
+    .section4-accordion-block{
+      width: 700px;
+      gap: 6%;
+      top: 25%;
+      left: 132px;
+    }
+  }
+  .accordion-title::before {
+    width: 700px;
+  }
+
+  .accordion-content{
+    width: 700px;
+  }
+}
+@media screen  and (max-width: 1366px){
+  .section4-container{
+    width: 1366px;
+    .section4-title{
+      padding-left: 122px;
+    }
+
+    .section4-accordion-block{
+      width: 660px;
+      gap: 5%;
+      top: 25%;
+      left: 122px;
+    }
+  }
+
+  .accordion-title{
+    font-size: 4vw;
+    line-height: 60px;
+  }
+
+  .accordion-title::before {
+    width: 660px;
+  }
+
+  .accordion-content{
+    width: 660px;
+  }
+
+  .title-large {
+    font-size: 130px;
+
+  }
+
+}
+@media screen  and (max-width: 1280px){
+  .section4-container{
+  width: 1280px;
+
+  .section4-title{
+    padding-left: 115px;
+  }
+
+  .section4-accordion-block{
+    width: 600px;
+    gap: 4%;
+    top: 25%;
+    left: 115px;
+
+  }
+  .section4-accordion-picture{
+    margin-top: 26px;
+  }
+}
+
+.accordion-title{
+  width: 500px;
+  font-size: 3.8vw;
+  line-height: 60px;
+}
+
+.accordion-title::before {
+  width: 600px;
+}
+
+.accordion-content{
+  width: 600px;
+  padding: 25px 34px 25px 34px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.title-large {
+  font-size: 150px;
+}
+
+}
+@media screen  and (max-width: 1024px){
+  .section4-container{
+    width: 1024px;
+
+    margin-bottom: 100px;
+
+    .section4-title{
+      padding-left: 100px;
+      width: 700px;
+    }
+    .section4-accordion-block{
+      width: 800px;
+      top: 16%;
+      left: 100px;
+
+    }
+    .section4-accordion-picture{
+      display: none;
+    }
+  }
+
+  .accordion-title{
+    margin-bottom: 25px;
+    font-size: 6vw;
+    line-height: 60px;
+  }
+
+  .accordion-title::before {
+    width: 850px;
+  }
+
+  .accordion-content{
+    width: 850px;
+    padding: 20px 34px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .title-large {
+    font-size: 11.6vw;
+
+}
+
+}
+
+

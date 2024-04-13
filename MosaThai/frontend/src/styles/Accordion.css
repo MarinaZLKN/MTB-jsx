@@ -85,4 +85,134 @@
   font-size: 150px;
 }
 
+@media screen and (max-width: 1680px) {
+  .section4-container {
+    width: 1680px;
+  }
+  .section4-container .section4-accordion-block {
+    width: 800px;
+    gap: 7%;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .section4-container {
+    width: 1440px;
+  }
+  .section4-container .section4-title {
+    padding-top: 2%;
+    padding-left: 132px;
+    position: absolute;
+    width: 500px;
+  }
+  .section4-container .section4-accordion-block {
+    width: 700px;
+    gap: 6%;
+    top: 25%;
+    left: 132px;
+  }
+  .accordion-title::before {
+    width: 700px;
+  }
+  .accordion-content {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .section4-container {
+    width: 1366px;
+  }
+  .section4-container .section4-title {
+    padding-left: 122px;
+  }
+  .section4-container .section4-accordion-block {
+    width: 660px;
+    gap: 5%;
+    top: 25%;
+    left: 122px;
+  }
+  .accordion-title {
+    font-size: 4vw;
+    line-height: 60px;
+  }
+  .accordion-title::before {
+    width: 660px;
+  }
+  .accordion-content {
+    width: 660px;
+  }
+  .title-large {
+    font-size: 130px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section4-container {
+    width: 1280px;
+  }
+  .section4-container .section4-title {
+    padding-left: 115px;
+  }
+  .section4-container .section4-accordion-block {
+    width: 600px;
+    gap: 4%;
+    top: 25%;
+    left: 115px;
+  }
+  .section4-container .section4-accordion-picture {
+    margin-top: 26px;
+  }
+  .accordion-title {
+    width: 500px;
+    font-size: 3.8vw;
+    line-height: 60px;
+  }
+  .accordion-title::before {
+    width: 600px;
+  }
+  .accordion-content {
+    width: 600px;
+    padding: 25px 34px 25px 34px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .title-large {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section4-container {
+    width: 1024px;
+    margin-bottom: 100px;
+  }
+  .section4-container .section4-title {
+    padding-left: 100px;
+    width: 700px;
+  }
+  .section4-container .section4-accordion-block {
+    width: 800px;
+    top: 16%;
+    left: 100px;
+  }
+  .section4-container .section4-accordion-picture {
+    display: none;
+  }
+  .accordion-title {
+    margin-bottom: 25px;
+    font-size: 6vw;
+    line-height: 60px;
+  }
+  .accordion-title::before {
+    width: 850px;
+  }
+  .accordion-content {
+    width: 850px;
+    padding: 20px 34px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .title-large {
+    font-size: 11.6vw;
+  }
+}
+
 /*# sourceMappingURL=Accordion.css.map */
