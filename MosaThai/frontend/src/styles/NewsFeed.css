@@ -40,6 +40,99 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 1440px) {
+  .section8-container {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 132px;
+    padding-right: 112px;
+  }
+  .section8-container .news-container {
+    margin-top: 40px;
+    display: flex;
+    border: 1px solid gray;
+  }
+  .section8-container .news-container .news-image {
+    width: 40%;
+    height: auto;
+  }
+  .section8-container .news-container .news-wrapper {
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+  .section8-container .news-container .news-wrapper .btn {
+    margin-top: 12px;
+  }
+  .section8-container .news-container .news-wrapper .news-date {
+    color: var(--White);
+    font-size: 20px;
+  }
+  .section8-container .news-container .news-wrapper .news-title {
+    color: var(--White);
+    font-size: 40px;
+  }
+  .section8-container .news-container .news-wrapper .news-text {
+    font-family: var(--font-text);
+    color: var(--White);
+    line-height: 20px;
+  }
+  .section8-container .news-container .news-wrapper .news-button {
+    width: 23%;
+    height: 40px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .section8-container {
+    width: 1366px;
+    padding-top: 100px;
+    padding-left: 122px;
+    padding-right: 112px;
+  }
+  .section8-container .news-wrapper {
+    padding: 35px 15px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section8-container {
+    width: 1280px;
+    padding-top: 100px;
+    padding-left: 115px;
+    padding-right: 100px;
+  }
+  .section8-container .news-wrapper {
+    padding: 35px 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section8-container {
+    width: 1024px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 50px;
+  }
+  .section8-container .news-container .news-wrapper {
+    gap: 5%;
+  }
+  .section8-container .news-container .news-wrapper .news-date {
+    font-size: 22px;
+  }
+  .section8-container .news-container .news-wrapper .news-title {
+    font-size: 3vw;
+  }
+  .section8-container .news-container .news-wrapper .news-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section8-container .news-container .news-wrapper .news-button {
+    width: 24%;
+    height: 40px;
+    font-size: 22px;
+  }
+}
 .newsfeed-container {
   width: 100%;
   height: auto;
