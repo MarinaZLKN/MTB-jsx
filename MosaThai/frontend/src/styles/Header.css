@@ -210,6 +210,30 @@
     font-size: 40px; /* Устанавливаем размер шрифта */
     cursor: pointer;
   }
+  .dropdown-menu {
+    top: 0;
+    right: 0;
+    width: 400px; /* Ширина меню */
+    overflow: hidden;
+    padding: 10px;
+  }
+  .dropdown-menu ul li {
+    padding: 20px 0;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .dropdown-pic {
+    position: relative;
+    top: 2%;
+    left: 83%;
+  }
+  .dropdown-pic .dropdown-close {
+    color: var(--yellow-);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */

@@ -253,6 +253,7 @@
     display: block;
     width: 768px;
     height: auto;
+    overflow: hidden;
   }
   .news-container-open .news-container-content {
     display: block;
@@ -274,7 +275,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .news-container-open {
-    width: 1020px;
+    width: 950px;
     height: auto;
     margin-top: 140px;
     display: block;
