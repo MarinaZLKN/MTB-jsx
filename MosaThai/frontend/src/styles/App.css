@@ -87,7 +87,11 @@ button:hover {
         width: 1024px;
     }
 }
-@media screen  and (max-width: 768px){}
+@media screen  and (max-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
 /*@media screen and (max-width: 768px) {*/
 /*     .container{*/
 /*         width: 768px;*/
@@ -100,27 +104,3 @@ button:hover {
 /*     }*/
 /*}*/
 
-/*@media screen  and (max-width: 1280px){*/
-/*    .container{*/
-/*        width: 1300px;*/
-
-/*    }*/
-/*}*/
-/*@media screen and (max-width: 1024px){*/
-/*    .container {*/
-/*        width: 1024px;*/
-/*        height: auto;*/
-/*    }*/
-/*    button{*/
-/*         width: 120px;*/
-/*         height: 40px;*/
-/*         font-size: 20px;*/
-/*     }*/
-/*}*/
-
-/*@media screen  and (min-width: 320px) and (max-width: 720px){*/
-/*    .container{*/
-/*        width: 100%;*/
-
-/*    }*/
-/*}*/
