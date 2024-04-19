@@ -172,3 +172,32 @@
     }
   }
 }
+
+//TODO make it look good
+@media screen  and (max-width: 768px){
+  .schedule-table-container{
+    padding-top: 30px;
+    padding-left: 75px;
+    padding-right: 50px;
+
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px 1px;
+      width: 210px;
+
+    }
+    td{
+      font-size: 20px;
+      line-height: 20px; /* 100% */
+    }
+
+    th {
+      line-height: 25px;
+
+    }
+  }
+}

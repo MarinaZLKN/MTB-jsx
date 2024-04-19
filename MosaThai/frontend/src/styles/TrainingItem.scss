@@ -199,3 +199,35 @@
       }
   }
 }
+
+@media screen  and (max-width: 768px){
+  .prices-container{
+      width: 768px;
+      height: auto;
+      padding-bottom: 80px;
+      .training-item_price{
+        width: 85%;
+        height: 260px;
+      }
+      .prices-title{
+        padding-left: 75px;
+
+      }
+      .prices-prices{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        padding-left:75px;
+      }
+      .prices-name{
+        font-size: 3vw;
+        line-height: 20px;
+        padding-top: 40px;
+        //padding-bottom: 35px;
+      }
+      .prices-int{
+        font-size: 4vw;
+        line-height: 40px;
+      }
+  }
+}

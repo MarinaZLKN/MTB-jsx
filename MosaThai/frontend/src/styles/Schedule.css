@@ -138,5 +138,26 @@
     line-height: 25px;
   }
 }
+@media screen and (max-width: 768px) {
+  .schedule-table-container {
+    padding-top: 30px;
+    padding-left: 75px;
+    padding-right: 50px;
+  }
+  .schedule-table-container table {
+    width: 100%;
+  }
+  .schedule-table-container th, .schedule-table-container td {
+    padding: 10px 1px;
+    width: 210px;
+  }
+  .schedule-table-container td {
+    font-size: 20px;
+    line-height: 20px; /* 100% */
+  }
+  .schedule-table-container th {
+    line-height: 25px;
+  }
+}
 
 /*# sourceMappingURL=Schedule.css.map */

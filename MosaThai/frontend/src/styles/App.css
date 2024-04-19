@@ -93,6 +93,12 @@ button:hover {
 @media screen  and (max-width: 768px){
     .container{
         width: 768px;
+        overflow: hidden;
+    }
+    button{
+        width: 190px;
+        height: 55px;
+        font-size: 30px;
     }
 }
 /*@media screen and (max-width: 768px) {*/
