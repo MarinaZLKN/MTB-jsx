@@ -15,6 +15,9 @@ from .models import (
 class FeedbackAdmin(admin.ModelAdmin):
     list_display = ('name', 'date_created', 'email')
 
+class TrainingRegistrationAdmin(admin.ModelAdmin):
+    list_display = ('name', 'date_created')
+
 
 admin.site.register(Post)
 admin.site.register(Trainer)

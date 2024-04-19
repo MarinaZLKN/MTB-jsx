@@ -11,7 +11,7 @@
     display: block;
     position: absolute;
     left: 31%;
-    bottom: 50px;
+    bottom: 40px;
 
   }
   .footer-title{
@@ -20,20 +20,20 @@
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
-    line-height: 64px; /* 100% */
+    line-height: 56px; /* 100% */
   }
   .footer-logo-container{
     height: 210px;
     .footer-logo{
-        margin-left: 40%;
-        width: 180px;
-      height: 210px;
+        margin-left: 33%;
+        width: 250px;
+      height: 250px;
       }
   }
   .footer-social{
     display: flex;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 44%;
     .footer-social_logo{
       cursor: pointer;
@@ -88,7 +88,7 @@
     }
     .footer-content{
       left: 18%;
-      bottom: 50px;
+      bottom: 40px;
 
     }
     .footer-title{
@@ -98,9 +98,13 @@
     .footer-logo-container{
       height: 190px;
       .footer-logo{
-          width: 170px;
-          height: 190px;
+          width: 210px;
+          height: 210px;
       }
+    }
+    .footer-social{
+      padding-top: 20px;
+      padding-left: 42%;
     }
   }
 }

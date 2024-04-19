@@ -13,6 +13,9 @@ body {
     --font-family:'Bebas Neue', sans-serif;
     --font-text:'Montserrat', sans-serif;
     --yellow-: #FFD11B;
+    --yellow-new: #C1912D;
+    --green: #364630;
+    --red: #4F1D1C;
     --Black: #0D0C0A;
     --White: #E5E5D6;
     --font-size-big: 200px;
@@ -29,7 +32,7 @@ button{
     height: 64px;
     background: transparent;
     border-radius: 100px;
-    border: 1px solid  #FFD11B;
+    border: 1px solid  var(--yellow-);
     color:  var(--yellow-);
     text-align: center;
     font-variant-numeric: lining-nums proportional-nums;
