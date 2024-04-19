@@ -178,5 +178,28 @@
     font-size: 2.3vw;
   }
 }
+@media screen and (max-width: 768px) {
+  .wmt-container {
+    width: 768px;
+    height: 820px;
+    margin-bottom: 60px;
+    padding-left: 75px;
+  }
+  .wmt-container .wmt-picture-block {
+    display: none;
+  }
+  .wmt-container .wmt-info-block {
+    width: 95%;
+    height: 790px;
+    padding: 10px 10px 50px 0px;
+    gap: 58px;
+  }
+  .wmt-container .wmt-info-block .wmy-title {
+    font-size: 10vw;
+  }
+  .wmt-container .wmt-info-block .wmt-text {
+    font-size: 2.3vw;
+  }
+}
 
 /*# sourceMappingURL=WhyMuayThai.css.map */
