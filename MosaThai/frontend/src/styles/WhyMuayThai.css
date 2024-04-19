@@ -7,15 +7,15 @@
   padding-left: 172px;
 }
 .wmt-container .wmt-picture-block .wmt-picture {
-  width: 768px;
-  height: 950px;
+  width: 700px;
+  height: 850px;
   overflow: hidden;
 }
 .wmt-container .wmt-info-block {
   width: 90%;
   height: auto;
   display: flex;
-  padding: 10px 96px 80px 100px;
+  padding: 10px 96px 80px 80px;
   flex-direction: column;
   align-items: flex-start;
   gap: 58px;
@@ -63,7 +63,7 @@
 
 .custom-next-button:hover,
 .custom-prev-button:hover {
-  background-color: #FFD11B;
+  background-color: var(--yellow-);
 }
 
 .custom-prev-button img, .custom-next-button img {
@@ -86,7 +86,10 @@
     overflow: hidden;
   }
   .wmt-container .wmt-info-block {
-    height: auto;
+    height: 800px;
+  }
+  .wmt-container .wmt-info-block .wmt-text {
+    font-size: 1.3vw;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -96,11 +99,11 @@
     padding-left: 132px;
   }
   .wmt-container .wmt-picture-block .wmt-picture {
-    width: 600px;
+    width: 500px;
   }
   .wmt-container .wmt-info-block {
     width: 90%;
-    height: auto;
+    height: 750px;
     padding: 10px 76px 80px 70px;
     gap: 38px;
   }
@@ -108,7 +111,7 @@
     font-size: 6vw;
   }
   .wmt-container .wmt-info-block .wmt-text {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -117,11 +120,11 @@
     padding-left: 122px;
   }
   .wmt-container .wmt-picture-block .wmt-picture {
-    width: 550px;
+    width: 500px;
   }
   .wmt-container .wmt-info-block {
     width: 100%;
-    height: auto;
+    height: 720px;
     padding: 10px 36px 80px 50px;
     gap: 30px;
   }
@@ -129,7 +132,7 @@
     font-size: 6vw;
   }
   .wmt-container .wmt-info-block .wmt-text {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -138,7 +141,7 @@
     padding-left: 115px;
   }
   .wmt-container .wmt-picture-block .wmt-picture {
-    width: 500px;
+    width: 450px;
   }
   .wmt-container .wmt-info-block {
     width: 100%;
@@ -164,7 +167,7 @@
   }
   .wmt-container .wmt-info-block {
     width: 90%;
-    height: auto;
+    height: 750px;
     padding: 10px 10px 80px 0px;
     gap: 58px;
   }

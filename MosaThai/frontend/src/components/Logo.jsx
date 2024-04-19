@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.scss';
-import logo from '@images/logoNew.png';
+import logo from '@images/logo_hingeraud .png';
 
 const Logo = ({ alt, className = 'logo-main' }) => {
   return (
