@@ -130,5 +130,10 @@
     width: 350px;
   }
 }
+@media screen and (max-width: 768px) {
+  .trainer-list_container {
+    padding-left: 75px;
+  }
+}
 
 /*# sourceMappingURL=Trainer.css.map */
