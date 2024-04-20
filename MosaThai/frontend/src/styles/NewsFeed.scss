@@ -164,6 +164,20 @@
   }
 }
 
+@media screen  and (max-width: 768px){
+  .section8-container {
+    padding-left: 75px;
+    .news-wrapper {
+      .btn {
+
+      }
+
+      .news-text {
+        display: none;
+      }
+    }
+  }
+}
 
 .newsfeed-container {
   width: 100%;

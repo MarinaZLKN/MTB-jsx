@@ -103,5 +103,13 @@
     padding-left: 42%;
   }
 }
+@media screen and (max-width: 768px) {
+  .footer-container {
+    width: 768px;
+  }
+  .footer-container .footer-logo-container .footer-logo {
+    margin-left: 30%;
+  }
+}
 
 /*# sourceMappingURL=Footer.css.map */
