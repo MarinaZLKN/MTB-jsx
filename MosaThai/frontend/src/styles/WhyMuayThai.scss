@@ -233,3 +233,37 @@
 
   }
 }
+@media screen  and (max-width: 800px){
+  .wmt-container{
+    width: 768px;
+    height: 820px;
+    margin-bottom: 60px;
+    padding-left:  75px;}
+}
+@media screen  and (max-width: 640px){
+    .wmt-container{
+    width: 640px;
+    height: 820px;
+    margin-bottom: 60px;
+    padding-left:  50px;
+
+    .wmt-picture-block{
+      display: none;
+    }
+    .wmt-info-block{
+      width: 95%;
+      height: 790px;
+      padding: 10px 10px 50px 0px;
+      gap: 38px;
+
+      .wmy-title{
+        font-size: 10vw;
+      }
+      .wmt-text{
+        font-size: 3.1vw;
+        line-height: 30px;
+      }
+    }
+
+  }
+}

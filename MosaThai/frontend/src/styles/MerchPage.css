@@ -198,5 +198,53 @@
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 640px) {
+  .merch-container {
+    width: 640px;
+  }
+  .merch-container .merch-content {
+    padding-left: 6%;
+  }
+  .merch-container .merchandise-list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .merch-container .merchandise-list .merch-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-slider {
+    padding: 10px 30px;
+    width: 550px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info {
+    margin-top: 20px;
+    display: block;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-title {
+    font-size: 8vw;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-desc {
+    font-size: 3.5vw;
+    line-height: 26px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-price {
+    font-size: 7vw;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-availibe {
+    font-size: 24px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-size {
+    font-size: 24px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info h3,
+  .merch-container .merchandise-list .merch-item .merch-item-info p {
+    margin-bottom: 15px;
+  }
+}
 
 /*# sourceMappingURL=MerchPage.css.map */

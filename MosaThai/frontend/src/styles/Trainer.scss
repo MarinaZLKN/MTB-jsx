@@ -140,8 +140,39 @@
   }
 
 }
+@media screen  and (max-width: 800px){
+  .trainer-list_container{
+    padding-left: 75px;
+  }
+}
 @media screen  and (max-width: 768px){
   .trainer-list_container{
     padding-left: 75px;
+  }
+}
+@media screen  and (max-width: 640px){
+  .trainer-list_container{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    .trainers{
+      padding-top: 10px;
+      //gap: 230px;
+    }
+
+    .trainer{
+      position: relative;
+      width: 300px;
+      .trainer_img{
+        width: 540px;
+      }
+      .trainer_name{
+        bottom: 18%;
+        padding: 20px 30px;
+        font-size: 6vw;
+      }
+      .trainer_title{
+        font-size: 3vw;
+      }
+    }
   }
 }
