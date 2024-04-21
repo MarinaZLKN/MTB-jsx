@@ -138,6 +138,11 @@
     line-height: 25px;
   }
 }
+@media screen and (max-width: 800px) {
+  .schedule-table-container {
+    padding-left: 75px;
+  }
+}
 @media screen and (max-width: 768px) {
   .schedule-table-container {
     padding-top: 30px;
@@ -157,6 +162,11 @@
   }
   .schedule-table-container th {
     line-height: 25px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .schedule-table-container {
+    padding-left: 50px;
   }
 }
 

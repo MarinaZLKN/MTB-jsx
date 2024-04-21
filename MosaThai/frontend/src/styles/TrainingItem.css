@@ -176,6 +176,35 @@
     line-height: 40px;
   }
 }
+@media screen and (max-width: 800px) {
+  .prices-container {
+    width: 800px;
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .prices-container .training-item_price {
+    width: 85%;
+    height: 260px;
+  }
+  .prices-container .prices-title {
+    padding-left: 75px;
+  }
+  .prices-container .prices-prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-left: 75px;
+  }
+  .prices-container .prices-name {
+    font-size: 3vw;
+    line-height: 20px;
+    padding-top: 40px;
+  }
+  .prices-container .prices-int {
+    font-size: 4vw;
+    line-height: 40px;
+  }
+}
 @media screen and (max-width: 768px) {
   .prices-container {
     width: 768px;
@@ -202,6 +231,35 @@
   }
   .prices-container .prices-int {
     font-size: 4vw;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .prices-container {
+    width: 640px;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .prices-container .training-item_price {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+    padding-bottom: 65px;
+  }
+  .prices-container .prices-title {
+    padding-left: 50px;
+  }
+  .prices-container .prices-prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding-left: 50px;
+  }
+  .prices-container .prices-name {
+    font-size: 3.5vw;
+  }
+  .prices-container .prices-int {
+    font-size: 5vw;
     line-height: 40px;
   }
 }

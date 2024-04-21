@@ -117,9 +117,33 @@
     .footer-logo{
         margin-left: 30%;
       }
+    }
   }
+}
 
 
+@media screen and (max-width: 640px) {
+  .footer-container{
+    width: 640px;
+    .footer-content{
+      left: 3%;
+      bottom: 35px;
+
+    }
+    .footer-title{
+      font-size: 7.2vw;
+      line-height: 40px; /* 100% */
+    }
+    .footer-logo-container{
+      height: 210px;
+    .footer-logo{
+      margin-top: -25px;
+        margin-left: 27%;
+        width: 280px;
+        height: 280px;
+
+      }
+    }
   }
 }
 
