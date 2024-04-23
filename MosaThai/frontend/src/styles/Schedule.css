@@ -169,5 +169,10 @@
     padding-left: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  .schedule-table-container {
+    padding-left: 30px;
+  }
+}
 
 /*# sourceMappingURL=Schedule.css.map */

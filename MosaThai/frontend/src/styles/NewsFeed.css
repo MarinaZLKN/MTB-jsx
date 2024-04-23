@@ -192,6 +192,20 @@
     font-size: 24px;
   }
 }
+@media screen and (max-width: 480px) {
+  .section8-container {
+    padding-left: 30px;
+  }
+  .section8-container .news-container {
+    width: 420px;
+  }
+  .section8-container .news-container .news-wrapper .btn {
+    margin-top: 12px;
+  }
+  .section8-container .news-container .news-wrapper .news-button {
+    width: 35%;
+  }
+}
 .newsfeed-container {
   width: 100%;
   height: auto;
@@ -404,11 +418,9 @@
     gap: 10%;
   }
   .newsfeed-container .news-container-closed .news-wrapper1 .news-date1 {
-    color: var(--White);
     font-size: 5vw;
   }
   .newsfeed-container .news-container-closed .news-wrapper1 .news-title1 {
-    color: var(--White);
     font-size: 8vw;
     margin: 15px 0px;
   }
@@ -430,7 +442,8 @@
     width: 550px;
   }
   .news-container-open .news-container-content .news-slider .news-image {
-    height: 550px;
+    width: 500px;
+    height: 500px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -455,6 +468,47 @@
   }
   .news-container-open .news-title1 {
     color: var(--White);
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .news-container-open {
+    width: 100%;
+    max-height: 1400px;
+    margin-top: 80px;
+  }
+  .news-container-open .news-container-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+  }
+  .news-container-open .news-container-content .news-slider {
+    width: 100%;
+    max-height: 400px;
+  }
+  .news-container-open .news-container-content .news-slider .news-image {
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .news-container-open .news-container-content .news-wrapper1-open {
+    gap: 30px;
+  }
+  .news-container-open .news-container-content .news-wrapper1-open .news-date1 {
+    color: var(--White);
+    font-size: 4.1vw;
+  }
+  .news-container-open .news-container-content .news-wrapper1-open .news-content {
+    font-size: 4vw;
+    line-height: 24px;
+  }
+  .news-container-open .news-container-content .news-wrapper1-open .news-button2 {
+    height: 50px;
+    width: 150px;
+  }
+  .news-container-open .news-title1 {
     font-size: 50px;
   }
 }

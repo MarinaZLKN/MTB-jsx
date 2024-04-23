@@ -133,5 +133,27 @@
     height: 280px;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer-container {
+    width: 480px;
+  }
+  .footer-container .footer-content {
+    left: 3%;
+    bottom: 35px;
+  }
+  .footer-container .footer-title {
+    font-size: 7.5vw;
+    line-height: 40px; /* 100% */
+  }
+  .footer-container .footer-logo-container {
+    height: 210px;
+  }
+  .footer-container .footer-logo-container .footer-logo {
+    margin-top: -25px;
+    margin-left: 21%;
+    width: 280px;
+    height: 280px;
+  }
+}
 
 /*# sourceMappingURL=Footer.css.map */

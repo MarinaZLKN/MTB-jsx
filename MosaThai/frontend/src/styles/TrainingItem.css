@@ -263,5 +263,34 @@
     line-height: 40px;
   }
 }
+@media screen and (max-width: 480px) {
+  .prices-container {
+    width: 480px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .prices-container .training-item_price {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: 10px 0px;
+  }
+  .prices-container .prices-title {
+    padding-left: 30px;
+  }
+  .prices-container .prices-prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    padding-left: 30px;
+  }
+  .prices-container .prices-name {
+    font-size: 5.7vw;
+  }
+  .prices-container .prices-int {
+    font-size: 6.2vw;
+    line-height: 40px;
+  }
+}
 
 /*# sourceMappingURL=TrainingItem.css.map */
