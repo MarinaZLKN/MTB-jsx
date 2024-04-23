@@ -32,11 +32,6 @@
       color: var(--yellow-);
     }
 
-    //@media screen and (max-width: 1440px) {
-    //  .header-menu-main {
-    //    font-size: 42px;
-    //  }
-    //}
   }
   .burger-menu{
     display: block;
@@ -404,6 +399,39 @@
   .dropdown-menu ul li {
     padding: 25px 0;
     font-size: 6vw;
+  }
+  .dropdown-pic{
+    position: relative;
+    top: 2%;
+    left: 83%;
+    .dropdown-close{
+      color: var(--yellow-);
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+
+    }
+}
+}
+@media screen  and (max-width: 480px) {
+  .header-container {
+    padding-left: 10px;
+    .burger-menu{
+      font-size: 60px;
+      cursor: pointer;
+    }
+  }
+   .dropdown-menu {
+    top: 0;
+    right: 0;
+    width: 480px; /* Ширина меню */
+    overflow: hidden;
+    padding: 10px;
+
+}
+  .dropdown-menu ul li {
+    padding: 20px 0;
+    font-size: 8vw;
   }
   .dropdown-pic{
     position: relative;

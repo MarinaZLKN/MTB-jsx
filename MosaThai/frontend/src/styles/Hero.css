@@ -10,6 +10,11 @@
   z-index: 3;
   text-align: left;
 }
+.hero .image-title .hero-title {
+  width: 1000px;
+  height: auto;
+  margin-left: -100px;
+}
 .hero .main-page_pic-title {
   color: var(--White, #E5E5D6);
   font-family: var(--font-family);
@@ -106,6 +111,29 @@
 @media screen and (max-width: 640px) {
   .hero {
     width: 145%;
+    margin-left: -125px;
+  }
+  .hero .image-title {
+    position: absolute;
+    top: 18%;
+    left: 7%;
+    z-index: 3;
+    text-align: left;
+  }
+  .hero .main-page_pic-title {
+    font-size: 110px;
+  }
+  .hero .main-page_pic-subtitle {
+    margin-top: -25px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 155%;
+    margin-top: 100px;
     margin-left: -125px;
   }
   .hero .image-title {

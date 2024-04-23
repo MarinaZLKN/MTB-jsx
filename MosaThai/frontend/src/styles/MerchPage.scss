@@ -281,3 +281,31 @@
   }
   }
 }
+
+@media screen  and (max-width: 480px){
+  .merch-container{
+    width: 480px;
+    .merchandise-list{
+    .merch-item{
+      .merch-item-slider{
+        padding: 10px 30px;
+        width: 420px;
+      }
+      .merch-item-info{
+        gap:15px;
+         .merch-item-title{
+            font-size: 8.5vw;
+      }
+        .merch-item-desc{
+          font-size: 3.9vw;
+        }
+        .merch-item-price{
+          font-size: 7vw;
+        }
+
+      }
+
+    }
+  }
+  }
+}

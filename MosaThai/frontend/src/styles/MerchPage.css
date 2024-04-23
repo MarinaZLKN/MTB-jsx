@@ -246,5 +246,26 @@
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 480px) {
+  .merch-container {
+    width: 480px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-slider {
+    padding: 10px 30px;
+    width: 420px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info {
+    gap: 15px;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-title {
+    font-size: 8.5vw;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-desc {
+    font-size: 3.9vw;
+  }
+  .merch-container .merchandise-list .merch-item .merch-item-info .merch-item-price {
+    font-size: 7vw;
+  }
+}
 
 /*# sourceMappingURL=MerchPage.css.map */

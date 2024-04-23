@@ -104,16 +104,16 @@ const TrainReg = () => {
                 </div>
                 {!submitted ? (
                     <div className="train-reg-wrapper">
-                        <label className="train-reg-title">Start your <label id="train-reg-title-yellow">journey</label></label>
+                        <label className="train-reg-title">Alusta oma <label id="train-reg-title-yellow">seiklust</label></label>
                         <form className="train-reg-form" onSubmit={handleSubmit}>
                             <div>
-                                <label className="train-reg-lab">Name</label>
+                                <label className="train-reg-lab">Nimi</label>
                                 <input className="input-train-reg" type="text" name="name" value={formData.name}
                                        onChange={handleChange}
                                        required/>
                             </div>
                             <div>
-                                <label className="train-reg-lab">Level</label>
+                                <label className="train-reg-lab">Tase</label>
                                 <select className="input-train-reg" name="level" value={formData.level}
                                         onChange={handleChange}>
                                     <option value="advanced">Advanced</option>
@@ -123,7 +123,7 @@ const TrainReg = () => {
                                 </select>
                             </div>
                             <div>
-                                <label className={phoneError ? 'invalid_contacts-lab' : "train-reg-lab"}>Phone Number*</label>
+                                <label className={phoneError ? 'invalid_contacts-lab' : "train-reg-lab"}>Telefoni number*</label>
                                 <input className={phoneError ? 'invalid-input' : "input-train-reg"} type="tel" name="phone_number"
                                        value={formData.phone_number}
                                        onChange={handleChange} required/>
@@ -138,13 +138,13 @@ const TrainReg = () => {
                             {formData.level === 'child' && (
                                 <>
                                     <div>
-                                        <label className={ageError ? 'invalid_contacts-lab' : "train-reg-lab"}>Age</label>
+                                        <label className={ageError ? 'invalid_contacts-lab' : "train-reg-lab"}>Vanus</label>
                                         <input className={ageError ? 'invalid-input' : "input-train-reg"} type="number" name="age" value={formData.age}
                                                onChange={handleChange} required/>
                                         {ageError && <p className="error-message">{ageError}</p>}
                                     </div>
                                     <div>
-                                        <label className={parentNameError ? 'invalid_contacts-lab' : "train-reg-lab"}>Parent Name</label>
+                                        <label className={parentNameError ? 'invalid_contacts-lab' : "train-reg-lab"}>Lapse vanema nimi</label>
                                         <input className={parentNameError ? 'invalid-input' : "input-train-reg"} type="text" name="parent_name"
                                                value={formData.parent_name}
                                                onChange={handleChange} required/>

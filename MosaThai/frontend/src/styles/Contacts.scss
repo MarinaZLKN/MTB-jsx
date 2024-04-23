@@ -3,6 +3,7 @@
   height: auto;
   position: relative;
   padding-bottom: 20px;
+
   .contacts-row {
     width: 100%;
     position: absolute;
@@ -146,66 +147,78 @@
     }
   }
 }
-@media screen  and (max-width: 1680px){
+
+@media screen and (max-width: 1680px) {
   .contacts-container {
     width: 1680px;
     overflow: hidden;
     height: auto;
-  .contacts-wrapper {
-    padding-left: 172px;
-    top: 20%;
 
-    .contacts-form {
-      width: 700px;
-    }
-    .contacts-data-container {
-      .contacts-map {
-        flex: 2;
-        .contacts-map-pic {
-          width: 800px;
-        }
+    .contacts-wrapper {
+      padding-left: 172px;
+      top: 20%;
+
+      .contacts-form {
+        width: 700px;
       }
 
+      .contacts-data-container {
+        .contacts-map {
+          flex: 2;
+
+          .contacts-map-pic {
+            width: 800px;
+          }
+        }
+
+      }
     }
   }
-}
 
 }
-@media screen  and (max-width: 1440px){
-    .contacts-container {
-      width: 1440px;
+
+@media screen and (max-width: 1440px) {
+  .contacts-container {
+    width: 1440px;
+
     .contacts-wrapper {
       padding-left: 132px;
       top: 17%;
     }
   }
 }
-@media screen  and (max-width: 1366px){
+
+@media screen and (max-width: 1366px) {
   .contacts-container {
     width: 1366px;
-  .contacts-wrapper {
-    padding-left: 122px;
-    top: 15%;
 
-    .contacts-form {
-      width: 700px;
-    }
-    .contacts-data-container {
-      .contacts-map {
-        flex: 2;
-        .contacts-map-pic {
-          width: 750px;
+    .contacts-wrapper {
+      padding-left: 122px;
+      top: 15%;
+
+      .contacts-form {
+        width: 700px;
+      }
+
+      .contacts-data-container {
+        .contacts-map {
+          flex: 2;
+
+          .contacts-map-pic {
+            width: 750px;
+          }
         }
       }
     }
   }
-}
 
 }
-@media screen  and (max-width: 1280px){
+
+@media screen and (max-width: 1280px) {
   .contacts-container {
     width: 1280px;
     height: auto;
+
     .contacts-wrapper {
       padding-left: 115px;
       top: 15%;
@@ -213,10 +226,13 @@
       .contacts-form {
         width: 700px;
       }
+
       .contacts-data-container {
-          padding-top: 5px;
+        padding-top: 5px;
+
         .contacts-map {
           flex: 2;
+
           .contacts-map-pic {
             width: 650px;
           }
@@ -225,7 +241,8 @@
     }
   }
 }
-@media screen  and (max-width: 1024px){
+
+@media screen and (max-width: 1024px) {
 
 }
 
@@ -278,7 +295,8 @@
 
   }
 }
-@media screen  and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
   .contacts-container {
     width: 100%;
     height: 1650px;
@@ -391,7 +409,8 @@
     }
   }
 }
-@media screen  and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
   .contacts-container {
     width: 100%;
     height: 1650px;
@@ -505,7 +524,7 @@
   }
 }
 
-@media screen  and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .contacts-container {
     width: 100%;
     height: 1650px;
@@ -513,6 +532,7 @@
     .contacts-picture {
       display: none;
     }
+
     .contacts-wrapper {
       padding-left: 50px;
       top: 12%;
@@ -564,6 +584,7 @@
           }
 
         }
+
         .contacts-data {
 
           .contacts-p {
@@ -572,6 +593,59 @@
 
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts-container {
+    width: 100%;
+    height: 1550px;
+
+    .contacts-picture {
+      display: none;
+    }
+
+    .contacts-wrapper {
+      padding-left: 30px;
+      top: 12%;
+
+      .contacts-form {
+        width: 420px;
+
+        .input-contacts {
+          padding: 1px;
+          font-size: 16px;
+        }
+
+        #textarea1 {
+          padding-top: 10px;
+        }
+
+        .invalid-input {
+          font-size: 16px;
+        }
+      }
+
+      .contacts-submitted-form {
+        width: 450px;
+      }
+
+      .contacts-data-container {
+        width: 420px;
+
+        .contacts-map {
+          flex: 2;
+
+          .contacts-map-pic {
+            padding-bottom: 20px;
+            width: 420px;
+            height: 300px;
+          }
+
+        }
+
       }
     }
   }
