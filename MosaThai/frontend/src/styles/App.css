@@ -137,3 +137,15 @@ button:hover {
     }
 }
 
+@media screen  and (max-width: 360px){
+    .container{
+        width: 360px;
+        overflow: hidden;
+    }
+    button{
+        width: 170px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+

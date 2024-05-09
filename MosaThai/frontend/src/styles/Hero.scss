@@ -185,3 +185,30 @@
   }
 
 }
+
+@media screen  and (max-width: 360px){
+  .hero {
+    width: 155%;
+    margin-top: 100px;
+    margin-left: -125px;
+
+    .image-title{
+      position: absolute;
+      top: 13%;
+      left: 7%;
+      z-index: 3;
+      text-align: left;
+    }
+     .main-page_pic-title{
+        font-size: 70px;
+      }
+     .main-page_pic-subtitle{
+       margin-top: -15px;
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 25px;
+    }
+
+  }
+
+}

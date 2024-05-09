@@ -261,6 +261,24 @@
   }
 }
 
+@media screen  and (max-width: 3600px){
+  .section8-container {
+    padding-left: 30px;
+    .news-container{
+      width: 310px;
+
+      .news-wrapper{
+        .btn{
+          margin-top: 12px;
+        }
+        .news-button{
+          width: 100%;
+        }
+      }}
+
+  }
+}
+
 .newsfeed-container {
   width: 100%;
   height: auto;

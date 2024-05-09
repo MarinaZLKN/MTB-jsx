@@ -206,6 +206,20 @@
     width: 35%;
   }
 }
+@media screen and (max-width: 3600px) {
+  .section8-container {
+    padding-left: 30px;
+  }
+  .section8-container .news-container {
+    width: 310px;
+  }
+  .section8-container .news-container .news-wrapper .btn {
+    margin-top: 12px;
+  }
+  .section8-container .news-container .news-wrapper .news-button {
+    width: 100%;
+  }
+}
 .newsfeed-container {
   width: 100%;
   height: auto;

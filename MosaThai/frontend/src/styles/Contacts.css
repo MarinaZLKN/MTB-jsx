@@ -509,5 +509,54 @@
     height: 300px;
   }
 }
+@media screen and (max-width: 360px) {
+  .contacts-container {
+    width: 100%;
+    height: 1550px;
+  }
+  .contacts-container .contacts-picture {
+    display: none;
+  }
+  .contacts-container .contacts-wrapper {
+    padding-left: 30px;
+    top: 12%;
+  }
+  .contacts-container .contacts-wrapper .contacts-form {
+    width: 310px;
+  }
+  .contacts-container .contacts-wrapper .contacts-form .input-contacts {
+    padding: 1px;
+    font-size: 16px;
+  }
+  .contacts-container .contacts-wrapper .contacts-form #textarea1 {
+    padding-top: 10px;
+  }
+  .contacts-container .contacts-wrapper .contacts-form .invalid-input {
+    font-size: 16px;
+  }
+  .contacts-container .contacts-wrapper .contacts-submitted-form {
+    width: 320px;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container {
+    width: 310px;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-map {
+    flex: 2;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-map .contacts-map-pic {
+    padding-bottom: 20px;
+    width: 310px;
+    height: 300px;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-data {
+    flex: 1;
+  }
+  .contacts-container .contacts-wrapper .contacts-data-container .contacts-data .contacts-p {
+    padding: 10px 0px;
+    font-size: 18px;
+    color: var(--White);
+    font-family: var(--font-text);
+  }
+}
 
 /*# sourceMappingURL=Contacts.css.map */

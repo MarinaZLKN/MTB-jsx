@@ -196,3 +196,23 @@
     }
   }
 }
+
+@media screen  and (max-width: 360px){
+  .trainer-list_container{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    .trainers{
+      padding-top: 10px;
+      //gap: 230px;
+    }
+
+    .trainer{
+      position: relative;
+      width: 200px;
+      .trainer_img{
+        width: 310px;
+      }
+
+    }
+  }
+}

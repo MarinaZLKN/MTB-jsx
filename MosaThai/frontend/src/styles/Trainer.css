@@ -180,5 +180,21 @@
     width: 420px;
   }
 }
+@media screen and (max-width: 360px) {
+  .trainer-list_container {
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+  .trainer-list_container .trainers {
+    padding-top: 10px;
+  }
+  .trainer-list_container .trainer {
+    position: relative;
+    width: 200px;
+  }
+  .trainer-list_container .trainer .trainer_img {
+    width: 310px;
+  }
+}
 
 /*# sourceMappingURL=Trainer.css.map */
