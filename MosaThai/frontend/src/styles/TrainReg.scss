@@ -397,4 +397,66 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .train_reg-container {
+    .train-pic {
+      max-width: 360px;
+      left: 0;
+      .train_reg-close{
+        position: absolute;
+        top: 40px;
+        left: 300px;
+        cursor: pointer;
+      }
+    }
+    .train-reg-title{
+      font-size: 50px;
+    }
+    .train-reg-wrapper {
+      top: 15%;
+      left: 5%;
+      .train-reg-form{
+        width: 320px;
+      .train-reg-lab{
+        font-size: 20px;
+      }
+      .train-btn{
+        padding-top: 10%;
+      }
+      #lab{
+        padding-bottom: 20px;
+      }
+      .input-train-reg{
+          font-size: 20px;
+
+      }
+      .invalid-input {
+          font-size: 20px;
+          border-bottom: 2px solid red;
+        }
+
+      .invalid_contacts-lab{
+          font-size: 22px;
+      }
+
+
+      .error-message {
+        font-size: 20px;
+        margin-top: -10px;
+      }
+      #train-reg_btn{
+        position: absolute;
+        left:  20%;
+        cursor: pointer;
+
+      }
+    }
+    }
+    .train-reg-wrapper_sent{
+      top: 1%;
+      left: 2%;
+    }
+  }
+}
+
 

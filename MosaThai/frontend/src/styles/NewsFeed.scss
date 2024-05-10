@@ -166,13 +166,21 @@
 @media screen  and (max-width: 800px){
   .section8-container {
     padding-left: 75px;
-    .news-wrapper {
-      .btn {
-
-      }
-
-      .news-text {
-        display: none;
+    .news-container{
+      .news-wrapper{
+        gap: 5%;
+        .news-date{
+          font-size: 22px;
+        }
+        .news-title{
+          font-size: 3vw;
+        }
+        .news-text{
+          display: none;
+        }
+        .news-button{
+          width: 100%;
+        }
       }
     }
   }
@@ -181,10 +189,6 @@
   .section8-container {
     padding-left: 75px;
     .news-wrapper {
-      .btn {
-
-      }
-
       .news-text {
         display: none;
       }
@@ -261,7 +265,7 @@
   }
 }
 
-@media screen  and (max-width: 3600px){
+@media screen  and (max-width: 360px){
   .section8-container {
     padding-left: 30px;
     .news-container{

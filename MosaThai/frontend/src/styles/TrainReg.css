@@ -347,5 +347,59 @@
     left: 2%;
   }
 }
+@media screen and (max-width: 360px) {
+  .train_reg-container .train-pic {
+    max-width: 360px;
+    left: 0;
+  }
+  .train_reg-container .train-pic .train_reg-close {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    cursor: pointer;
+  }
+  .train_reg-container .train-reg-title {
+    font-size: 50px;
+  }
+  .train_reg-container .train-reg-wrapper {
+    top: 15%;
+    left: 5%;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form {
+    width: 320px;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form .train-reg-lab {
+    font-size: 20px;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form .train-btn {
+    padding-top: 10%;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form #lab {
+    padding-bottom: 20px;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form .input-train-reg {
+    font-size: 20px;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form .invalid-input {
+    font-size: 20px;
+    border-bottom: 2px solid red;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form .invalid_contacts-lab {
+    font-size: 22px;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form .error-message {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .train_reg-container .train-reg-wrapper .train-reg-form #train-reg_btn {
+    position: absolute;
+    left: 20%;
+    cursor: pointer;
+  }
+  .train_reg-container .train-reg-wrapper_sent {
+    top: 1%;
+    left: 2%;
+  }
+}
 
 /*# sourceMappingURL=TrainReg.css.map */
