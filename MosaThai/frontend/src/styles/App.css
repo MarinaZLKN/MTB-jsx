@@ -13,7 +13,8 @@ body {
     --font-family:'Bebas Neue', sans-serif;
     --font-text:'Montserrat', sans-serif;
     --yellow-new: #FFD11B;
-    --yellow-: #C1912D;
+    --yellow-: #d09b37;
+    --yellow-main: #C1912D;
     --green: #364630;
     --red: #4F1D1C;
     --Black: #0D0C0A;
@@ -128,6 +129,18 @@ button:hover {
 @media screen  and (max-width: 480px){
     .container{
         width: 480px;
+        overflow: hidden;
+    }
+    button{
+        width: 170px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+@media screen  and (max-width: 360px){
+    .container{
+        width: 360px;
         overflow: hidden;
     }
     button{

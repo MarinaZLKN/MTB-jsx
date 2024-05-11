@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../../../styles/Accordion.scss';
 import sec4 from '@images/prg.png';
-import acc from '@images/accordion-pic.png';
+import acc from '@images/IMG_7363.jpg';
 import Title from '../../Title';
 import { motion, AnimatePresence } from "framer-motion";
 import TrainingList from "../Section5/TrainingList";
@@ -12,8 +12,8 @@ const Section4 = () => {
 
     const accordionData =[
     {
-      title: "Basic Course 6-weeks",
-      content: "Embark on a transformative journey with our Basic 6-Week Muay Thai Course! Designed for beginners, this program offers comprehensive training in Muay Thai fundamentals. You’ll learn proper stance, footwork, basic punches, kicks, knees, and elbow strikes, ensuring a solid foundation. Each week focuses on different techniques, gradually advancing in complexity. We also incorporate conditioning exercises to improve your strength and endurance. Classes are held in a supportive, group environment, fostering both individual and team growth. This course runs three times a year in January, May, and September. Follow us on social media for the exact dates and to stay updated!"
+      title: "baaskursus",
+      content: "Alustage oma muutuste teekonda meie 6-nädalase algkursusega Muay Thai poksist! See kursus on mõeldud algajatele ja pakub põhjalikku väljaõpet Muay Thai põhitõdedes. Siin the õpite õiget seisukohta, liikumist, põhilisi lööke, jalalööke, põlvelööke ja küünarnukilööke, tagades kindla aluse. Iga nädal keskendub erinevatele tehnikatele, järk-järgult keerukust lisades. Lisame ka jõuharjutusi, et parandada teie jõudu ja vastupidavust. Treeningud toimuvad toetavas grupikeskkonnas, soodustades nii individuaalset kui ka meeskondlikku arengut. Kursus toimub kolm korda aastas: jaanuaris, mais ja septembris. Jälgige meid sotsiaalmeedias, et saada täpseid kuupäevi ja olla kursis uudistega!"
     },
     {
       title: "Advanced",
@@ -28,20 +28,19 @@ const Section4 = () => {
       content: "Designed for young learners, this program emphasizes fun, discipline, and basic Muay Thai techniques. It includes age-appropriate drills focusing on basic strikes and defenses, fostering physical fitness, coordination, and confidence. Safety is prioritized with non-contact or light-contact exercises."
     },
     {
-      title: "Personal training",
-      content: "Personal Muay Thai training offers a bespoke experience, ideal for individuals with varying needs and goals. It’s especially suitable for beginners who need a strong foundational base, as well as advanced practitioners focusing on skill refinement. This format is also perfect for those who prefer one-on-one attention or have specific objectives they wish to achieve."
+      title: "Personaalne treening",
+      content: "Personaalne Muay Thai treening pakub kohandatud kogemust, mis on ideaalne erinevate vajaduste ja eesmärkidega inimestele. See on eriti sobiv algajatele, kes vajavad tugevat alust, samuti edasijõudnutele, kes keskenduvad oskuste lihvimisele. See formaat on samuti täiuslik neile, kes eelistavad individuaalset tähelepanu või kellel on konkreetseid eesmärke, mida nad soovivad saavutada."
     },
     {
-      title: "Equipment",
-      content: "All equipment for the training is provided, but participants are required to bring their personal hand wraps. Hand wraps can be purchased at any sports store for an average price of €15. \n" +
-          "We also highly recommend to have personal equipment  for hygiene and individual comfort."
+      title: "Varustus",
+      content: "Kogu treeninguks vajalik varustus on tagatud, kuid osalejad peavad kaasa võtma oma isiklikud käesidemed. Käesidemeid saab osta igast spordipoest keskmise hinnaga 15 eurot. Soovitame tungivalt kasutada ka isiklikku varustust hügieeni ja individuaalse mugavuse tagamiseks."
     }
   ];
 
     return (
         <div className="container section4-container">
             <div className="section4-title">
-                 <Title text="Our programs" size="large" color="var(--White)" lineHeight="120px"/>
+                 <Title text="Meie programmid" size="large" color="var(--White)" lineHeight="120px"/>
             </div>
             <img src={sec4} alt="section4 picture" className="section4-picture"/>
             <div className="section4-accordion-block">

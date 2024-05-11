@@ -167,8 +167,8 @@
       }
       .trainer_name{
         bottom: 18%;
-        padding: 20px 30px;
-        font-size: 6vw;
+        padding: 15px 30px;
+        font-size: 5vw;
       }
       .trainer_title{
         font-size: 3vw;
@@ -191,6 +191,26 @@
       width: 250px;
       .trainer_img{
         width: 420px;
+      }
+
+    }
+  }
+}
+
+@media screen  and (max-width: 360px){
+  .trainer-list_container{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    .trainers{
+      padding-top: 10px;
+      //gap: 230px;
+    }
+
+    .trainer{
+      position: relative;
+      width: 200px;
+      .trainer_img{
+        width: 310px;
       }
 
     }

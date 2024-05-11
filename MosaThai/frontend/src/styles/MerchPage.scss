@@ -309,3 +309,38 @@
   }
   }
 }
+
+
+@media screen  and (max-width: 360px){
+  .merch-container{
+    width: 360px;
+    .p{
+      font-size: 80px;
+      color: var(--yellow-);
+      padding-bottom: 30px;
+      padding-left: 25px;
+    }
+    .merchandise-list{
+    .merch-item{
+      .merch-item-slider{
+        padding: 10px 30px;
+        width: 320px;
+      }
+      .merch-item-info{
+        gap:15px;
+         .merch-item-title{
+            font-size: 8.5vw;
+      }
+        .merch-item-desc{
+          font-size: 3.9vw;
+        }
+        .merch-item-price{
+          font-size: 7vw;
+        }
+
+      }
+
+    }
+  }
+  }
+}

@@ -21,7 +21,7 @@ const TrainingList= () => {
   return (
     <div className="container prices-container">
       <div className="prices-title">
-        <Title text="Prices" size="large" color="var(--White)" lineHeight="168px"/>
+        <Title text="Hinnakiri" size="large" color="var(--White)" lineHeight="168px"/>
       </div>
       <div className="prices-prices">
         {trainings.map((training) => (

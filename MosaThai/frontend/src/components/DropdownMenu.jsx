@@ -10,16 +10,16 @@ const DropdownMenu = ({ scrollToSection, onClose }) => {
                 <img src={close} className="dropdown-close"/>
             </div>
             <ul>
-                <li onClick={() => { scrollToSection('about'); onClose(); }}>About</li>
-                <li onClick={() => { scrollToSection('programs'); onClose(); }}>Programs</li>
-                <li onClick={() => { scrollToSection('prices'); onClose(); }}>Prices</li>
-                <li onClick={() => { scrollToSection('schedule'); onClose(); }}>Schedule</li>
-                <li onClick={() => { scrollToSection('coaches'); onClose(); }}>Coaches</li>
-                <li><Link to="/news" onClick={() => { window.scrollTo(0, 0); onClose(); }}>News</Link></li>
+                <li onClick={() => { scrollToSection('about'); onClose(); }}>Meist</li>
+                <li onClick={() => { scrollToSection('programs'); onClose(); }}>Kava</li>
+                <li onClick={() => { scrollToSection('prices'); onClose(); }}>Hinnakiri</li>
+                <li onClick={() => { scrollToSection('schedule'); onClose(); }}>Tunniplaan</li>
+                <li onClick={() => { scrollToSection('coaches'); onClose(); }}>Treenerid</li>
+                <li><Link to="/news" onClick={() => { window.scrollTo(0, 0); onClose(); }}>Uudised</Link></li>
                 <li><Link to="/merch" onClick={() => { window.scrollTo(0, 0); onClose(); }}>Merch</Link></li>
-                <li onClick={() => { scrollToSection('contact'); onClose(); }}>Contact</li>
+                <li onClick={() => { scrollToSection('contact'); onClose(); }}>Kontakt</li>
                 <li onClick={() => { window.scrollTo(0, 0); onClose(); }}>
-                    <Link to="/register"><button className="header-btn">Register</button></Link>
+                    <Link to="/register"><button className="header-btn">Registreeri</button></Link>
                 </li>
             </ul>
         </div>

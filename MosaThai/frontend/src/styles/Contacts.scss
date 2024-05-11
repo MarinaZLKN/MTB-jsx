@@ -650,3 +650,67 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .contacts-container {
+    width: 100%;
+    height: 1550px;
+
+    .contacts-picture {
+      display: none;
+    }
+
+    .contacts-wrapper {
+      padding-left: 30px;
+      top: 12%;
+
+      .contacts-form {
+        width: 310px;
+
+        .input-contacts {
+          padding: 1px;
+          font-size: 16px;
+        }
+
+        #textarea1 {
+          padding-top: 10px;
+        }
+
+        .invalid-input {
+          font-size: 16px;
+        }
+      }
+
+      .contacts-submitted-form {
+        width: 320px;
+      }
+
+      .contacts-data-container {
+        width: 310px;
+        .contacts-map {
+
+          flex: 2;
+
+          .contacts-map-pic {
+            padding-bottom: 20px;
+            width: 310px;
+            height: 300px;
+          }
+
+        }
+        .contacts-data {
+          flex: 1;
+
+          .contacts-p {
+            padding: 10px 0px;
+            font-size: 18px;
+            color: var(--White);
+            font-family: var(--font-text);
+          }
+
+        }
+
+      }
+    }
+  }
+}

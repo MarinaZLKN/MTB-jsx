@@ -73,7 +73,7 @@ const NewsClosed = ({news}) => {
                         <div className="news-wrapper1-open">
                             <p className="news-date1">{formatDate(news.date_created)}</p>
                             <div className="news-content">{news.text}</div>
-                            <button className="news-button2" onClick={toggleNews}>Close</button>
+                            <button className="news-button2" onClick={toggleNews}>Kinni</button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ const NewsClosed = ({news}) => {
                     <div className="news-wrapper1">
                         <p className="news-date1">{formatDate(news.date_created)}</p>
                         <h2 className="news-title1">{news.title}</h2>
-                        <button className="news-button1" onClick={toggleNews}>Read more</button>
+                        <button className="news-button1" onClick={toggleNews}>loe rohkem</button>
                     </div>
                 </div>
             )}

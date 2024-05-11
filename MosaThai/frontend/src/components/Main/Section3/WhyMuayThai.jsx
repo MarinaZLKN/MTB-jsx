@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../../../styles/WhyMuayThai.scss';
-import wmt from '@images/whymuaythai.png';
+import wmt from '@images/DSCF1542.jpg';
 import CustomPrevButton from './CustomPrevButton.jsx';
 import CustomNextButton from './CustomNextButton.jsx';
 

@@ -40,7 +40,7 @@
 
 
       .news-button{
-        width: 23%;
+        width: 80%;
         height: 12%;
         font-size: 24px;
       }
@@ -99,7 +99,7 @@
 
 
         .news-button{
-          width: 23%;
+          width: 80%;
           height: 40px;
           font-size: 24px;
         }
@@ -155,7 +155,7 @@
           line-height: 18px;
         }
         .news-button{
-          width: 24%;
+          width: 100%;
           height: 40px;
           font-size: 22px;
         }
@@ -166,13 +166,22 @@
 @media screen  and (max-width: 800px){
   .section8-container {
     padding-left: 75px;
-    .news-wrapper {
-      .btn {
-
-      }
-
-      .news-text {
-        display: none;
+    .news-container{
+      .news-wrapper{
+        gap: 5%;
+        .news-date{
+          font-size: 22px;
+        }
+        .news-title{
+          font-size: 3vw;
+        }
+        .news-text{
+          display: none;
+        }
+        .news-button{
+          width: 100%;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -181,12 +190,13 @@
   .section8-container {
     padding-left: 75px;
     .news-wrapper {
-      .btn {
-
-      }
-
       .news-text {
         display: none;
+      }
+      .news-button{
+        width: 100%;
+        font-size: 20px;
+        cursor: pointer;
       }
     }
   }
@@ -255,6 +265,24 @@
         }
         .news-button{
           width: 35%;
+        }
+      }}
+
+  }
+}
+
+@media screen  and (max-width: 360px){
+  .section8-container {
+    padding-left: 30px;
+    .news-container{
+      width: 310px;
+
+      .news-wrapper{
+        .btn{
+          margin-top: 12px;
+        }
+        .news-button{
+          width: 100%;
         }
       }}
 

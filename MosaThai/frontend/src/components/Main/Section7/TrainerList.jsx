@@ -27,7 +27,7 @@ const TrainerList= () => {
   return (
     <div className="container trainer-list_container">
       <div className="trainer-list_title">
-        <Title text="coaches" size="large" color="var(--White)" lineHeight="168px"/>
+        <Title text="Treenerid" size="large" color="var(--White)" lineHeight="168px"/>
       </div>
       <div className="trainers">
         {trainers.map((trainer) => (

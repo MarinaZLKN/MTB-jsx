@@ -171,3 +171,33 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .footer-container{
+    width: 360px;
+    .footer-content{
+      left: 1%;
+      bottom: 35px;
+
+    }
+    .footer-title{
+      font-size: 7.5vw;
+      line-height: 40px; /* 100% */
+    }
+    .footer-logo-container{
+      height: 210px;
+    .footer-logo{
+      margin-top: -25px;
+        margin-left: 11%;
+        width: 280px;
+        height: 280px;
+
+      }
+    }
+    .footer-social{
+    padding-left: 38%;
+
+  }
+  }
+
+}
