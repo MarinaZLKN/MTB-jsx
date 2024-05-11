@@ -14,7 +14,6 @@
 .header-container .header-menu {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
 }
 .header-container .header-menu .header-menu-main {
   color: var(--White);

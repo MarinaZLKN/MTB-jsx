@@ -69,10 +69,10 @@ const Contacts = () => {
                  <InfiniteMarquee/>
             </div>
             <div className="contacts-wrapper">
-                <Title text="Contact us" size="large" color="var(--White)" lineHeight="120px"/>
+                <Title text="Kirjuta meile" size="large" color="var(--White)" lineHeight="120px"/>
                 {!submitted ? (
                     <form className="contacts-form" onSubmit={handleFormSubmit}>
-                        <label className="contacts-lab">Name</label>
+                        <label className="contacts-lab">Nimi</label>
                         <input
                             type="text"
                             className="input-contacts"
@@ -87,7 +87,7 @@ const Contacts = () => {
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         />
                         {emailError && <p className="error-message">{emailError}</p>}
-                        <label className={phoneError ? 'invalid_contacts-lab': "contacts-lab"}>Phone number*</label>
+                        <label className={phoneError ? 'invalid_contacts-lab': "contacts-lab"}>Telefoni number*</label>
                         <input
                             type="text"
                             value={formData.phone_number}
@@ -106,7 +106,7 @@ const Contacts = () => {
                     </form>
                 ) : (
                     <div className="contacts-submitted-form">
-                        <div className="contacts-submitted-form-title">Thank you for your feedback!</div>
+                        <div className="contacts-submitted-form-title">Täname tagasiside eest!</div>
                         <div className="contacts-submitted-form-img">
                             <img src={tick} alt="Success tick" className="submitted-form-img"/>
                         </div>
@@ -118,7 +118,7 @@ const Contacts = () => {
                             <img src={map} className="contacts-map-pic" />
                         </div>
                         <div className="contacts-data">
-                            <label className="contacts-title">Contact</label>
+                            <label className="contacts-title">Kontaktid</label>
                             <p className="contacts-p">{contact.company_name}</p>
                             <p className="contacts-p">{contact.account_number}</p>
                             <p className="contacts-p">{contact.address}</p>

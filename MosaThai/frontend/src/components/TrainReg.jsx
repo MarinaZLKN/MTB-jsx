@@ -159,11 +159,10 @@ const TrainReg = () => {
                         </form>
                     </div>) : (
                     <div className="train-reg-wrapper_sent">
-                        <label className="train-reg-title">You are scheduled!</label>
+                        <label className="train-reg-title">Oled kirjas!</label>
                         <div className="train-reg-wrapper_sent-container">
                             <img src={tick} alt="scheduled" className="train-reg-wrapper_sent-svg"/>
-                            <div className="train-reg-wrapper_sent-text"> Thanks for your registration! See you at the
-                                training! :)
+                            <div className="train-reg-wrapper_sent-text"> Täname registreerumise eest! Kohtume treeningul!:)
                             </div>
                             <Link to="/">
                                 <button> back to page</button>

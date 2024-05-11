@@ -13,18 +13,18 @@ const Header = ({ scrollToSection }) => {
                 <Logo alt="Header logo" className="logo-main" />
             </div>
             <div className="header-menu">
-                <label className="header-menu-main" onClick={() => scrollToSection('about')}>About</label>
-                <label className="header-menu-main" onClick={() => scrollToSection('programs')}>Programs</label>
-                <label className="header-menu-main" onClick={() => scrollToSection('prices')}>Prices</label>
-                <label className="header-menu-main" onClick={() => scrollToSection('schedule')}>Schedule</label>
-                <label className="header-menu-main" onClick={() => scrollToSection('coaches')}>Coaches</label>
-                <Link to="/news"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">News</label></Link>
-                <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><label className="header-menu-main">Merch</label></Link>
-                <div className="header-menu-main" onClick={() => scrollToSection('contact')}>Contact</div>
+                <p className="header-menu-main" onClick={() => scrollToSection('about')}>Meist</p>
+                <p className="header-menu-main" onClick={() => scrollToSection('programs')}>Kava</p>
+                <p className="header-menu-main" onClick={() => scrollToSection('prices')}>Hinnad</p>
+                <p className="header-menu-main" onClick={() => scrollToSection('schedule')}>Tunniplaan</p>
+                <p className="header-menu-main" onClick={() => scrollToSection('coaches')}>Treenerid</p>
+                <Link to="/news"onClick={() => window.scrollTo(0, 0)}><p className="header-menu-main">Uudised</p></Link>
+                <Link to="/merch"onClick={() => window.scrollTo(0, 0)}><p className="header-menu-main">Merch</p></Link>
+                <p className="header-menu-main" onClick={() => scrollToSection('contact')}>Kontakt</p>
             </div>
             <div className="registration-button">
                 <Link to="/register"onClick={() => window.scrollTo(0, 0)}>
-                    <button className="header-btn">Register</button>
+                    <button className="header-btn">Registreeri</button>
                 </Link>
             </div>
             <div className="burger-menu" onClick={() => setMenuOpen(!isMenuOpen)}>

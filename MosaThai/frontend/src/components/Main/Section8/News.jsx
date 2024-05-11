@@ -48,7 +48,7 @@ const News = () => {
         <p className="news-text">{truncatedText}</p>
          <Link to="/news"onClick={() => window.scrollTo(0, 0)}>
            <div className="btn">
-             <button className="news-button">Read more</button>
+             <button className="news-button">Loe rohkem</button>
            </div>
 
         </Link>

@@ -42,7 +42,7 @@ const NewsFeed= () => {
 
                 <div className="newsfeed-list">
                     <Link to="/">
-                        <button >back</button>
+                        <button >tagasi</button>
                     </Link>
                     {newsList.map((news, index) => (
                         <NewsClosed key={index} news={news}/>

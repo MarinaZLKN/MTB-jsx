@@ -9,7 +9,7 @@ const Trainer = ({ id, name, photo, description, is_available }) => {
       <div className="trainer_name">{name}</div>
       <div className="trainer_title">Muay Thai coach</div>
       {/*<p className="trainer_description">{description}</p>*/}
-      {is_available ? <p className="trainer_availible">Available</p> : <p className="trainer_availible">Not Available</p>}
+      {/*{is_available ? <p className="trainer_availible">Available</p> : <p className="trainer_availible">Not Available</p>}*/}
     </div>
   );
 };

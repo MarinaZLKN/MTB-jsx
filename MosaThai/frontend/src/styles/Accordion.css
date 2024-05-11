@@ -26,11 +26,15 @@
 .section4-container .section4-accordion-picture {
   margin-top: 26px;
 }
+.section4-container .section4-accordion-picture .acc-pic {
+  width: 500px;
+  height: auto;
+}
 .section4-container .section4-accordion {
   height: auto;
 }
 .accordion-title {
-  width: 500px;
+  width: 600px;
   margin-bottom: 25px;
   cursor: pointer;
   color: var(--White, #E5E5D6);

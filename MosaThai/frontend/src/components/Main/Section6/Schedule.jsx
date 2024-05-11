@@ -20,7 +20,7 @@ const Schedule = () => {
   return (
     <div className="schedule-table-container">
       <div className="scedule-title">
-        <Title text="Schedule" size="large" color="var(--White)" lineHeight="168px"/>
+        <Title text="Tunniplaan" size="large" color="var(--White)" lineHeight="168px"/>
       </div>
       <div className="schedule-table">
         <table>

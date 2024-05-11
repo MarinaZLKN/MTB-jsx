@@ -11,7 +11,7 @@ const MerchPage = () => {
 
             <div className="merch-content">
                 <Link to="/">
-                    <button className="p1">back</button>
+                    <button className="p1">tagasi</button>
                 </Link>
                 <div className="merch-block">
                     <MerchandiseGroups/>
