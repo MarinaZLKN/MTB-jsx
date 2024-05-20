@@ -15,3 +15,8 @@ module.exports = {
     "**/?(*.)+(spec|test).js?(x)"
   ]
 };
+
+
+// moduleNameMapper: {
+//   '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': 'jest-transform-stub'
+// }

@@ -79,9 +79,10 @@ const Contacts = () => {
                             value={formData.name}
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         />
-                        <label className={emailError ? 'invalid_contacts-lab': "contacts-lab"}>Email*</label>
+                        <label className={emailError ? 'invalid_contacts-lab': "contacts-lab"} htmlFor="email-input">Email*</label>
                         <input
                             type="text"
+                            id="email-input"
                             value={formData.email}
                             className={emailError ? 'invalid-input' : 'input-contacts'}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
