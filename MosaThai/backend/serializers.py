@@ -50,11 +50,19 @@ class FeedbackSerializer(serializers.ModelSerializer):
         model = Feedback
         fields = ['name', 'email', 'phone_number', 'text']
 
+    def validate_phone_number(self, value):
+        if not value.isdigit():
+            raise serializers.ValidationError("Phone number must contain only digits.")
+        return value
 
 class TrainingRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = TrainingRegistration
         fields = '__all__'
+    def validate_phone_number(self, value):
+        if not value.isdigit():
+            raise serializers.ValidationError("Phone number must contain only digits.")
+        return value
 
 
 class ContactSerializer(serializers.ModelSerializer):
