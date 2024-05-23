@@ -107,14 +107,14 @@ const TrainReg = () => {
                         <label className="train-reg-title">Alusta oma <label id="train-reg-title-yellow">seiklust</label></label>
                         <form className="train-reg-form" onSubmit={handleSubmit}>
                             <div>
-                                <label className="train-reg-lab">Nimi</label>
-                                <input className="input-train-reg" type="text" name="name" value={formData.name}
+                                <label className="train-reg-lab" htmlFor="name-input">Nimi</label>
+                                <input className="input-train-reg" id="name-input" type="text" name="name" value={formData.name}
                                        onChange={handleChange}
                                        required/>
                             </div>
                             <div>
-                                <label className="train-reg-lab">Tase</label>
-                                <select className="input-train-reg" name="level" value={formData.level}
+                                <label className="train-reg-lab" htmlFor="level-input">Tase</label>
+                                <select className="input-train-reg" id="level-input" name="level" value={formData.level}
                                         onChange={handleChange}>
                                     <option value="advanced">Advanced</option>
                                     <option value="beginner">Beginner</option>
@@ -123,29 +123,30 @@ const TrainReg = () => {
                                 </select>
                             </div>
                             <div>
-                                <label className={phoneError ? 'invalid_contacts-lab' : "train-reg-lab"}>Telefoni number*</label>
+                                <label className={phoneError ? 'invalid_contacts-lab' : "train-reg-lab"} htmlFor="phone-input">Telefoni number*</label>
                                 <input className={phoneError ? 'invalid-input' : "input-train-reg"} type="tel" name="phone_number"
                                        value={formData.phone_number}
+                                       id="phone-input"
                                        onChange={handleChange} required/>
                                 {phoneError && <p className="error-message">{phoneError}</p>}
                             </div>
                             <div>
-                                <label className={emailError ? 'invalid_contacts-lab' : "train-reg-lab"}>Email*</label>
-                                <input className={emailError ? 'invalid-input' : "input-train-reg"} type="email" name="email" value={formData.email}
+                                <label className={emailError ? 'invalid_contacts-lab' : "train-reg-lab"} htmlFor="email-input">Email*</label>
+                                <input className={emailError ? 'invalid-input' : "input-train-reg"} type="email" id="email-input" name="email" value={formData.email}
                                        onChange={handleChange} required/>
                                 {emailError && <p className="error-message">{emailError}</p>}
                             </div>
                             {formData.level === 'child' && (
                                 <>
                                     <div>
-                                        <label className={ageError ? 'invalid_contacts-lab' : "train-reg-lab"}>Vanus</label>
-                                        <input className={ageError ? 'invalid-input' : "input-train-reg"} type="number" name="age" value={formData.age}
+                                        <label className={ageError ? 'invalid_contacts-lab' : "train-reg-lab"} htmlFor="age-input">Vanus</label>
+                                        <input className={ageError ? 'invalid-input' : "input-train-reg"} type="number" id="age-input" name="age" value={formData.age}
                                                onChange={handleChange} required/>
                                         {ageError && <p className="error-message">{ageError}</p>}
                                     </div>
                                     <div>
-                                        <label className={parentNameError ? 'invalid_contacts-lab' : "train-reg-lab"}>Lapse vanema nimi</label>
-                                        <input className={parentNameError ? 'invalid-input' : "input-train-reg"} type="text" name="parent_name"
+                                        <label className={parentNameError ? 'invalid_contacts-lab' : "train-reg-lab"} htmlFor="parent-name-input">Lapse vanema nimi</label>
+                                        <input className={parentNameError ? 'invalid-input' : "input-train-reg"} id="parent-name-input" type="text" name="parent_name"
                                                value={formData.parent_name}
                                                onChange={handleChange} required/>
                                         {parentNameError && <p className="error-message">{parentNameError}</p>}

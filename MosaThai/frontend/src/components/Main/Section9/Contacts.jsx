@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import contacts_pic from '@images/contacts-pic.png';
 import '../../../styles/Contacts.scss'
@@ -19,7 +19,6 @@ const Contacts = () => {
     const [emailError, setEmailError] = useState(null);
     const [phoneError, setPhoneError] = useState(null);
     const [submitted, setSubmitted] = useState(false);
-
 
     useEffect(() => {
         axios.get('http://127.0.0.1:8000/v1/contacts/')
@@ -42,14 +41,12 @@ const Contacts = () => {
             setEmailError(null);
         }
 
-
-        if (!formData.phone_number.match(/^\+?\d+(\s?\d+)*$/))  {
+        if (!formData.phone_number.match(/^\+?\d+(\s?\d+)*$/)) {
             setPhoneError("Phone number must contain only digits and may start with +");
             return;
         } else {
             setPhoneError(null);
         }
-
 
         axios.post('http://127.0.0.1:8000/v1/feedbacks/', formData)
             .then((response) => {
@@ -64,38 +61,40 @@ const Contacts = () => {
     return (
         <div className="container contacts-container">
             <img src={contacts_pic} className="contacts-picture"/>
-
             <div className="contacts-row">
-                 <InfiniteMarquee/>
+                <InfiniteMarquee/>
             </div>
             <div className="contacts-wrapper">
                 <Title text="Kirjuta meile" size="large" color="var(--White)" lineHeight="120px"/>
                 {!submitted ? (
                     <form className="contacts-form" onSubmit={handleFormSubmit}>
-                        <label className="contacts-lab">Nimi</label>
+                        <label className="contacts-lab" htmlFor="name-input">Nimi</label>
                         <input
                             type="text"
+                            id="name-input"
                             className="input-contacts"
                             value={formData.name}
                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         />
-                        <label className={emailError ? 'invalid_contacts-lab': "contacts-lab"}>Email*</label>
+                        <label className={emailError ? 'invalid_contacts-lab': "contacts-lab"} htmlFor="email-input">Email*</label>
                         <input
                             type="text"
+                            id="email-input"
                             value={formData.email}
                             className={emailError ? 'invalid-input' : 'input-contacts'}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         />
                         {emailError && <p className="error-message">{emailError}</p>}
-                        <label className={phoneError ? 'invalid_contacts-lab': "contacts-lab"}>Telefoni number*</label>
+                        <label className={phoneError ? 'invalid_contacts-lab': "contacts-lab"} htmlFor="phone-input">Telefoni number*</label>
                         <input
                             type="text"
+                            id="phone-input"
                             value={formData.phone_number}
                             className={phoneError ? 'invalid-input' : 'input-contacts'}
                             onChange={(e) => setFormData({ ...formData, phone_number: e.target.value })}
                         />
                         {phoneError && <p className="error-message">{phoneError}</p>}
-                        <label className="contacts-lab">Message</label>
+                        <label className="contacts-lab" htmlFor="textarea1">Message</label>
                         <textarea
                             value={formData.text}
                             id="textarea1"
@@ -127,13 +126,9 @@ const Contacts = () => {
                             <p className="contacts-p"><a href={`mailto:${contact.email}`}>{contact.email}</a></p>
                             <p className="contacts-p">{contact.registration_number}</p>
                         </div>
-
                     </div>
                 )}
             </div>
-
-
-
         </div>
     );
 };
