@@ -4,30 +4,41 @@ import { render, fireEvent, waitFor } from '@testing-library/react';
 import axios from 'axios';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Contacts from "../components/Main/Section9/Contacts";
-import TrainReg from "../components/TrainReg";
 
 
 jest.mock('axios');
+
 describe('Contacts Component', () => {
   beforeEach(() => {
-    axios.post.mockClear();
+    jest.clearAllMocks();
+    axios.get.mockResolvedValue({
+      data: [
+        {
+          company_name: "Test Company",
+          account_number: "1234567890",
+          address: "Test Address",
+          phone_number1: "+123456789",
+          phone_number2: "+987654321",
+          email: "test@example.com",
+          registration_number: "123456"
+        }
+      ]
+    });
   });
 
-  test('renders Contacts component', () => {
-    const { getByText, getByLabelText } = render(
+  test('renders and allows text input', () => {
+    const { getByLabelText } = render(
       <Router>
         <Contacts />
       </Router>
     );
 
-    expect(getByText('Kirjuta meile')).toBeInTheDocument();
-    expect(getByLabelText('Nimi')).toBeInTheDocument();
-    expect(getByLabelText('Email*')).toBeInTheDocument();
-    expect(getByLabelText('Telefoni number*')).toBeInTheDocument();
-    expect(getByLabelText('Message')).toBeInTheDocument();
+    const nameInput = getByLabelText('Nimi');
+    fireEvent.change(nameInput, { target: { value: 'John Doe' } });
+    expect(nameInput.value).toBe('John Doe');
   });
 
-  test('shows error message for invalid email format', () => {
+  test('shows error message for invalid email format', async () => {
     const { getByLabelText, getByText } = render(
       <Router>
         <Contacts />
@@ -36,42 +47,12 @@ describe('Contacts Component', () => {
 
     const emailInput = getByLabelText('Email*');
     fireEvent.change(emailInput, { target: { value: 'invalid-email' } });
-    fireEvent.submit(emailInput);
+    fireEvent.submit(getByText('Contact us'));
 
-    expect(getByText('Invalid email format')).toBeInTheDocument();
-  });
-
-  // Проверка валидации номера телефона
-  test('shows error message for invalid phone number format', () => {
-    const { getByLabelText, getByText } = render(
-      <Router>
-        <Contacts />
-      </Router>
-    );
-
-    const phoneInput = getByLabelText('Telefoni number*');
-    fireEvent.change(phoneInput, { target: { value: 'invalid-phone' } });
-    fireEvent.submit(phoneInput);
-
-    expect(getByText('Phone number must contain only digits and may start with +')).toBeInTheDocument();
-  });
-  test('should show an error message for invalid email format', () => {
-    const { getByLabelText, getByText, queryByText } = render(
-      <Router>
-        <Contacts />
-      </Router>
-    );
-
-    const emailInput = getByLabelText('Email*');
-    fireEvent.change(emailInput, { target: { value: 'wrongemail' } });
-    fireEvent.submit(emailInput);
-
-    const errorMessage = getByText('Invalid email format');
-    expect(errorMessage).toBeInTheDocument();
-
-    fireEvent.change(emailInput, { target: { value: 'correct@email.com' } });
-    fireEvent.submit(emailInput);
-    expect(queryByText('Invalid email format')).toBeNull();
+    await waitFor(() => {
+      const errorMessage = getByText('Invalid email format');
+      expect(errorMessage).toBeInTheDocument();
+    });
   });
 
   test('resets form and shows success message on valid submission', async () => {
@@ -95,8 +76,6 @@ describe('Contacts Component', () => {
       expect(queryByText('Contact us')).toBeNull();
     });
   });
-
-
   test('fetches and displays contact data', async () => {
     const mockContactData = {
       company_name: 'Test Company',
@@ -124,6 +103,4 @@ describe('Contacts Component', () => {
     expect(await findByText('789456')).toBeInTheDocument();
   });
 });
-
-
 

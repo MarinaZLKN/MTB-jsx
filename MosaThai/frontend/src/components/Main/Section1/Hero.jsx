@@ -9,8 +9,8 @@ const Hero = ({ alt }) => {
     <div className="hero">
       <img src={logo} alt={alt} className="hero-image" />
       <div className="image-title">
-        {/*<div className="main-page_pic-title"> hingeraud</div>*/}
-          <img src={pic} className="hero-title"/>
+        <div className="main-page_pic-title"> hingeraud</div>
+          {/*<img src={pic} className="hero-title"/>*/}
         <div className="main-page_pic-subtitle"> Empower your spirit, unleash your strength <br />Muay Thai – more than a martial art, it's a way of life</div>
         <Link to="/register">
           <button id="main-page-pic-btn">Join Us</button>
