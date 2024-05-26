@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '@images/DSCF1624-2.jpg';
+import mainpic from '@images/kislenkova.jpg';
 import '../../../styles/Hero.scss';
 import { Link } from "react-router-dom";
 import pic from '@images/HINGERAUD.png';
