@@ -1,22 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import MerchandiseItem from './MerchandiseItem';
 import '../../styles/MerchPage.scss';
 
-const MerchandiseGroups = () => {
-  const [categories, setCategories] = useState([]);
+const MerchandiseGroups = ({ categories }) => {
+  const hasMerchandise = categories.some(category => category.merchandise.length > 0);
 
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await axios.get('http://127.0.0.1:8000/v1/merchandise-by-category/');
-        setCategories(response.data);
-      } catch (error) {
-        console.error('Error fetching categories:', error);
-      }
-    };
-    fetchCategories();
-  }, []);
+  if (!hasMerchandise) {
+    return <p className="merch-soon">Varsti tulemas ;)</p>;
+  }
 
   return (
     <div className="groups">

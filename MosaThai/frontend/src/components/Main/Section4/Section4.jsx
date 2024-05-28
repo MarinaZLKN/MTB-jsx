@@ -1,14 +1,31 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../../styles/Accordion.scss';
 import sec4 from '@images/prg.png';
 import acc from '@images/IMG_7363.jpg';
 import Title from '../../Title';
 import { motion, AnimatePresence } from "framer-motion";
 import TrainingList from "../Section5/TrainingList";
-
-
+import pic1 from '@images/DSCF1900.jpg';
+import pic2 from '@images/DSCF1965.jpg';
+import pic3 from '@images/DSCF2051.jpg';
+import pic4 from '@images/DSCF2036.jpg';
+import pic5 from '@images/DSCF2305-Enhanced-NR.jpg';
+import pic6 from '@images/DSCF2465.jpg';
+import pic7 from '@images/DSCF2641.jpg';
+const images = [
+    pic1, pic2, pic3, pic4, pic5, pic6, pic7
+];
 const Section4 = () => {
     const [openIndex, setOpenIndex] = useState(null);
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     const accordionData =[
     {
@@ -45,7 +62,7 @@ const Section4 = () => {
             <img src={sec4} alt="section4 picture" className="section4-picture"/>
             <div className="section4-accordion-block">
                 <div className="section4-accordion-picture">
-                    <img src={acc} alt="accordion picture" className="acc-pic"/>
+                    <img src={images[currentImageIndex]} alt="accordion picture" className="acc-pic"/>
                 </div>
                 <div className="section4-accordion">
                   {accordionData.map((data, index) => (

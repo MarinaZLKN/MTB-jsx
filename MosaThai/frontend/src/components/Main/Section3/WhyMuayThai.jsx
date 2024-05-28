@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../../styles/WhyMuayThai.scss';
 import wmt from '@images/DSCF1542.jpg';
 import CustomPrevButton from './CustomPrevButton.jsx';
@@ -52,7 +52,7 @@ const WhyMuayThai = () => {
 
     return (
         <div className="container wmt-container">
-            <div className="wmt-picture-block">
+             <div className="wmt-picture-block">
                 <img src={wmt} alt="Why Muay Thai" className="wmt-picture"/>
             </div>
             <div className="wmt-info-block">
@@ -64,7 +64,6 @@ const WhyMuayThai = () => {
                     <CustomPrevButton onClick={goToPrevText}/>
                     <CustomNextButton onClick={goToNextText}/>
                 </div>
-                {/*<button onClick={toggleText}>Переключить </button>*/}
             </div>
         </div>
     )
